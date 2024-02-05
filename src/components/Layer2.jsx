@@ -50,10 +50,10 @@ const Layer2 = () => {
           </div>
         </div>
         <div className="flex w-[90%] items-center justify-center md:justify-normal  ">
-          <a className="bold font-comfortaa text-2xl  text-[#F7C94B] drop-shadow-2xl">
+          <a className="bold font-comfortaa text-2xl  text-[#F7C94B] drop-shadow-md">
             >> Get to know us more
           </a>
-          <img src={star} alt="flag" className="w-[8%]" />
+          <img src={star} alt="flag" className="hidden w-[8%] md:block" />
         </div>
       </div>
     </>
