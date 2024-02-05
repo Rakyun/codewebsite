@@ -47,7 +47,7 @@ const Layer3 = () => {
       <div className="m-auto mb-14 flex w-[90%] flex-col items-center justify-evenly bg-transparent md:flex-row">
         {coursesBox}
       </div>
-      <button className="font-comfortaa bold w-[300px]  rounded-[50px] bg-[#F7C94B] p-2 text-white drop-shadow-lg transition duration-500 hover:scale-110 hover:bg-[#EA5880] active:opacity-80 active:duration-0 md:p-4">
+      <button className="font-comfortaa bold transition-transform md:hover:scale-105 w-[300px] rounded-[50px] bg-[#F7C94B] p-2 text-white drop-shadow-lg duration-500  hover:bg-[#EA5880] active:opacity-80  md:p-4">
         More on our Courses
       </button>
     </div>
