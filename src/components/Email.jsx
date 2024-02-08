@@ -25,26 +25,132 @@ export const Email = () => {
   };
 
   return (
-    <div className="text-bold bg-black text-amber-500 ">
-      <form
-        ref={form}
-        onSubmit={sendEmail}
-        className="flex w-[100%] flex-col items-center p-4"
-      >
-        <label>Name</label>
-        <input type="text" name="user_name" className="rounded-xl p-3 px-24" />
-        <label>Email</label>
+    <div className="font-comfortaa text-bold px-p5 bg-[#EA5880] px-5 py-12 text-white">
+      <h1 className="mb-14 text-3xl font-bold md:text-4xl">
+        Join our free Trial Class now!
+      </h1>
+      <form ref={form} onSubmit={sendEmail} className="flex w-[70%] flex-col">
+        <h1 className="mb-5 text-2xl">Information</h1>
+        <label>Student's Name</label>
         <input
-          type="email"
-          name="user_email"
-          className="rounded-xl p-3 px-24"
+          type="text"
+          name="student_name"
+          className="mb-5 rounded-xl p-3 px-4  text-black"
+          required
         />
-        <label>Message</label>
-        <textarea name="message" className="rounded-xl p-3 px-24" />
+        <label>Student's Age</label>
+        <input
+          type="number"
+          min="1"
+          max="90"
+          name="student_age"
+          className="mb-5 rounded-xl p-3 px-4 text-black"
+          required
+        />
+        <label>Student's School</label>
+        <input
+          type="text"
+          name="student_school"
+          className="mb-5 rounded-xl p-3 px-4 text-black"
+          required
+        />
+        <label>Parent's Name</label>
+        <input
+          type="text"
+          name="parent_name"
+          className="mb-5 rounded-xl p-3 px-4 text-black"
+          required
+        />
+        <div className="flex w-full flex-col justify-between md:flex-row">
+          <div className="w-full md:w-[45%]">
+            <label>Mobile Number</label>
+            <input
+              type="tel"
+              name="parent_number"
+              className="mb-5 w-full rounded-xl px-4 py-3 text-black"
+              required
+            />
+          </div>
+          <div className="w-full md:w-[45%]">
+            <label>LINE ID</label>
+            <input
+              type="text"
+              name="line_id"
+              className="mb-5 w-full rounded-xl px-4 py-3 text-black"
+            />
+          </div>
+        </div>
+        <h1 className="my-5 text-2xl font-bold">Available Time to study</h1>
+        <label htmlFor="option1" className="text-lg">
+          <input
+            type="checkbox"
+            id="option1"
+            name="options[]"
+            value="Weekdays"
+            className="mb-5 mr-3"
+            required
+          />
+          Weekdays
+        </label>
+
+        <label htmlFor="option2" className="text-lg">
+          <input
+            type="checkbox"
+            id="option2"
+            name="options[]"
+            value="Weekdays After School"
+            className="mb-5 mr-3"
+          />
+          Weekdays After School
+        </label>
+
+        <label htmlFor="option3" className="text-lg">
+          <input
+            type="checkbox"
+            id="option3"
+            name="options[]"
+            value="Saturday Morning"
+            className="mb-5 mr-3"
+          />
+          Saturday Morning
+        </label>
+        <label htmlFor="option4" className="text-lg">
+          <input
+            type="checkbox"
+            id="option4"
+            name="options[]"
+            value="Saturday Afternoon"
+            className="mb-5 mr-3"
+          />
+          Saturday Afternoon
+        </label>
+
+        <label htmlFor="option5" className="text-lg">
+          <input
+            type="checkbox"
+            id="option5"
+            name="options[]"
+            value="Sunday Morning"
+            className="mb-5 mr-3"
+          />
+          Sunday Morning
+        </label>
+
+        <label htmlFor="option6" className="text-lg">
+          <input
+            type="checkbox"
+            id="option6"
+            name="options[]"
+            value="Sunday Afternoon"
+            className="mb-5 mr-3"
+          />
+          Sunday Afternoon
+        </label>
+
         <input
           type="submit"
-          value="Send"
-          className="mt-4 w-[200px] rounded-xl bg-red-700 p-3 hover:opacity-80 active:opacity-50"
+          value="Submit"
+          className=" mt-4 w-[200px] rounded-[50px] bg-[#F7C94B] p-3 hover:opacity-90 active:opacity-50"
         />
       </form>
     </div>

@@ -3,7 +3,7 @@ import intro from "../lottie/intro.json";
 const Layer1 = () => {
   return (
     <>
-      <div className="flex h-full w-full flex-col items-center bg-[#042451] py-[70px] ">
+      <main className="flex h-full w-full flex-col items-center bg-[#042451] py-[70px] ">
         <Player
           src={intro}
           className="h-[425px] w-full "
@@ -18,7 +18,7 @@ const Layer1 = () => {
             Free Trial Class
           </button>
         </div>
-      </div>
+      </main>
     </>
   );
 };

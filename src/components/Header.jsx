@@ -4,11 +4,11 @@ import ukflag from "../assets/ukflag.png";
 const Header = () => {
   return (
     <>
-      <div className="fixed left-0 right-0 top-0 z-50 flex h-[80px] md:h-[110px] items-center justify-between bg-[#29446A] px-10  drop-shadow-lg md:left-12 md:right-12 md:rounded-bl-[60px] md:rounded-br-[60px]">
+      <header className="fixed left-0 right-0 top-0 z-50 flex h-[80px] items-center justify-between bg-[#29446A] px-10 drop-shadow-lg  md:left-12 md:right-12 md:h-[110px] md:rounded-bl-[60px] md:rounded-br-[60px]">
         <img
           src={code_logo}
           alt="Logo"
-          className="relative right-11 md:right-16 w-[120px] h-[120px] md:h-[200px] md:w-[200px] transition duration-1000 hover:rotate-45 hover:scale-110"
+          className="relative right-11 h-[120px] w-[120px]  md:right-16 md:h-[200px] md:w-[200px]"
         />
         <img src={nav_logo} alt="nav" className="md:hidden" />
         <div className="relative right-12 hidden w-[90%] md:flex md:justify-between lg:justify-evenly">
@@ -37,7 +37,7 @@ const Header = () => {
             English
           </p>
         </div>
-      </div>
+      </header>
     </>
   );
 };
