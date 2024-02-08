@@ -29,7 +29,11 @@ export const Email = () => {
       <h1 className="mb-14 text-3xl font-bold md:text-4xl">
         Join our free Trial Class now!
       </h1>
-      <form ref={form} onSubmit={sendEmail} className="flex w-[70%] flex-col">
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        className="flex w-[100%] flex-col md:w-[70%]"
+      >
         <h1 className="mb-5 text-2xl">Information</h1>
         <label>Student's Name</label>
         <input
@@ -145,6 +149,17 @@ export const Email = () => {
             className="mb-5 mr-3"
           />
           Sunday Afternoon
+        </label>
+
+        <label htmlFor="option7" className="text-lg">
+          <input
+            type="checkbox"
+            id="option7"
+            name="options[]"
+            value="Anytime"
+            className="mb-5 mr-3"
+          />
+          Anytime
         </label>
 
         <input
