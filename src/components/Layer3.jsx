@@ -30,11 +30,11 @@ const Layer3 = () => {
   const coursesBox = courses.map((course) => (
     <div
       key={course.id}
-      className=" mb-8 box-border flex w-[80%] flex-col  rounded-br-[40px] rounded-tl-[40px] bg-white  transition-transform duration-500  hover:scale-105 sm:w-[70%]  md:w-[19%] xl:h-[450px]"
+      className="mb-8 box-border flex  w-[80%] flex-col  rounded-br-[40px] rounded-tl-[40px] bg-white  transition-transform duration-500  hover:scale-105 sm:w-[70%]  md:w-[19%]   "
     >
       <img src={course.image} className="rounded-tl-[40px]" />
       <div className="p-4 ">
-        <p className="mb-10 h-[30px] text-xl font-bold md:h-[80px] md:text-[1.5vw]">
+        <p className="text-xl  font-bold md:h-[120px] md:text-base lg:text-xl">
           {course.courseName}
         </p>
         <p className=" text-xl font-bold">{course.age}</p>
@@ -47,7 +47,7 @@ const Layer3 = () => {
       <div className="m-auto mb-14 flex w-[90%] flex-col items-center justify-evenly bg-transparent md:flex-row">
         {coursesBox}
       </div>
-      <button className="font-comfortaa bold transition-transform md:hover:scale-105 w-[300px] rounded-[50px] bg-[#F7C94B] p-2 text-white drop-shadow-lg duration-500  hover:bg-[#EA5880] active:opacity-80  md:p-4">
+      <button className="font-comfortaa bold w-[300px] rounded-[50px] bg-[#F7C94B] p-2 text-white drop-shadow-lg transition-transform duration-500 hover:bg-[#EA5880]  active:opacity-80 md:p-4  md:hover:scale-105">
         More on our Courses
       </button>
     </div>
