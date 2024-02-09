@@ -4,6 +4,7 @@ import Layer1 from "./components/Layer1";
 import Layer2 from "./components/Layer2";
 import Layer3 from "./components/Layer3";
 import Layer4 from "./components/Layer4";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
       <Layer3 />
       <Layer4 />
       <Email />
+      <Footer/>
     </>
   );
 }

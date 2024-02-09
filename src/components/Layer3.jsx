@@ -30,11 +30,11 @@ const Layer3 = () => {
   const coursesBox = courses.map((course) => (
     <div
       key={course.id}
-      className="mb-8 box-border flex  w-[80%] flex-col  rounded-br-[40px] rounded-tl-[40px] bg-white  transition-transform duration-500  hover:scale-105 sm:w-[70%]  md:w-[19%]   "
+      className="mb-8  flex  w-[80%] flex-col  rounded-br-[40px] rounded-tl-[40px] bg-white  transition-transform duration-500  hover:scale-105 sm:w-[70%]  md:w-[19%]   "
     >
       <img src={course.image} className="rounded-tl-[40px]" />
       <div className="p-4 ">
-        <p className="text-xl  font-bold md:h-[120px] md:text-base lg:text-xl">
+        <p className="mb-6 text-xl font-bold  md:mb-0 md:h-[120px] md:text-base lg:text-xl">
           {course.courseName}
         </p>
         <p className=" text-xl font-bold">{course.age}</p>
