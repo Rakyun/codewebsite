@@ -8,7 +8,7 @@ const Layer2 = () => {
       <div className="font-comfortaa relative flex h-full w-full flex-col items-center bg-[#98E7FF] py-[70px]">
         <div className="m-auto mb-10 flex w-[90%] flex-col items-center bg-transparent md:flex-row md:items-start md:justify-between ">
           <div className="mb-10 flex  w-[90%] flex-col items-center md:w-[45%]">
-            <p className="mb-10  h-12 w-[400px] text-center text-2xl font-extrabold">
+            <p className="mb-10  h-12 text-center text-2xl font-extrabold md:w-[400px]">
               Prepare your child's skills for the world of the future
             </p>
             <img
@@ -26,7 +26,7 @@ const Layer2 = () => {
             </p>
           </div>
           <div className="mb-10 flex w-[90%] flex-col  items-center md:w-[45%]">
-            <p className="mb-10 flex h-12 w-[400px] items-end justify-center text-center text-2xl  font-extrabold">
+            <p className="mb-10 flex h-12 items-end justify-center text-center text-2xl font-extrabold  md:w-[400px]">
               Why study with us?
             </p>
             <div className="relative">
@@ -50,7 +50,7 @@ const Layer2 = () => {
           </div>
         </div>
         <div className="flex w-[90%] items-center justify-center md:justify-normal  ">
-          <a className="font-bold font-comfortaa text-2xl  text-[#F7C94B] drop-shadow-md">
+          <a className="font-comfortaa text-2xl font-bold  text-[#F7C94B] drop-shadow-md">
             >> Get to know us more
           </a>
           <img src={star} alt="flag" className="hidden w-[8%] md:block" />

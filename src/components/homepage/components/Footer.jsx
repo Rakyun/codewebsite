@@ -18,7 +18,7 @@ const Footer = () => {
     },
   ];
   const contactList = contacts.map((contact) => (
-    <div className=" my-1 flex text-lg  font-bold text-white" key={contact.key}>
+    <div className=" text-md my-1 flex  font-bold text-white" key={contact.key}>
       <img
         src={contact.logo}
         alt="logo"
@@ -39,11 +39,11 @@ const Footer = () => {
           alt="Logo"
           className="inline h-[300px] w-[300px]"
         />
-        <div className="auto mb-10 flex w-[80%] flex-col justify-center px-12 md:mb-0">
+        <div className="auto mb-10 flex w-[80%] flex-col justify-center  md:mb-0">
           {contactList}
         </div>
       </section>
-      <div className="flex w-full items-center justify-center bg-[#29446A] p-5 text-lg font-bold text-white md:justify-normal">
+      <div className="flex w-full items-center justify-center bg-[#29446A]  text-lg font-bold text-white md:justify-normal">
         Copyright © CO-DE Academy
       </div>
     </footer>

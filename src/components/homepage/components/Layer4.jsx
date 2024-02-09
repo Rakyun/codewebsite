@@ -27,7 +27,6 @@ const Layer4 = () => {
               Our Team and Curriculum
             </p>
           </div>
-          ../
         </div>
         <div className="flex w-[85%] flex-col items-center bg-transparent md:flex-row md:justify-around ">
           <div className="relative my-5 flex w-[90%] items-center  justify-center drop-shadow-xl transition-transform duration-500  hover:scale-105 md:w-[45%]">
