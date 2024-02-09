@@ -1,9 +1,9 @@
-import code_logo from "../assets/code_logo.png";
-import facebook from "../assets/logos/facebook.png";
-import line from "../assets/logos/line.png";
-import phone from "../assets/logos/phone.png";
-import email from "../assets/logos/email.png";
-import location from "../assets/logos/location.png";
+import code_logo from "../../../assets/code_logo.png";
+import facebook from "../../../assets/logos/facebook.png";
+import line from "../../../assets/logos/line.png";
+import phone from "../../../assets/logos/phone.png";
+import email from "../../../assets/logos/email.png";
+import location from "../../../assets/logos/location.png";
 const Footer = () => {
   const contacts = [
     { logo: facebook, text: "CO-DE academy", key: "logo1" },

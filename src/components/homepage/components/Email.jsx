@@ -165,7 +165,7 @@ export const Email = () => {
         <input
           type="submit"
           value="Submit"
-          className=" mt-4 w-[200px] rounded-[50px] bg-[#F7C94B] p-3 hover:opacity-90 active:opacity-50"
+          className="mt-4 w-[200px] cursor-pointer rounded-[50px] bg-[#F7C94B] p-3 hover:opacity-90 active:opacity-50"
         />
       </form>
     </div>

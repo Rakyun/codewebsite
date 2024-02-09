@@ -1,7 +1,7 @@
-import prepare from "../assets/prepare.png";
-import why from "../assets/why.png";
-import catpeek from "../assets/catpeek.png";
-import star from "../assets/star.png";
+import prepare from "../../../assets/prepare.png";
+import why from "../../../assets/why.png";
+import catpeek from "../../../assets/catpeek.png";
+import star from "../../../assets/star.png";
 const Layer2 = () => {
   return (
     <>

@@ -1,5 +1,5 @@
 import { Player } from "@lottiefiles/react-lottie-player";
-import intro from "../lottie/intro.json";
+import intro from "../../../lottie/intro.json";
 const Layer1 = () => {
   return (
     <>

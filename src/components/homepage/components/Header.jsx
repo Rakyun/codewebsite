@@ -1,6 +1,6 @@
-import code_logo from "../assets/code_logo.png";
-import nav_logo from "../assets/nav.png";
-import ukflag from "../assets/ukflag.png";
+import code_logo from "../../../assets/code_logo.png";
+import nav_logo from "../../../assets/nav.png";
+import ukflag from "../../../assets/ukflag.png";
 const Header = () => {
   return (
     <>

@@ -1,8 +1,8 @@
-import img1 from "../assets/courses/squarebanner01.png";
-import img2 from "../assets/courses/squarebanner02.png";
-import img3 from "../assets/courses/squarebanner03.png";
-import img4 from "../assets/courses/squarebanner04.png";
-import img5 from "../assets/courses/squarebanner05.png";
+import img1 from "../../../assets/courses/squarebanner01.png";
+import img2 from "../../../assets/courses/squarebanner02.png";
+import img3 from "../../../assets/courses/squarebanner03.png";
+import img4 from "../../../assets/courses/squarebanner04.png";
+import img5 from "../../../assets/courses/squarebanner05.png";
 const Layer3 = () => {
   const courses = [
     { image: img1, courseName: "Design Thinking Class", age: "4++", id: "dtc" },
