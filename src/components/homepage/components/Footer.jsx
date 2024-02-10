@@ -43,7 +43,7 @@ const Footer = () => {
           {contactList}
         </div>
       </section>
-      <div className="flex w-full items-center justify-center bg-[#29446A]  text-lg font-bold text-white md:justify-normal">
+      <div className="flex w-full items-center justify-center bg-[#29446A]  p-3 text-lg font-bold text-white md:justify-normal">
         Copyright © CO-DE Academy
       </div>
     </footer>
