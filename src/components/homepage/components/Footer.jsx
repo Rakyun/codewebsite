@@ -6,11 +6,18 @@ import email from "../../../assets/logos/email.png";
 import location from "../../../assets/logos/location.png";
 const Footer = () => {
   const contacts = [
-    { logo: facebook, text: "CO-DE academy", key: "logo1" },
-    { logo: line, text: "@CO-DE", key: "logo2" },
-    { logo: phone, text: "0808300899", key: "logo3" },
-    { logo: email, text: "codeacademy.ad@gmail.com", key: "logo4" },
     {
+      portal: "https://www.facebook.com/codeacademy.thailand",
+      logo: facebook,
+      text: "CO-DE academy",
+      key: "logo1",
+    },
+    { portal: "", logo: line, text: "@CO-DE", key: "logo2" },
+    { portal: "", logo: phone, text: "0808300899", key: "logo3" },
+    { portal: "", logo: email, text: "codeacademy.ad@gmail.com", key: "logo4" },
+    {
+      portal:
+        "https://www.google.com/maps/dir//Mille+Malle+Mall,+Sukhumvit+20+Alley,+Khlong+Toei,+Bangkok+10110/@13.730056,100.4810962,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x30e29ff6f10ee8f3:0x76076b242bf23d09!2m2!1d100.5634996!2d13.7301107?entry=ttu",
       logo: location,
       text: "CO-DE academy",
       text2: "Floor 3. Mille Malle , Sukhumvit 20",
@@ -18,15 +25,19 @@ const Footer = () => {
     },
   ];
   const contactList = contacts.map((contact) => (
-    <div className=" text-md my-1 flex  font-bold text-white" key={contact.key}>
+    <div className=" text-md my-1 flex font-bold text-white" key={contact.key}>
       <img
         src={contact.logo}
         alt="logo"
         className={`mr-3  h-[35px] ${contact.key == "logo5" ? "relative left-[5px] mr-[22px] w-[25px]" : "w-[35px]"}`}
       />
       <div>
-        <p>{contact.text}</p>
-        {contact.key == "logo5" && <p>{contact.text2}</p>}
+        <a href={contact.portal}>{contact.text}</a>
+        {contact.key == "logo5" && (
+          <a className="block" href={contact.portal}>
+            {contact.text2}
+          </a>
+        )}
       </div>
     </div>
   ));

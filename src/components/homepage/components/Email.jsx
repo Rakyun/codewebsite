@@ -25,7 +25,7 @@ export const Email = () => {
   };
 
   return (
-    <div className="font-comfortaa text-bold bg-[#EA5880]  p-14 text-white">
+    <div id="email" className="font-comfortaa text-bold bg-[#EA5880]  p-14 text-white">
       <h1 className="mb-14 text-3xl font-bold md:text-4xl">
         Join our free Trial Class now!
       </h1>

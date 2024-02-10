@@ -43,7 +43,10 @@ const Layer3 = () => {
   ));
 
   return (
-    <div className="font-comfortaa flex h-full w-full flex-col items-center bg-[#042451] py-24">
+    <div
+      id="layer3"
+      className="font-comfortaa flex h-full w-full flex-col items-center bg-[#042451] py-24"
+    >
       <div className="m-auto mb-14 flex w-[90%] flex-col items-center justify-evenly bg-transparent md:flex-row">
         {coursesBox}
       </div>
