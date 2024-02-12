@@ -1,5 +1,5 @@
 import ukflag from "../../../assets/ukflag.png";
-
+import { Link } from "react-router-dom";
 const Nav = (props) => {
   return (
     <>
@@ -12,13 +12,13 @@ const Nav = (props) => {
           className="font-comfortaa my-4 cursor-pointer select-none text-xl text-white   hover:opacity-80  active:opacity-50"
           rel="noreferrer"
         >
-          CO-DE
+          <Link to="/">CO-DE</Link>
         </a>
         <a className="font-comfortaa my-4 cursor-pointer select-none text-xl text-white  hover:opacity-80 active:opacity-50">
           COURSES
         </a>
         <a className="font-comfortaa my-4 cursor-pointer select-none text-xl text-white  hover:opacity-80 active:opacity-50">
-          OUR PLAYGROUND
+          <Link to="/playground">OUR PLAYGROUND</Link>
         </a>
         <a className="font-comfortaa my-4 cursor-pointer select-none text-xl text-white  hover:opacity-80 active:opacity-50">
           TRENDS

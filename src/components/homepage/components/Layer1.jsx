@@ -16,7 +16,7 @@ const Layer1 = () => {
             to="layer3"
             smooth={true}
             duration={800}
-            offset={-30}
+            offset={0}
             className="font-comfortaa bold mb-10 w-[200px] cursor-pointer select-none rounded-[50px] bg-[#F7C94B] p-2 text-center text-white drop-shadow-lg transition-transform duration-500 hover:bg-[#EA5880]  active:opacity-80 md:p-4  md:hover:scale-105"
           >
             Our Curriculum
@@ -25,7 +25,7 @@ const Layer1 = () => {
             to="email"
             smooth={true}
             duration={800}
-            offset={-30}
+            offset={0}
             className="font-comfortaa bold w-[200px] cursor-pointer select-none rounded-[50px] bg-[#F7C94B] p-2 text-center text-white drop-shadow-lg transition-transform duration-500 hover:bg-[#EA5880]  active:opacity-80 md:p-4  md:hover:scale-105"
           >
             Free Trial Class
