@@ -1,12 +1,10 @@
-import { useState, useEffect } from "react";
-import Header from "../header/Header";
+import Header from "../header/Header.jsx";
 import Nav from "../header/Nav.jsx";
-import Playground from "./components/Playground";
-import Classrooms from "./components/Classrooms";
-import Footer from "../homepage/components/Footer";
+import { useState, useEffect } from "react";
+import Information from "./components/Information";
 import Email from "../homepage/components/Email";
-
-const OurPlayground = () => {
+import Footer from "../homepage/components/Footer";
+const Contact = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNav = () => {
@@ -16,17 +14,15 @@ const OurPlayground = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
   return (
     <>
       <Header toggle={toggleNav} />
       <Nav isVisible={isNavOpen} />
-      <Playground />
-      <Classrooms />
+      <Information />
       <Email />
       <Footer />
     </>
   );
 };
 
-export default OurPlayground;
+export default Contact;

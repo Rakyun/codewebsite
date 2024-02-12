@@ -11,9 +11,9 @@ const Header = (props) => {
       const scrollPosition = window.scrollY;
 
       if (scrollPosition > 1) {
-        setHeaderStyle("-translate-y-[120px]");
+        setHeaderStyle("md:-translate-y-[120px]");
       } else {
-        setHeaderStyle("translate-y-0");
+        setHeaderStyle("md:translate-y-0");
       }
     };
 
@@ -29,13 +29,11 @@ const Header = (props) => {
       <header
         className={`fixed left-0 right-0 top-0 z-[9999] flex h-[80px] items-center justify-between bg-[#29446A] px-10 drop-shadow-lg transition duration-500  md:left-12 md:right-12 md:h-[110px] md:rounded-bl-[60px] md:rounded-br-[60px] ${headerStyle}`}
       >
-        <Link to="/">
-          <img
-            src={code_logo}
-            alt="Logo"
-            className="relative right-11 h-[120px] w-[120px]  md:right-16 md:h-[200px] md:w-[200px]"
-          />
-        </Link>
+        <img
+          src={code_logo}
+          alt="Logo"
+          className="relative right-11 h-[120px] w-[120px]  md:right-16 md:h-[200px] md:w-[200px]"
+        />
         <img
           src={nav_logo}
           onClick={props.toggle}
@@ -59,7 +57,7 @@ const Header = (props) => {
             TRENDS
           </a>
           <a className="font-comfortaa cursor-pointer select-none text-white hover:opacity-80  active:opacity-50 md:text-[1.6vw]  lg:text-[1.3vw]">
-            CONTACT US
+            <Link to="/contactUs">CONTACT US</Link>
           </a>
         </div>
         <div className="absolute right-10 top-2 hidden cursor-pointer select-none items-center hover:opacity-80 active:opacity-50  md:flex">

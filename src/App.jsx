@@ -1,11 +1,10 @@
+import Contact from "./components/contactUs/Contact";
 import Homepage from "./components/homepage/Homepage";
-import OurPlayground from "./components/playground/OurPlayground";
-
 
 function App() {
   return (
     <>
-      <OurPlayground />
+      <Homepage />
     </>
   );
 }

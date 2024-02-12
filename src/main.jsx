@@ -1,10 +1,12 @@
 import React from "react";
+import App from "./App.jsx";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Homepage from "./components/homepage/Homepage.jsx";
 
 import OurPlayground from "./components/playground/OurPlayground.jsx";
+import Contact from "./components/contactUs/Contact.jsx";
 
 const router = createBrowserRouter(
   [
@@ -15,6 +17,10 @@ const router = createBrowserRouter(
     {
       path: "/playground",
       element: <OurPlayground />,
+    },
+    {
+      path: "/contactUs",
+      element: <Contact />,
     },
   ],
   { basename: "/codewebsite/" },
