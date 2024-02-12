@@ -24,7 +24,7 @@ const Nav = (props) => {
           TRENDS
         </a>
         <a className="font-comfortaa my-4 cursor-pointer select-none text-xl text-white  hover:opacity-80 active:opacity-50">
-          CONTACT US
+          <Link to="/contactUs">CONTACT US</Link>
         </a>
         <div className="my-3 flex cursor-pointer select-none items-center hover:opacity-80 active:opacity-50">
           <img src={ukflag} alt="flag" className="h-[25px] w-[40px]" />
