@@ -54,7 +54,7 @@ const CourseList = () => {
       <section className="mb-20 flex w-[90%] flex-col items-center md:flex-row  md:justify-between lg:w-[50%] ">
         <Link
           to="/contactUs"
-          className="font-comfortaa bold mb-11 w-[45%]  rounded-[50px] bg-[#F7C94B] p-3 text-center text-white drop-shadow-lg transition-transform duration-500 hover:bg-[#EA5880] active:opacity-80  md:m-0 md:p-4  md:hover:scale-105"
+          className="font-comfortaa bold mb-11 w-[60%] rounded-[50px]  bg-[#F7C94B] p-3 text-center text-white drop-shadow-lg transition-transform duration-500 hover:bg-[#EA5880] active:opacity-80 sm:w-[45%]  md:m-0 md:p-4  md:hover:scale-105"
         >
           Contact Us
         </Link>
@@ -64,7 +64,7 @@ const CourseList = () => {
           smooth={true}
           duration={800}
           offset={0}
-          className="font-comfortaa bold mb-11 w-[45%]  cursor-pointer select-none rounded-[50px] bg-[#F7C94B] p-3 text-center text-white drop-shadow-lg transition-transform duration-500 hover:bg-[#EA5880] active:opacity-80  md:m-0 md:p-4  md:hover:scale-105"
+          className="font-comfortaa bold mb-11 w-[60%] cursor-pointer select-none  rounded-[50px] bg-[#F7C94B] p-3 text-center text-white drop-shadow-lg transition-transform duration-500 hover:bg-[#EA5880] active:opacity-80 sm:w-[45%] md:m-0  md:w-[45%] md:p-4  md:hover:scale-105"
         >
           Free Trial Class
         </ScrollLink>
