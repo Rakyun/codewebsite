@@ -15,7 +15,7 @@ const Nav = (props) => {
           <Link to="/">CO-DE</Link>
         </a>
         <a className="font-comfortaa my-4 cursor-pointer select-none text-xl text-white  hover:opacity-80 active:opacity-50">
-          COURSES
+          <Link to="/courses">COURSES</Link>
         </a>
         <a className="font-comfortaa my-4 cursor-pointer select-none text-xl text-white  hover:opacity-80 active:opacity-50">
           <Link to="/playground">OUR PLAYGROUND</Link>

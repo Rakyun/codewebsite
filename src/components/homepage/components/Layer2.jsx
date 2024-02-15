@@ -8,7 +8,7 @@ const Layer2 = () => {
       <div className="font-comfortaa relative flex h-full w-full flex-col items-center bg-[#98E7FF] py-[70px]">
         <div className="m-auto mb-10 flex w-[90%] flex-col items-center bg-transparent md:flex-row md:items-start md:justify-between ">
           <div className="mb-10 flex  w-[90%] flex-col items-center md:w-[45%]">
-            <p className="mb-10  h-12 text-center text-2xl font-extrabold md:w-[400px]">
+            <p className="mb-10  text-center text-2xl font-extrabold md:h-12 md:w-[400px]">
               Prepare your child's skills for the world of the future
             </p>
             <img

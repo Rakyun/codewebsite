@@ -48,14 +48,14 @@ const Header = (props) => {
             <Link to="/">CO-DE</Link>
           </a>
           <a className="font-comfortaa cursor-pointer select-none text-white hover:opacity-80  active:opacity-50 md:text-[1.6vw]  lg:text-[1.3vw]">
-            COURSES
+          <Link to="/courses">COURSES</Link>
           </a>
           <a className="font-comfortaa cursor-pointer select-none text-white hover:opacity-80  active:opacity-50 md:text-[1.6vw]  lg:text-[1.3vw]">
             <Link to="/playground">OUR PLAYGROUND</Link>
           </a>
           <a className="font-comfortaa cursor-pointer select-none text-white hover:opacity-80  active:opacity-50 md:text-[1.6vw]  lg:text-[1.3vw]">
             TRENDS
-          </a>
+          </a>  
           <a className="font-comfortaa cursor-pointer select-none text-white hover:opacity-80  active:opacity-50 md:text-[1.6vw]  lg:text-[1.3vw]">
             <Link to="/contactUs">CONTACT US</Link>
           </a>
