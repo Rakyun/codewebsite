@@ -2,6 +2,7 @@ import prepare from "../../../assets/prepare.png";
 import why from "../../../assets/why.png";
 import catpeek from "../../../assets/catpeek.png";
 import star from "../../../assets/star.png";
+import { Link } from "react-router-dom";
 const Layer2 = () => {
   return (
     <>
@@ -51,7 +52,7 @@ const Layer2 = () => {
         </div>
         <div className="flex w-[90%] items-center justify-center md:justify-normal  ">
           <a className="font-comfortaa text-2xl font-bold  text-[#F7C94B] drop-shadow-md">
-            >> Get to know us more
+            <Link to="/aboutUs"> {">> Get to know us more"} </Link>
           </a>
           <img src={star} alt="flag" className="hidden w-[8%] md:block" />
         </div>

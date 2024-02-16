@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import img1 from "../../../assets/courses/squarebanner01.png";
 import img2 from "../../../assets/courses/squarebanner02.png";
 import img3 from "../../../assets/courses/squarebanner03.png";
@@ -26,7 +27,7 @@ const Layer3 = () => {
     },
     { image: img5, courseName: "Creative Coding Class", age: "9++", id: "ccc" },
   ];
-
+  
   const coursesBox = courses.map((course) => (
     <div
       key={course.id}
@@ -50,9 +51,12 @@ const Layer3 = () => {
       <div className="m-auto mb-14 flex w-[90%] flex-col items-center justify-evenly bg-transparent md:flex-row">
         {coursesBox}
       </div>
-      <button className="font-comfortaa bold w-[300px] rounded-[50px] bg-[#F7C94B] p-2 text-white drop-shadow-lg transition-transform duration-500 hover:bg-[#EA5880]  active:opacity-80 md:p-4  md:hover:scale-105">
+      <Link
+        to="/courses"
+        className="font-comfortaa bold w-[300px] cursor-pointer rounded-[50px] bg-[#F7C94B] p-2 text-center text-white drop-shadow-lg transition-transform duration-500 hover:bg-[#EA5880]  active:opacity-80 md:p-4  md:hover:scale-105"
+      >
         More on our Courses
-      </button>
+      </Link>
     </div>
   );
 };
