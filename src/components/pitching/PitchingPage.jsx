@@ -4,8 +4,10 @@ import Nav from "../header/Nav";
 import Stage from "./components/Stage";
 import Email from "../homepage/components/Email";
 import Footer from "../homepage/components/Footer";
+import Message from "../msg/Message";
 
 const PitchingPage = () => {
+  const page = "Pitching";
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNav = () => {
@@ -20,8 +22,9 @@ const PitchingPage = () => {
       <Header toggle={toggleNav} />
       <Nav isVisible={isNavOpen} />
       <Stage />
-      <Email />
+      <Email pageName={page}/>
       <Footer />
+      <Message/>
     </>
   );
 };

@@ -4,7 +4,9 @@ import Nav from "../header/Nav";
 import Email from "../homepage/components/Email";
 import Footer from "../homepage/components/Footer";
 import Detail from "./components/Detail";
+import Message from "../msg/Message";
 const AboutUs = () => {
+  const page = "About Us";
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNav = () => {
@@ -18,9 +20,10 @@ const AboutUs = () => {
     <>
       <Header toggle={toggleNav} />
       <Nav isVisible={isNavOpen} />
-      <Detail/>
-      <Email />
+      <Detail />
+      <Email pageName={page} />
       <Footer />
+      <Message />
     </>
   );
 };

@@ -7,8 +7,10 @@ import Layer2 from "./components/Layer2";
 import Layer3 from "./components/Layer3";
 import Layer4 from "./components/Layer4";
 import Nav from "../header/Nav";
+import Message from "../msg/Message";
 
 const Homepage = () => {
+  const page = "Home";
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNav = () => {
@@ -27,8 +29,9 @@ const Homepage = () => {
       <Layer2 />
       <Layer3 />
       <Layer4 />
-      <Email />
+      <Email pageName={page} />
       <Footer />
+      <Message/>
     </div>
   );
 };

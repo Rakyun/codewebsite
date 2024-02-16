@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-export const Email = () => {
+export const Email = (props) => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -25,7 +25,10 @@ export const Email = () => {
   };
 
   return (
-    <div id="email" className="font-comfortaa text-bold bg-[#EA5880]  p-14 text-white">
+    <div
+      id="email"
+      className="font-comfortaa text-bold bg-[#EA5880]  p-14 text-white"
+    >
       <h1 className="mb-14 text-3xl font-bold md:text-4xl">
         Join our free Trial Class now!
       </h1>
@@ -35,6 +38,7 @@ export const Email = () => {
         className="flex w-[100%] flex-col md:w-[70%]"
       >
         <h1 className="mb-5 text-2xl">Information</h1>
+        <input type="hidden" name="page_name" value={props.pageName} />
         <label>Student's Name</label>
         <input
           type="text"
@@ -92,7 +96,6 @@ export const Email = () => {
             name="options[]"
             value="Weekdays"
             className="mb-5 mr-3"
-            required
           />
           Weekdays
         </label>

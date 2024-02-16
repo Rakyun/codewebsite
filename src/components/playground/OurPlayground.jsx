@@ -5,8 +5,10 @@ import Playground from "./components/Playground";
 import Classrooms from "./components/Classrooms";
 import Footer from "../homepage/components/Footer";
 import Email from "../homepage/components/Email";
+import Message from "../msg/Message.jsx";
 
 const OurPlayground = () => {
+  const page = "Playground";
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNav = () => {
@@ -23,8 +25,9 @@ const OurPlayground = () => {
       <Nav isVisible={isNavOpen} />
       <Playground />
       <Classrooms />
-      <Email />
+      <Email pageName={page} />
       <Footer />
+      <Message/>
     </>
   );
 };

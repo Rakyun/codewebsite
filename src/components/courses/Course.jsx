@@ -4,7 +4,9 @@ import { useState, useEffect } from "react";
 import CourseList from "./components/CourseList";
 import Email from "../homepage/components/Email";
 import Footer from "../homepage/components/Footer";
+import Message from "../msg/Message";
 const Course = () => {
+  const page = "Courses";
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNav = () => {
@@ -19,8 +21,9 @@ const Course = () => {
       <Header toggle={toggleNav} />
       <Nav isVisible={isNavOpen} />
       <CourseList />
-      <Email />
+      <Email pageName={page}/>
       <Footer />
+      <Message/>
     </>
   );
 };
