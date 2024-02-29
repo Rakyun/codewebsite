@@ -1,12 +1,12 @@
-import { useRef } from "react";
+import { useRef,useState } from "react";
 import emailjs from "@emailjs/browser";
 
 export const Email = (props) => {
   const form = useRef();
-
+  const [submit, setSubmit] = useState(false)
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setSubmit(true)
     emailjs
       .sendForm(
         "service_danilopablito",
@@ -165,11 +165,14 @@ export const Email = (props) => {
           Anytime
         </label>
 
+        <div className="flex items-center">
         <input
           type="submit"
           value="Submit"
           className="mt-4 w-[200px] cursor-pointer rounded-[50px] bg-[#F7C94B] p-3 hover:opacity-90 active:opacity-50"
         />
+        {submit && <p className="ml-5">Submit Success, Thank you!</p>}
+        </div>
       </form>
     </div>
   );

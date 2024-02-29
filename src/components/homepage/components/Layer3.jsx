@@ -14,18 +14,18 @@ const Layer3 = () => {
       id: "bbcc",
     },
     {
-      image: img3,
+      image: img5,
       courseName: "Mechanical Innovation Class",
       age: "8++",
       id: "mic",
     },
     {
-      image: img4,
+      image: img3,
       courseName: "Fundamental Coding Class",
       age: "9++",
       id: "fcc",
     },
-    { image: img5, courseName: "Creative Coding Class", age: "9++", id: "ccc" },
+    { image: img4, courseName: "Creative Coding Class", age: "9++", id: "ccc" },
   ];
   
   const coursesBox = courses.map((course) => (

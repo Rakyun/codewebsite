@@ -25,7 +25,7 @@ const Information = () => {
   ];
   const contactList = contacts.map((contact) => (
     <div
-      className=" sm:text-md my-1  flex text-sm font-bold text-white lg:text-lg"
+      className="sm:text-md my-1  flex text-sm font-bold text-white lg:text-xl"
       key={contact.key}
     >
       <img
@@ -58,7 +58,7 @@ const Information = () => {
             </div>
             <img src={qrcode} alt="qrcode" className="border-8 border-black" />
           </div>
-          <div className="flex w-[90%] flex-col rounded-2xl border-4 border-black bg-[#29446A] p-4 drop-shadow-xl sm:w-[60%] md:w-[45%]">
+          <div className="flex w-[90%] flex-col rounded-2xl py-4  bg-[#29446A] md:py-10 drop-shadow-xl pl-4 sm:w-[60%] md:w-[450px]">
             {contactList}
           </div>
         </div>

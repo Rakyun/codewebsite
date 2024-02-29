@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         comfortaa: ["Comfortaa", "sans-serif"],
       },
+      animation:{
+        'bounce-slow': "bounce 1.5s infinite"
+      }
     },
   },
   plugins: [],
