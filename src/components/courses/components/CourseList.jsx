@@ -30,16 +30,16 @@ const CourseList = () => {
   ));
 
   return (
-    <div className="overflow-x-hidden font-comfortaa flex h-full w-full flex-col items-center bg-[#042451] pt-[150px] text-white">
+    <div className="flex h-full w-full flex-col items-center overflow-x-hidden bg-[#042451] pt-[150px] font-comfortaa text-white">
       <p className="mb-10 text-center text-4xl">Our Courses</p>
       <img
         src={menu}
         alt="menu"
-        className="mb-20 w-[80%] rounded-3xl md:w-[50%]"
+        className="mb-20 w-[80%] rounded-3xl md:w-[50%] "
       />
       <section className="mb-20 flex h-full flex-col">{listOfCourses}</section>
       <section className="flex w-full flex-col items-center ">
-        <p className=" w-[80%] text-center text-3xl md:text-4xl">
+        <p className="  w-[80%] text-center text-3xl md:text-4xl">
           Let your children experience Start-up culture from a young age
         </p>
         <p className="my-14 w-[80%] text-center text-lg md:text-xl">
@@ -54,7 +54,7 @@ const CourseList = () => {
       <section className="mb-20 flex w-[90%] flex-col items-center md:flex-row  md:justify-between lg:w-[50%] ">
         <Link
           to="/contactUs"
-          className="font-comfortaa bold mb-11 w-[60%] rounded-[50px]  bg-[#F7C94B] p-3 text-center text-white drop-shadow-lg transition-transform duration-500 hover:bg-[#EA5880] active:opacity-80 sm:w-[45%]  md:m-0 md:p-4  md:hover:scale-105"
+          className="bold mb-11 w-[60%] rounded-[50px] bg-[#F7C94B]  p-3 text-center font-comfortaa text-white drop-shadow-lg transition-transform duration-500 hover:bg-[#EA5880] active:opacity-80 sm:w-[45%]  md:m-0 md:p-4  md:hover:scale-105"
         >
           Contact Us
         </Link>
@@ -64,7 +64,7 @@ const CourseList = () => {
           smooth={true}
           duration={800}
           offset={0}
-          className="font-comfortaa bold mb-11 w-[60%] cursor-pointer select-none  rounded-[50px] bg-[#F7C94B] p-3 text-center text-white drop-shadow-lg transition-transform duration-500 hover:bg-[#EA5880] active:opacity-80 sm:w-[45%] md:m-0  md:w-[45%] md:p-4  md:hover:scale-105"
+          className="bold mb-11 w-[60%] cursor-pointer select-none rounded-[50px]  bg-[#F7C94B] p-3 text-center font-comfortaa text-white drop-shadow-lg transition-transform duration-500 hover:bg-[#EA5880] active:opacity-80 sm:w-[45%] md:m-0  md:w-[45%] md:p-4  md:hover:scale-105"
         >
           Free Trial Class
         </ScrollLink>

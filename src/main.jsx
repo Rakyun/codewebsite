@@ -35,6 +35,11 @@ const router = createBrowserRouter(
       path: "/aboutUs",
       element: <AboutUs />,
     },
+    {
+      path: "/courses/scratch",
+      element: <AboutUs/>
+    }
+    ,
   ],
   { basename: "/codewebsite/" },
 );

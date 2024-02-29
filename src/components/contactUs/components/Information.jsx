@@ -46,7 +46,7 @@ const Information = () => {
 
   return (
     <>
-      <main className="font-comfortaa flex h-full w-full flex-col items-center bg-[#042451] py-10 pt-[150px] text-white ">
+      <main className="flex h-full w-full flex-col items-center bg-[#042451] py-10 pt-[150px] font-comfortaa text-white ">
         <p className="mb-12 w-[80%] text-center text-3xl md:text-4xl">
           Plan your study with us!
         </p>
@@ -58,7 +58,7 @@ const Information = () => {
             </div>
             <img src={qrcode} alt="qrcode" className="border-8 border-black" />
           </div>
-          <div className="flex w-[90%] flex-col rounded-2xl py-4  bg-[#29446A] md:py-10 drop-shadow-xl pl-4 sm:w-[60%] md:w-[450px]">
+          <div className="flex w-[90%] flex-col rounded-2xl bg-[#29446A]  py-4 pl-4 drop-shadow-xl sm:w-[60%] md:w-[450px] md:py-10">
             {contactList}
           </div>
         </div>
