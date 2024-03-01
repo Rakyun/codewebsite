@@ -51,11 +51,14 @@ const Information = () => {
           Plan your study with us!
         </p>
         <div className="flex w-[95%] flex-col items-center justify-center md:flex-row">
-          <div className="mb-12 flex flex-col items-center md:mr-20">
-            <div className="mb-2 flex items-center p-2">
+          <div className="my-6 flex flex-col items-center md:mr-20">
+            <a
+              href="https://line.me/R/ti/p/@191yifch"
+              className="mb-2 flex items-center p-2"
+            >
               <img src={line} alt="linelogo" className="mr-2 w-[40px]" />
-              <p className="  h-8  text-center text-2xl">@CO-DE</p>
-            </div>
+              <p className=" text-center text-2xl">@CO-DE</p>
+            </a>
             <img src={qrcode} alt="qrcode" className="border-8 border-black" />
           </div>
           <div className="flex w-[90%] flex-col rounded-2xl bg-[#29446A]  py-4 pl-4 drop-shadow-xl sm:w-[60%] md:w-[450px] md:py-10">

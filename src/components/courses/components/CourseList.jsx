@@ -17,16 +17,12 @@ const CourseList = () => {
   ];
 
   const listOfCourses = courses.map((course) => (
-    <div
+    <img
       key={course.id}
-      className={`mb-8 flex  w-full  bg-transparent ${course.id % 2 == 0 ? "justify-end" : "justify-normal"}`}
-    >
-      <img
-        src={course.image}
-        alt="A course"
-        className={`w-[60%] cursor-pointer transition-transform duration-500 hover:scale-105 ${course.id % 2 == 0 ? "rounded-l-2xl" : "rounded-r-2xl"}`}
-      />
-    </div>
+      src={course.image}
+      alt="A course"
+      className={` w-[90%] cursor-pointer transition-transform duration-500 hover:scale-105 lg:w-[85%] xl:w-[75%] ${course.id == 1 ? "rounded-t-xl" : course.id == 5 ? "rounded-b-xl" : ""}`}
+    />
   ));
 
   return (
@@ -35,9 +31,11 @@ const CourseList = () => {
       <img
         src={menu}
         alt="menu"
-        className="mb-20 w-[80%] rounded-3xl md:w-[50%] "
+        className="mb-32 w-[80%] rounded-3xl transition-all duration-500 hover:w-[95%] md:w-[70%] md:hover:w-[85%] md:active:w-[70%] "
       />
-      <section className="mb-20 flex h-full flex-col">{listOfCourses}</section>
+      <section className="mb-20 flex h-full flex-col items-center">
+        {listOfCourses}
+      </section>
       <section className="flex w-full flex-col items-center ">
         <p className="  w-[80%] text-center text-3xl md:text-4xl">
           Let your children experience Start-up culture from a young age

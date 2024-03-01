@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Layer2 = () => {
   return (
     <>
-      <div className="font-comfortaa relative flex h-full w-full flex-col items-center bg-[#98E7FF] py-[70px]">
+      <div className="relative flex h-full w-full flex-col items-center bg-[#98E7FF] py-[70px] font-comfortaa">
         <div className="m-auto mb-10 flex w-[90%] flex-col items-center bg-transparent md:flex-row md:items-start md:justify-between ">
           <div className="mb-10 flex  w-[90%] flex-col items-center md:w-[45%]">
             <p className="mb-10  text-center text-2xl font-extrabold md:h-12 md:w-[400px]">
@@ -42,11 +42,18 @@ const Layer2 = () => {
             <p className="text-center">
               Our academy emphasizes teaching and learning that allows students
               to experience coding skills and develop systematic thinking.
-              Through learning Project-Based learning with a team of engineers
-              and programmers who will work directly with you.You will practice
-              your skills in pitching projects and present your project at the
-              end of class. To develop skills Prepare yourself to be a citizen
-              of the digital world of the future.
+              Through learning{" "}
+              <Link
+                to="/pitchingStage"
+                className="text-lg font-bold text-red-800"
+              >
+                Project-Based learning{" "}
+              </Link>
+              with a team of engineers and programmers who will work directly
+              with you.You will practice your skills in pitching projects and
+              present your project at the end of class. To develop skills
+              Prepare yourself to be a citizen of the digital world of the
+              future.
             </p>
           </div>
         </div>

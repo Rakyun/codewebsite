@@ -43,7 +43,7 @@ const Footer = () => {
   ));
 
   return (
-    <footer className="font-comfortaa h-full w-full">
+    <footer className="h-full w-full font-comfortaa">
       <section className=" flex  flex-col items-center bg-[#042451]  md:flex-row">
         <img
           src={code_logo}
@@ -54,8 +54,11 @@ const Footer = () => {
           {contactList}
         </div>
       </section>
-      <div className="flex w-full items-center justify-center bg-[#29446A]  p-3 text-lg font-bold text-white md:justify-normal">
-        Copyright © CO-DE Academy
+      <div className="flex w-full items-center justify-center bg-[#29446A]  p-3 text-lg font-bold text-white md:justify-between md:px-10">
+        <p>Copyright © CO-DE Academy</p>
+        <p className="text-xl text-[#FFAC1C]">
+          <a href="mailto:jobscode@gmail.com">Work with Us</a>
+        </p>
       </div>
     </footer>
   );

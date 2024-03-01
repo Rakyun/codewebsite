@@ -1,8 +1,7 @@
 const Scratch = () => {
   return (
-    <div>
-      <p>dasdas</p>
-      <p>fasf</p>
+    <div className="">
+      <p>hello world</p>
     </div>
   );
 };

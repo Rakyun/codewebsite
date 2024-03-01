@@ -6,7 +6,7 @@ import team from "../../../assets/about/team.png";
 const Layer4 = () => {
   return (
     <>
-      <div className="font-comfortaa flex h-full w-full flex-col items-center justify-between bg-[#6FBC87] py-[70px]   text-white">
+      <div className="flex h-full w-full flex-col items-center justify-between bg-[#6FBC87] py-[70px] font-comfortaa   text-white">
         <div className="flex w-[85%] flex-col items-center bg-transparent md:flex-row md:justify-around ">
           <Link
             to="/playground"
@@ -43,7 +43,7 @@ const Layer4 = () => {
               alt="A picture"
             />
             <p className="absolute  text-center text-2xl underline underline-offset-[20px]">
-              Our Pitching Stage
+              Project Pitching Based Concept
             </p>
           </Link>
           <div className="relative my-5 flex w-[90%] cursor-pointer items-center justify-center drop-shadow-xl  transition-transform duration-500 hover:scale-105  active:opacity-[0.9] md:w-[45%]">

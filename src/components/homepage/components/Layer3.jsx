@@ -26,19 +26,22 @@ const Layer3 = () => {
       id: "fcc",
     },
     { image: img4, courseName: "Creative Coding Class", age: "9++", id: "ccc" },
+    { image: img4, courseName: "Creative Coding Class", age: "9++", id: "ccc" },
   ];
-  
+
   const coursesBox = courses.map((course) => (
     <div
       key={course.id}
-      className="mb-8  flex  w-[80%] flex-col  rounded-br-[40px] rounded-tl-[40px] bg-white  transition-transform duration-500  hover:scale-105 sm:w-[70%]  md:w-[19%]   "
+      className="mb-8  flex  w-[80%] flex-col  rounded-br-[40px] rounded-tl-[40px] bg-white  transition-transform duration-500  hover:scale-105 sm:w-[70%]  md:w-[30%]   "
     >
       <img src={course.image} className="rounded-tl-[40px]" />
       <div className="p-4 ">
-        <p className="mb-6 text-xl font-bold  md:mb-0 md:h-[120px] md:text-base lg:text-xl">
+        <p className="mb-6 text-xl font-bold  md:mb-0 md:h-[120px] md:text-lg lg:text-xl xl:text-2xl">
           {course.courseName}
         </p>
-        <p className=" text-xl font-bold">{course.age}</p>
+        <p className=" text-xl font-bold md:text-2xl xl:text-3xl">
+          {course.age}
+        </p>
       </div>
     </div>
   ));
@@ -46,14 +49,14 @@ const Layer3 = () => {
   return (
     <div
       id="layer3"
-      className="font-comfortaa flex h-full w-full flex-col items-center bg-[#042451] py-24"
+      className="flex h-full w-full flex-col items-center bg-[#042451] py-24 font-comfortaa"
     >
-      <div className="m-auto mb-14 flex w-[90%] flex-col items-center justify-evenly bg-transparent md:flex-row">
+      <div className="m-auto mb-14 flex w-[90%] flex-col flex-wrap items-center justify-evenly bg-transparent md:flex-row">
         {coursesBox}
       </div>
       <Link
         to="/courses"
-        className="font-comfortaa bold w-[300px] cursor-pointer rounded-[50px] bg-[#F7C94B] p-2 text-center text-white drop-shadow-lg transition-transform duration-500 hover:bg-[#EA5880]  active:opacity-80 md:p-4  md:hover:scale-105"
+        className="bold w-[300px] cursor-pointer rounded-[50px] bg-[#F7C94B] p-2 text-center font-comfortaa text-white drop-shadow-lg transition-transform duration-500 hover:bg-[#EA5880]  active:opacity-80 md:p-4  md:hover:scale-105"
       >
         More on our Courses
       </Link>
