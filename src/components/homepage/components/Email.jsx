@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -21,6 +22,18 @@ export const Email = (props) => {
     option7: false,
   });
 
+  const resetCheckboxes = () => {
+    setCheckboxes({
+      option1: false,
+      option2: false,
+      option3: false,
+      option4: false,
+      option5: false,
+      option6: false,
+      option7: false,
+    });
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -33,7 +46,6 @@ export const Email = (props) => {
       return;
     }
 
-    alert("Submit Success, Thank you!");
     emailjs
       .sendForm(
         "service_danilopablito",
@@ -44,18 +56,20 @@ export const Email = (props) => {
       .then(
         (result) => {
           console.log(result.text);
+          alert("Submit Success, Thank you!");
+          resetCheckboxes();
+          setStudentName("");
+          setStudentAge("");
+          setStudentSchool("");
+          setParentName("");
+          setParentNumber("");
+          setLineId("");
         },
         (error) => {
           console.log(error.text);
+          alert("Error Submitting, Please Try Again");
         },
       );
-
-    setStudentName("");
-    setStudentAge("");
-    setStudentSchool("");
-    setParentName("");
-    setParentNumber("");
-    setLineId("");
   };
 
   return (
@@ -216,7 +230,7 @@ export const Email = (props) => {
             type="checkbox"
             id="option6"
             name="options[]"
-            value="Sunday Afternoon6"
+            value="Sunday Afternoon"
             className="mb-5 mr-3"
             checked={checkboxes.option6}
             onChange={() =>

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import prepare from "../../../assets/prepare.png";
 import why from "../../../assets/why.png";
 import catpeek from "../../../assets/catpeek.png";
