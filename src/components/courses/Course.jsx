@@ -5,7 +5,31 @@ import CourseList from "./components/CourseList";
 import Email from "../homepage/components/Email";
 import Footer from "../homepage/components/Footer";
 import Message from "../msg/Message";
+
+import blockcode from "../../assets/bannerLong/blockcode.jpg";
+import creative from "../../assets/bannerLong/creative.jpg";
+import fundamental from "../../assets/bannerLong/fundamental.jpg";
+import mechanical from "../../assets/bannerLong/mechanical.jpg";
+import noncoding from "../../assets/bannerLong/noncoding.jpg";
+
 const Course = () => {
+  const courses = [
+    { image: noncoding, id: 1, filterTest: "kids" },
+    { image: blockcode, id: 2, filterTest: "teen" },
+    { image: fundamental, id: 3, filterTest: "kids" },
+    { image: creative, id: 4, filterTest: "teen" },
+    { image: mechanical, id: 5, filterTest: "kids" },
+  ];
+  const [filterState, setfilterState] = useState("all");
+  const coursesFiltered = courses.filter((course) =>
+    filterState === "all" ? true : filterState === course.filterTest,
+  );
+
+  const filterCourse = (course) => {
+    setfilterState(course);
+  };
+
+  console.log(coursesFiltered);
   const page = "Courses";
   const [isNavOpen, setIsNavOpen] = useState(false);
 
@@ -20,10 +44,10 @@ const Course = () => {
     <>
       <Header toggle={toggleNav} />
       <Nav isVisible={isNavOpen} />
-      <CourseList />
-      <Email pageName={page}/>
+      <CourseList courses={coursesFiltered} filter={filterCourse} />
+      <Email pageName={page} />
       <Footer />
-      <Message/>
+      <Message />
     </>
   );
 };

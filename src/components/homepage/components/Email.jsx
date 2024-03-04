@@ -1,12 +1,39 @@
-import { useRef,useState } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 export const Email = (props) => {
   const form = useRef();
-  const [submit, setSubmit] = useState(false)
+
+  const [studentName, setStudentName] = useState("");
+  const [studentAge, setStudentAge] = useState("");
+  const [studentSchool, setStudentSchool] = useState("");
+  const [parentName, setParentName] = useState("");
+  const [parentNumber, setParentNumber] = useState("");
+  const [lineId, setLineId] = useState("");
+
+  const [checkboxes, setCheckboxes] = useState({
+    option1: false,
+    option2: false,
+    option3: false,
+    option4: false,
+    option5: false,
+    option6: false,
+    option7: false,
+  });
+
   const sendEmail = (e) => {
     e.preventDefault();
-    setSubmit(true)
+
+    const atLeastOneChecked = Object.values(checkboxes).some(
+      (checked) => checked,
+    );
+
+    if (!atLeastOneChecked) {
+      alert("Please select at least one option.");
+      return;
+    }
+
+    alert("Submit Success, Thank you!");
     emailjs
       .sendForm(
         "service_danilopablito",
@@ -22,12 +49,19 @@ export const Email = (props) => {
           console.log(error.text);
         },
       );
+
+    setStudentName("");
+    setStudentAge("");
+    setStudentSchool("");
+    setParentName("");
+    setParentNumber("");
+    setLineId("");
   };
 
   return (
     <div
       id="email"
-      className="font-comfortaa text-bold bg-[#EA5880]  p-14 text-white"
+      className="text-bold bg-[#EA5880] p-14  font-comfortaa text-white"
     >
       <h1 className="mb-14 text-3xl font-bold md:text-4xl">
         Join our free Trial Class now!
@@ -43,6 +77,8 @@ export const Email = (props) => {
         <input
           type="text"
           name="student_name"
+          value={studentName}
+          onChange={(e) => setStudentName(e.target.value)}
           className="mb-5 rounded-xl p-3 px-4  text-black"
           required
         />
@@ -52,6 +88,8 @@ export const Email = (props) => {
           min="1"
           max="90"
           name="student_age"
+          value={studentAge}
+          onChange={(e) => setStudentAge(e.target.value)}
           className="mb-5 rounded-xl p-3 px-4 text-black"
           required
         />
@@ -59,6 +97,8 @@ export const Email = (props) => {
         <input
           type="text"
           name="student_school"
+          value={studentSchool}
+          onChange={(e) => setStudentSchool(e.target.value)}
           className="mb-5 rounded-xl p-3 px-4 text-black"
           required
         />
@@ -66,6 +106,8 @@ export const Email = (props) => {
         <input
           type="text"
           name="parent_name"
+          value={parentName}
+          onChange={(e) => setParentName(e.target.value)}
           className="mb-5 rounded-xl p-3 px-4 text-black"
           required
         />
@@ -75,7 +117,11 @@ export const Email = (props) => {
             <input
               type="tel"
               name="parent_number"
+              value={parentNumber}
+              onChange={(e) => setParentNumber(e.target.value)}
               className="mb-5 w-full rounded-xl px-4 py-3 text-black"
+              pattern="[0-9]{10}"
+              title="Please Enter A Valid Number"
               required
             />
           </div>
@@ -84,6 +130,8 @@ export const Email = (props) => {
             <input
               type="text"
               name="line_id"
+              value={lineId}
+              onChange={(e) => setLineId(e.target.value)}
               className="mb-5 w-full rounded-xl px-4 py-3 text-black"
             />
           </div>
@@ -96,6 +144,10 @@ export const Email = (props) => {
             name="options[]"
             value="Weekdays"
             className="mb-5 mr-3"
+            checked={checkboxes.option1}
+            onChange={() =>
+              setCheckboxes({ ...checkboxes, option1: !checkboxes.option1 })
+            }
           />
           Weekdays
         </label>
@@ -107,6 +159,10 @@ export const Email = (props) => {
             name="options[]"
             value="Weekdays After School"
             className="mb-5 mr-3"
+            checked={checkboxes.option2}
+            onChange={() =>
+              setCheckboxes({ ...checkboxes, option2: !checkboxes.option2 })
+            }
           />
           Weekdays After School
         </label>
@@ -118,6 +174,10 @@ export const Email = (props) => {
             name="options[]"
             value="Saturday Morning"
             className="mb-5 mr-3"
+            checked={checkboxes.option3}
+            onChange={() =>
+              setCheckboxes({ ...checkboxes, option3: !checkboxes.option3 })
+            }
           />
           Saturday Morning
         </label>
@@ -128,6 +188,10 @@ export const Email = (props) => {
             name="options[]"
             value="Saturday Afternoon"
             className="mb-5 mr-3"
+            checked={checkboxes.option4}
+            onChange={() =>
+              setCheckboxes({ ...checkboxes, option4: !checkboxes.option4 })
+            }
           />
           Saturday Afternoon
         </label>
@@ -139,6 +203,10 @@ export const Email = (props) => {
             name="options[]"
             value="Sunday Morning"
             className="mb-5 mr-3"
+            checked={checkboxes.option5}
+            onChange={() =>
+              setCheckboxes({ ...checkboxes, option5: !checkboxes.option5 })
+            }
           />
           Sunday Morning
         </label>
@@ -148,8 +216,12 @@ export const Email = (props) => {
             type="checkbox"
             id="option6"
             name="options[]"
-            value="Sunday Afternoon"
+            value="Sunday Afternoon6"
             className="mb-5 mr-3"
+            checked={checkboxes.option6}
+            onChange={() =>
+              setCheckboxes({ ...checkboxes, option6: !checkboxes.option6 })
+            }
           />
           Sunday Afternoon
         </label>
@@ -161,17 +233,20 @@ export const Email = (props) => {
             name="options[]"
             value="Anytime"
             className="mb-5 mr-3"
+            checked={checkboxes.option7}
+            onChange={() =>
+              setCheckboxes({ ...checkboxes, option7: !checkboxes.option7 })
+            }
           />
           Anytime
         </label>
 
         <div className="flex items-center">
-        <input
-          type="submit"
-          value="Submit"
-          className="mt-4 w-[200px] cursor-pointer rounded-[50px] bg-[#F7C94B] p-3 hover:opacity-90 active:opacity-50"
-        />
-        {submit && <p className="ml-5">Submit Success, Thank you!</p>}
+          <input
+            type="submit"
+            value="Submit"
+            className="mt-4 w-[200px] cursor-pointer rounded-[50px] bg-[#F7C94B] p-3 hover:opacity-90 active:opacity-50"
+          />
         </div>
       </form>
     </div>
