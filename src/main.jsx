@@ -9,6 +9,7 @@ import Contact from "./components/contactUs/Contact.jsx";
 import Course from "./components/courses/Course.jsx";
 import PitchingPage from "./components/pitching/PitchingPage.jsx";
 import AboutUs from "./components/aboutUs/AboutUs.jsx";
+import BlockCode from "./components/courses/pages/blockcode/BlockCode.jsx";
 const router = createBrowserRouter(
   [
     {
@@ -36,10 +37,9 @@ const router = createBrowserRouter(
       element: <AboutUs />,
     },
     {
-      path: "/courses/scratch",
-      element: <AboutUs/>
-    }
-    ,
+      path: "/courses/blockcode",
+      element: <BlockCode />,
+    },
   ],
   { basename: "/codewebsite/" },
 );
