@@ -11,6 +11,7 @@ import creative from "../../assets/bannerLong/creative.jpg";
 import fundamental from "../../assets/bannerLong/fundamental.jpg";
 import mechanical from "../../assets/bannerLong/mechanical.jpg";
 import noncoding from "../../assets/bannerLong/noncoding.jpg";
+import graduate from "../../assets/bannerLong/graduate.jpg";
 
 const Course = () => {
   const courses = [
@@ -19,6 +20,7 @@ const Course = () => {
     { image: fundamental, id: 3, filterTest: "kids" },
     { image: creative, id: 4, filterTest: "teen" },
     { image: mechanical, id: 5, filterTest: "kids" },
+    { image: graduate, id: 6, filterTest: "kids" },
   ];
   const [filterState, setfilterState] = useState("all");
   const coursesFiltered = courses.filter((course) =>

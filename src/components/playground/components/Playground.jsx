@@ -13,19 +13,23 @@ const Playground = () => {
       title: "Curve and Shape",
       desc: "Increase your imagination and creativity",
     },
-    { logo: color, title: "Color", desc: "Stimulate and eager of learning" },
+    { logo: color, title: "Color", desc: "Stimulate eagerness for learning" },
     { logo: head, title: "Fun", desc: "The desire of learning new things" },
     {
       logo: bulb,
       title: "Lighting",
-      desc: "Warm white lights reducing eye strain",
+      desc: "Warm white lights reduce eye strain.",
     },
     {
       logo: temp,
       title: "Temperature",
       desc: "The best room temperature for productivity",
     },
-    { logo: camera, title: "Safety", desc: "Inappropriate Behavior Control" },
+    {
+      logo: camera,
+      title: "CCTV Safety",
+      desc: "Ensure appropriate behavior control.",
+    },
   ];
 
   const featureRender = features.map((feature, index) => (

@@ -5,6 +5,7 @@ import img2 from "../../../assets/courses/squarebanner02.png";
 import img3 from "../../../assets/courses/squarebanner03.png";
 import img4 from "../../../assets/courses/squarebanner04.png";
 import img5 from "../../../assets/courses/squarebanner05.png";
+import img6 from "../../../assets/courses/squarebanner06.png";
 const Layer3 = (props) => {
   const [filter, setFilter] = useState("all");
   const [checkboxes, setCheckboxes] = useState({
@@ -45,9 +46,9 @@ const Layer3 = (props) => {
       id: "teen",
     },
     {
-      image: img4,
-      courseName: "Creative Coding Class",
-      age: "9++",
+      image: img6,
+      courseName: "Road to University",
+      age: "15++",
       id: "teen",
     },
   ];
