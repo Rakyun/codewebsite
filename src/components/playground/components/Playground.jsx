@@ -8,18 +8,36 @@ import camera from "../../../assets/CourseSkills/camera.png";
 
 const Playground = () => {
   const features = [
-    { logo: shape, desc: "Increase your imagination and creativity" },
-    { logo: color, desc: "Stimulate and eager of learning" },
-    { logo: head, desc: "The desire of learning new things" },
-    { logo: bulb, desc: "Warm white lights reducing eye strain" },
-    { logo: temp, desc: "The best room temperature for productivity" },
-    { logo: camera, desc: "Inappropriate Behavior Control" },
+    {
+      logo: shape,
+      title: "Curve and Shape",
+      desc: "Increase your imagination and creativity",
+    },
+    { logo: color, title: "Color", desc: "Stimulate and eager of learning" },
+    { logo: head, title: "Fun", desc: "The desire of learning new things" },
+    {
+      logo: bulb,
+      title: "Lighting",
+      desc: "Warm white lights reducing eye strain",
+    },
+    {
+      logo: temp,
+      title: "Temperature",
+      desc: "The best room temperature for productivity",
+    },
+    { logo: camera, title: "Safety", desc: "Inappropriate Behavior Control" },
   ];
 
   const featureRender = features.map((feature, index) => (
-    <div key={index} className="flex w-[30%] flex-col items-center text-center">
-      <img src={feature.logo} />
-      <p className="-mt-5 text-sm md:text-base lg:text-lg xl:text-xl">
+    <div
+      key={index}
+      className="flex w-[35%] flex-col items-center text-center sm:w-[30%]"
+    >
+      <img src={feature.logo} className="-mb-6 md:-mb-11 lg:-mb-14 xl:-mb-20" />
+      <p className="mb-5 text-sm font-bold text-[#EA587F] sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+        {feature.title}
+      </p>
+      <p className="text-sm md:text-base lg:text-lg xl:text-xl">
         {feature.desc}
       </p>
     </div>
