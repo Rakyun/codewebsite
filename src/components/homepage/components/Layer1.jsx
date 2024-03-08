@@ -23,10 +23,10 @@ const Layer1 = (props) => {
           </ScrollLink>
           <ScrollLink
             onClick={props.openFilter}
-            to="layer3"
+            to="filterbutton"
             smooth={true}
             duration={800}
-            offset={1000}
+            offset={-550}
             className="bold w-[280px] cursor-pointer select-none rounded-[50px] bg-[#F7C94B] p-2 text-center font-comfortaa text-white drop-shadow-lg transition-transform duration-500 hover:bg-[#EA5880]  active:opacity-80 md:p-4  md:hover:scale-105"
           >
             Find Course Suitable for you

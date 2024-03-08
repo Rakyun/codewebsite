@@ -1,16 +1,7 @@
-import { useState } from "react";
-
 import menu from "../../../assets/bannerLong/menu.png";
 import { Link as ScrollLink } from "react-scroll";
 import { Link } from "react-router-dom";
 const CourseList = (props) => {
-  const [filter, setFilter] = useState("all");
-
-  const handleChangeFilter = (event) => {
-    setFilter(event.target.value);
-    props.filter(event.target.value);
-  };
-
   const listOfCourses = props.courses.map((course) => (
     <img
       key={course.id}
@@ -30,19 +21,9 @@ const CourseList = (props) => {
       />
 
       <section className="mb-20 flex h-full flex-col items-center">
-        <select
-          name="filter"
-          value={filter}
-          onChange={handleChangeFilter}
-          className="mb-10 rounded-lg border-2 bg-[#EA5880] p-2 text-lg font-bold text-white drop-shadow-lg "
-        >
-          <option value="all">All</option>
-          <option value="kids">Kids</option>
-          <option value="teen">Teens</option>
-        </select>
-
         {listOfCourses}
       </section>
+
       <section className="flex w-full flex-col items-center ">
         <p className="  w-[80%] text-center text-3xl md:text-4xl">
           Let your children experience Start-up culture from a young age

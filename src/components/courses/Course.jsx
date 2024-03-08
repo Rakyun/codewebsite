@@ -22,14 +22,6 @@ const Course = () => {
     { image: mechanical, id: 5, filterTest: "kids" },
     { image: graduate, id: 6, filterTest: "kids" },
   ];
-  const [filterState, setfilterState] = useState("all");
-  const coursesFiltered = courses.filter((course) =>
-    filterState === "all" ? true : filterState === course.filterTest,
-  );
-
-  const filterCourse = (course) => {
-    setfilterState(course);
-  };
 
   const page = "Courses";
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -45,7 +37,7 @@ const Course = () => {
     <>
       <Header toggle={toggleNav} />
       <Nav isVisible={isNavOpen} />
-      <CourseList courses={coursesFiltered} filter={filterCourse} />
+      <CourseList courses={courses} />
       <Email pageName={page} />
       <Footer />
       <Message />
