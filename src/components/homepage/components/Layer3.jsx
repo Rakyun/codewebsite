@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useContext } from "react";
+import { CheckBoxContext } from "../../../context/CheckBoxContext";
 import { Link } from "react-router-dom";
 import img1 from "../../../assets/courses/squarebanner01.png";
 import img2 from "../../../assets/courses/squarebanner02.png";
@@ -7,12 +8,7 @@ import img4 from "../../../assets/courses/squarebanner04.png";
 import img5 from "../../../assets/courses/squarebanner05.png";
 import img6 from "../../../assets/courses/squarebanner06.png";
 const Layer3 = (props) => {
-  const [filter, setFilter] = useState("all");
-  const [checkboxes, setCheckboxes] = useState({
-    option1: false,
-    option2: false,
-    option3: false,
-  });
+  const [radio, setRadio, filter, setFilter] = useContext(CheckBoxContext);
 
   const courses = [
     {
@@ -53,11 +49,7 @@ const Layer3 = (props) => {
     },
   ];
 
-  const coursesFiltered = courses.filter((course) =>
-    filter == "all" ? true : filter == course.id,
-  );
-
-  const coursesBox = coursesFiltered.map((course, index) => (
+  const coursesBox = courses.map((course, index) => (
     <div
       key={index}
       className="mb-8  flex  w-[80%] flex-col  rounded-br-[40px] rounded-tl-[40px] bg-white  transition-transform duration-500  hover:scale-105 sm:w-[70%]  md:w-[30%]   "
@@ -95,7 +87,7 @@ const Layer3 = (props) => {
         Filter
       </button>
       {props.filter && (
-        <>
+        <div className="flex flex-col ">
           <select
             name="filter"
             value={filter}
@@ -104,56 +96,69 @@ const Layer3 = (props) => {
             }}
             className="my-5 rounded-lg border-2 bg-[#EA5880] p-2 text-lg font-bold text-white drop-shadow-lg "
           >
-            <option value="all">All</option>
-            <option value="kids">Kids</option>
-            <option value="teen">Teens</option>
+            <option value="4+">4+</option>
+            <option value="5.5+">5.5+</option>
+            <option value="6+">6+</option>
+            <option value="7+">7+</option>
+            <option value="8+">8+</option>
+            <option value="9+">9+</option>
+            <option value="10+">10+</option>
+            <option value="12+">12+</option>
+            <option value="15+">15+</option>
           </select>
 
-          <label htmlFor="option1" className="text-lg text-white">
+          <label htmlFor="newbie" className="text-lg text-white">
             <input
-              type="checkbox"
-              id="option1"
-              name="option1"
-              value={checkboxes.option1}
+              type="radio"
+              id="newbie"
+              name="skill"
+              value="newbie"
               className="mb-5 mr-3"
-              checked={checkboxes.option1}
-              onChange={() =>
-                setCheckboxes({ ...checkboxes, option1: !checkboxes.option1 })
-              }
+              checked={radio === "newbie"}
+              onChange={(e) => {
+                setRadio(e.target.value);
+              }}
             />
-            Option1
+            Newbie
           </label>
 
-          <label htmlFor="option2" className="text-lg text-white">
+          <label htmlFor="explorer" className="text-lg text-white">
             <input
-              type="checkbox"
-              id="option2"
-              name="option2"
-              value={checkboxes.option2}
+              type="radio"
+              id="explorer"
+              name="skill"
+              value="explorer"
               className="mb-5 mr-3"
-              checked={checkboxes.option2}
-              onChange={() =>
-                setCheckboxes({ ...checkboxes, option2: !checkboxes.option2 })
-              }
+              checked={radio === "explorer"}
+              onChange={(e) => {
+                setRadio(e.target.value);
+              }}
             />
-            Option2
+            Explorer
           </label>
 
-          <label htmlFor="option3" className="text-lg text-white">
+          <label htmlFor="master" className="text-lg text-white">
             <input
-              type="checkbox"
-              id="option3"
-              name="option3"
-              value={checkboxes.option3}
+              type="radio"
+              id="master"
+              name="skill"
+              value="master"
               className="mb-5 mr-3"
-              checked={checkboxes.option3}
-              onChange={() =>
-                setCheckboxes({ ...checkboxes, option3: !checkboxes.option3 })
-              }
+              checked={radio === "master"}
+              onChange={(e) => {
+                setRadio(e.target.value);
+              }}
             />
-            Option3
+            Master
           </label>
-        </>
+
+          <Link
+            to="/courses/customCourse"
+            className="bold mt-4 w-[150px] cursor-pointer rounded-[50px] bg-[#F7C94B] p-2 text-center font-comfortaa text-white drop-shadow-lg transition-transform duration-500 hover:bg-[#EA5880]  active:opacity-80 md:p-4  md:hover:scale-105"
+          >
+            Search
+          </Link>
+        </div>
       )}
     </div>
   );

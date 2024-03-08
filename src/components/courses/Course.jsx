@@ -31,7 +31,6 @@ const Course = () => {
     setfilterState(course);
   };
 
-  console.log(coursesFiltered);
   const page = "Courses";
   const [isNavOpen, setIsNavOpen] = useState(false);
 
