@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import Homepage from "./components/homepage/Homepage.jsx";
 import CheckBoxProvider from "./context/CheckBoxContext.jsx";
 import OurPlayground from "./components/playground/OurPlayground.jsx";
@@ -12,43 +12,40 @@ import AboutUs from "./components/aboutUs/AboutUs.jsx";
 import BlockCode from "./components/courses/pages/blockcode/BlockCode.jsx";
 import Custom from "./components/homepage/components/customCourse/components/Custom.jsx";
 
-const router = createBrowserRouter(
-  [
-    {
-      path: "/",
-      element: <Homepage />,
-    },
-    {
-      path: "/playground",
-      element: <OurPlayground />,
-    },
-    {
-      path: "/contactUs",
-      element: <Contact />,
-    },
-    {
-      path: "/courses",
-      element: <Course />,
-    },
-    {
-      path: "/pitchingStage",
-      element: <PitchingPage />,
-    },
-    {
-      path: "/aboutUs",
-      element: <AboutUs />,
-    },
-    {
-      path: "/courses/blockcode",
-      element: <BlockCode />,
-    },
-    {
-      path: "/courses/customCourse",
-      element: <Custom />,
-    },
-  ],
-  { basename: "/codewebsite/" },
-);
+const router = createHashRouter([
+  {
+    path: "/",
+    element: <Homepage />,
+  },
+  {
+    path: "/playground",
+    element: <OurPlayground />,
+  },
+  {
+    path: "/contactUs",
+    element: <Contact />,
+  },
+  {
+    path: "/courses",
+    element: <Course />,
+  },
+  {
+    path: "/pitchingStage",
+    element: <PitchingPage />,
+  },
+  {
+    path: "/aboutUs",
+    element: <AboutUs />,
+  },
+  {
+    path: "/courses/blockcode",
+    element: <BlockCode />,
+  },
+  {
+    path: "/customCourse",
+    element: <Custom />,
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
