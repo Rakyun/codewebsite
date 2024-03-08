@@ -6,11 +6,11 @@ const CustomCourse = () => {
   const [radio, setRadio, filter] = useContext(CheckBoxContext);
 
   const customCourses = {
-    custom1: ["scratch", "minecraft", "roblox", "3D"],
-    custom2: ["scratch", "minecraft", "roblox", "3D", "python"],
+    custom1: ["microbit", "minecraft", "roblox", "3D"],
+    custom2: ["microbit", "minecraft", "roblox", "3D", "python"],
     custom3: ["roblox", "3D", "python"],
     custom4: ["roblox", "3D", "python", "web dev"],
-    custom5: ["roblox", "3D", "python", "web dev", "arduino"],
+    custom5: ["roblox", "3D", "python", "arduino"],
     custom6: [
       "roblox",
       "3D",
