@@ -1,5 +1,6 @@
 import front from "../../../../../assets/playground/front.png";
-import scratchCourse from "../../../../../assets/ScratchCourse.jpg";
+import octo from "../../../../../assets/specificCourses/octo.jpg";
+import scratch from "../../../../../assets/specificCourses/scratch.jpg";
 import dede from "../../../../../assets/messageUs.png";
 import { useState } from "react";
 const BlockCodeComp = () => {
@@ -55,9 +56,20 @@ const BlockCodeComp = () => {
       </p>
 
       <p className="mb-6 mt-28 w-[80%] text-center text-3xl md:text-4xl">
+        Octo Studio : Make Seafood using Octopus
+      </p>
+      <img src={octo} alt="scratch" className="my-2 mb-20 w-[85%] rounded-xl" />
+
+      <p className="mb-6 mt-28 w-[80%] text-center text-3xl md:text-4xl">
         Scratch : The Journey of Superpower
       </p>
-      <section className="mb-6 flex  w-[90%] flex-col bg-[#83CE9F] pb-10">
+      <img
+        src={scratch}
+        alt="scratch"
+        className="my-2 mb-20 w-[85%] rounded-xl"
+      />
+
+      {/*<section className="mb-6 flex  w-[90%] flex-col bg-[#83CE9F] pb-10">
         <div className="flex w-full flex-col md:flex-row">
           <div className="md:w-[50%] ">
             <img src={scratchCourse} alt="ScratchCourse" className="w-full" />
@@ -112,6 +124,7 @@ const BlockCodeComp = () => {
           </div>
         )}
       </section>
+        */}
     </div>
   );
 };
