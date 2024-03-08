@@ -1,4 +1,5 @@
 import front from "../../../../../assets/playground/front.png";
+import scratchCourse from "../../../../../assets/ScratchCourse.jpg";
 import octo from "../../../../../assets/specificCourses/octo.jpg";
 import scratch from "../../../../../assets/specificCourses/scratch.jpg";
 import dede from "../../../../../assets/messageUs.png";
@@ -69,62 +70,63 @@ const BlockCodeComp = () => {
         className="my-2 mb-20 w-[85%] rounded-xl"
       />
 
-      {/*<section className="mb-6 flex  w-[90%] flex-col bg-[#83CE9F] pb-10">
-        <div className="flex w-full flex-col md:flex-row">
-          <div className="md:w-[50%] ">
-            <img src={scratchCourse} alt="ScratchCourse" className="w-full" />
-          </div>
-          <div className="w-full pt-2 md:w-[50%]">
-            <p className="sm:text-md lg:text-md text-center md:text-xs lg:text-base xl:text-lg">
-              นำน้องๆ เข้าสู่โลกแห่ง Scratch โลกของการคิดอย่างเป็นเหตุเป็นผล
-            </p>
-            <div className="my-1 flex w-full text-sm lg:text-lg">
-              <div className="w-[50%] bg-[#F8C84D] py-2 text-center font-bold">
-                <p>Available in TH/ENG</p>
+      {/*
+        <section className="mb-6 flex  w-[90%] flex-col bg-[#83CE9F] pb-10">
+          <div className="flex w-full flex-col md:flex-row">
+            <div className="md:w-[50%] ">
+              <img src={scratchCourse} alt="ScratchCourse" className="w-full" />
+            </div>
+            <div className="w-full pt-2 md:w-[50%]">
+              <p className="sm:text-md lg:text-md text-center md:text-xs lg:text-base xl:text-lg">
+                นำน้องๆ เข้าสู่โลกแห่ง Scratch โลกของการคิดอย่างเป็นเหตุเป็นผล
+              </p>
+              <div className="my-1 flex w-full text-sm lg:text-lg">
+                <div className="w-[50%] bg-[#F8C84D] py-2 text-center font-bold">
+                  <p>Available in TH/ENG</p>
+                </div>
+                <div className="w-[50%] bg-[#F65353] py-2 text-center font-bold">
+                  <p>6++</p>
+                </div>
               </div>
-              <div className="w-[50%] bg-[#F65353] py-2 text-center font-bold">
-                <p>6++</p>
+              <div className="flex w-full flex-wrap items-center justify-around p-4">
+                {features}
+              </div>
+              <div className="text-md mt-5 flex items-center justify-between px-10 text-white md:px-5 lg:text-lg">
+                <div className="mr-3">
+                  <p>จำนวนครั้ง : 10 ครั้ง</p>
+                  <p>10 ชั่วโมง (ครั้งละ 1 ชั่วโมง)</p>
+                </div>
+                <button
+                  onClick={showInfo}
+                  className=" w-[150px] cursor-pointer rounded-[50px] bg-[#F7C94B] p-3 hover:opacity-90 active:opacity-50"
+                >
+                  More Info
+                </button>
               </div>
             </div>
-            <div className="flex w-full flex-wrap items-center justify-around p-4">
-              {features}
-            </div>
-            <div className="text-md mt-5 flex items-center justify-between px-10 text-white md:px-5 lg:text-lg">
-              <div className="mr-3">
-                <p>จำนวนครั้ง : 10 ครั้ง</p>
-                <p>10 ชั่วโมง (ครั้งละ 1 ชั่วโมง)</p>
-              </div>
-              <button
-                onClick={showInfo}
-                className=" w-[150px] cursor-pointer rounded-[50px] bg-[#F7C94B] p-3 hover:opacity-90 active:opacity-50"
-              >
-                More Info
-              </button>
-            </div>
           </div>
-        </div>
-        {showMore && (
-          <div className="mt-16 flex flex-col items-center text-sm text-white lg:text-base">
-            <p className="mb-10 text-3xl font-bold">Course Details</p>
-            <p className="w-[80%]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              rem libero dolore eum velit quod minus unde consectetur aut
-              incidunt. Vitae iusto eius, quas reprehenderit consectetur harum
-              praesentium vel magnam facilis excepturi cum dolorum quae culpa,
-              maxime aliquam consequuntur non? Sunt soluta magni dolorum
-              dignissimos minima, enim a animi consectetur temporibus id!
-              Perferendis voluptatibus soluta corporis enim odio, provident
-              sapiente adipisci consequatur culpa eveniet corrupti, optio
-              reiciendis! Voluptatibus deserunt totam cum nisi, perferendis
-              vitae rerum impedit pariatur sapiente voluptatem adipisci, atque
-              ipsam eveniet numquam sit nam ab voluptates doloremque nesciunt
-              omnis assumenda dignissimos, explicabo rem? Atque illum delectus
-              voluptates architecto!
-            </p>
-          </div>
-        )}
-      </section>
-        */}
+          {showMore && (
+            <div className="mt-16 flex flex-col items-center text-sm text-white lg:text-base">
+              <p className="mb-10 text-3xl font-bold">Course Details</p>
+              <p className="w-[80%]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus rem libero dolore eum velit quod minus unde
+                consectetur aut incidunt. Vitae iusto eius, quas reprehenderit
+                consectetur harum praesentium vel magnam facilis excepturi cum
+                dolorum quae culpa, maxime aliquam consequuntur non? Sunt soluta
+                magni dolorum dignissimos minima, enim a animi consectetur
+                temporibus id! Perferendis voluptatibus soluta corporis enim
+                odio, provident sapiente adipisci consequatur culpa eveniet
+                corrupti, optio reiciendis! Voluptatibus deserunt totam cum
+                nisi, perferendis vitae rerum impedit pariatur sapiente
+                voluptatem adipisci, atque ipsam eveniet numquam sit nam ab
+                voluptates doloremque nesciunt omnis assumenda dignissimos,
+                explicabo rem? Atque illum delectus voluptates architecto!
+              </p>
+            </div>
+          )}
+        </section>
+          */}
     </div>
   );
 };

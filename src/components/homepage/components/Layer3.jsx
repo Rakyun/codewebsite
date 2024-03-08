@@ -154,7 +154,7 @@ const Layer3 = (props) => {
           </label>
 
           <Link
-            to="/courses/customCourse"
+            to="/customCourse"
             className="bold mt-4 w-[150px] cursor-pointer rounded-[50px] bg-[#F7C94B] p-2 text-center font-comfortaa text-white drop-shadow-lg transition-transform duration-500 hover:bg-[#EA5880]  active:opacity-80 md:p-4  md:hover:scale-105"
           >
             Search
