@@ -1,10 +1,10 @@
 import front from "../../../assets/playground/front.png";
-import shape from "../../../assets/CourseSkills/shape.png";
-import color from "../../../assets/CourseSkills/color.png";
-import head from "../../../assets/CourseSkills/head.png";
-import bulb from "../../../assets/CourseSkills/bulb.png";
-import temp from "../../../assets/CourseSkills/temp.png";
-import camera from "../../../assets/CourseSkills/camera.png";
+import shape from "../../../assets/CourseSkills/light/shape.png";
+import color from "../../../assets/CourseSkills/light/color.png";
+import head from "../../../assets/CourseSkills/light/head.png";
+import bulb from "../../../assets/CourseSkills/light/bulb.png";
+import temp from "../../../assets/CourseSkills/light/temp.png";
+import camera from "../../../assets/CourseSkills/light/camera.png";
 
 const Playground = () => {
   const features = [
