@@ -14,37 +14,37 @@ const Layer3 = (props) => {
     {
       image: img1,
       courseName: "Design Thinking Class",
-      age: "4++",
+      age: "4+ years old",
       id: "teen",
     },
     {
       image: img2,
       courseName: "Block-Based Coding Class",
-      age: "6++",
+      age: "6+ years old",
       id: "teen",
     },
     {
       image: img5,
       courseName: "Mechanical Innovation Class",
-      age: "8++",
+      age: "8+ years old",
       id: "kids",
     },
     {
       image: img3,
       courseName: "Fundamental Coding Class",
-      age: "9++",
+      age: "9+ years old",
       id: "kids",
     },
     {
       image: img4,
       courseName: "Creative Coding Class",
-      age: "9++",
+      age: "9+ years old",
       id: "teen",
     },
     {
       image: img6,
       courseName: "Road to University",
-      age: "15++",
+      age: "15+ years old",
       id: "teen",
     },
   ];
@@ -59,9 +59,7 @@ const Layer3 = (props) => {
         <p className="mb-6 text-xl font-bold  md:mb-0 md:h-[65px] md:text-lg lg:text-xl xl:h-[80px] xl:text-2xl">
           {course.courseName}
         </p>
-        <p className=" text-xl font-bold md:text-2xl xl:text-3xl">
-          {course.age}
-        </p>
+        <p className=" text-xl font-bold  xl:text-2xl">{course.age}</p>
       </div>
     </div>
   ));
