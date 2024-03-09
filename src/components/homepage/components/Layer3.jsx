@@ -56,7 +56,7 @@ const Layer3 = (props) => {
     >
       <img src={course.image} className="rounded-tl-[40px]" />
       <div className="p-4 ">
-        <p className="mb-6 text-xl font-bold  md:mb-0 md:h-[120px] md:text-lg lg:text-xl xl:text-2xl">
+        <p className="mb-6 text-xl font-bold  md:mb-0 md:h-[65px] md:text-lg lg:text-xl xl:h-[80px] xl:text-2xl">
           {course.courseName}
         </p>
         <p className=" text-xl font-bold md:text-2xl xl:text-3xl">
