@@ -86,78 +86,107 @@ const Layer3 = (props) => {
         Filter
       </button>
       {props.filter && (
-        <div className="flex flex-col ">
-          <select
-            name="filter"
-            value={filter}
-            onChange={(event) => {
-              setFilter(event.target.value);
-            }}
-            className="my-5 rounded-lg border-2 bg-[#EA5880] p-2 text-lg font-bold text-white drop-shadow-lg "
-          >
-            <option value="4+">4+</option>
-            <option value="5.5+">5.5+</option>
-            <option value="6+">6+</option>
-            <option value="7+">7+</option>
-            <option value="8+">8+</option>
-            <option value="9+">9+</option>
-            <option value="10+">10+</option>
-            <option value="12+">12+</option>
-            <option value="15+">15+</option>
-          </select>
+        <>
+          <p className="mb-10 text-2xl text-white lg:text-3xl">
+            This is the main Title of Section
+          </p>
+          <div className="flex w-[90%] flex-col justify-between  text-white md:flex-row ">
+            <section className="mb-10 flex w-full flex-col items-center gap-10 md:w-[30%]">
+              <p className="text-lg font-bold">
+                Step 1 : This is example text to go with
+              </p>
+              <select
+                name="filter"
+                value={filter}
+                onChange={(event) => {
+                  setFilter(event.target.value);
+                }}
+                className="rounded-lg border-2 bg-[#EA5880] p-2 text-lg font-bold text-white drop-shadow-lg "
+              >
+                <option value="4+">4+</option>
+                <option value="5.5+">5.5+</option>
+                <option value="6+">6+</option>
+                <option value="7+">7+</option>
+                <option value="8+">8+</option>
+                <option value="9+">9+</option>
+                <option value="10+">10+</option>
+                <option value="12+">12+</option>
+                <option value="15+">15+</option>
+              </select>
+            </section>
 
-          <label htmlFor="newbie" className="text-lg text-white">
-            <input
-              type="radio"
-              id="newbie"
-              name="skill"
-              value="newbie"
-              className="mb-5 mr-3"
-              checked={radio === "newbie"}
-              onChange={(e) => {
-                setRadio(e.target.value);
-              }}
-            />
-            Newbie
-          </label>
+            <section className="mb-10 flex w-full flex-col items-center gap-10 md:w-[30%]">
+              <p className="text-lg font-bold">
+                Step 1 : This is example text to go with
+              </p>
+              <div className="flex flex-col">
+                <div className="mb-5 flex w-full">
+                  <input
+                    type="radio"
+                    id="newbie"
+                    name="skill"
+                    value="newbie"
+                    className="mr-3 h-6 w-6"
+                    checked={radio === "newbie"}
+                    onChange={(e) => {
+                      setRadio(e.target.value);
+                    }}
+                  />
+                  <label htmlFor="newbie" className="text-lg text-white">
+                    Newbie
+                  </label>
+                </div>
 
-          <label htmlFor="explorer" className="text-lg text-white">
-            <input
-              type="radio"
-              id="explorer"
-              name="skill"
-              value="explorer"
-              className="mb-5 mr-3"
-              checked={radio === "explorer"}
-              onChange={(e) => {
-                setRadio(e.target.value);
-              }}
-            />
-            Explorer
-          </label>
+                <div className="mb-5 flex w-full items-center">
+                  <input
+                    type="radio"
+                    id="explorer"
+                    name="skill"
+                    value="explorer"
+                    className="mr-3 h-6 w-6"
+                    checked={radio === "explorer"}
+                    onChange={(e) => {
+                      setRadio(e.target.value);
+                    }}
+                  />
 
-          <label htmlFor="master" className="text-lg text-white">
-            <input
-              type="radio"
-              id="master"
-              name="skill"
-              value="master"
-              className="mb-5 mr-3"
-              checked={radio === "master"}
-              onChange={(e) => {
-                setRadio(e.target.value);
-              }}
-            />
-            Master
-          </label>
+                  <label htmlFor="explorer" className="text-lg text-white">
+                    Explorer
+                  </label>
+                </div>
 
-          <Link
-            to="/customCourse"
-            className="bold mt-4 w-[150px] cursor-pointer rounded-[50px] bg-[#F7C94B] p-2 text-center font-comfortaa text-white drop-shadow-lg transition-transform duration-500 hover:bg-[#EA5880]  active:opacity-80 md:p-4  md:hover:scale-105"
-          >
-            Search
-          </Link>
-        </div>
+                <div className="mb-5 flex w-full items-center">
+                  <input
+                    type="radio"
+                    id="master"
+                    name="skill"
+                    value="master"
+                    className="mr-3 h-6 w-6"
+                    checked={radio === "master"}
+                    onChange={(e) => {
+                      setRadio(e.target.value);
+                    }}
+                  />
+
+                  <label htmlFor="master" className="text-lg text-white">
+                    Master
+                  </label>
+                </div>
+              </div>
+            </section>
+            <section className="mb-10 flex w-full flex-col items-center gap-10 md:w-[30%]">
+              <p className="text-lg font-bold">
+                Step 1 : This is example text to go with
+              </p>
+              <Link
+                to="/customCourse"
+                className="bold w-[150px] cursor-pointer rounded-[50px] bg-[#F7C94B] p-2 text-center font-comfortaa text-white drop-shadow-lg transition-transform duration-500 hover:bg-[#EA5880]  active:opacity-80 md:p-4  md:hover:scale-105"
+              >
+                Search
+              </Link>
+            </section>
+          </div>
+        </>
       )}
     </div>
   );
