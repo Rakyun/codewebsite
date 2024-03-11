@@ -12,15 +12,7 @@ import Message from "../msg/Message";
 const Homepage = () => {
   const page = "Home";
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const [openFilter, setOpenFilter] = useState(false);
 
-  const showFilter = () => {
-    setOpenFilter(true);
-  };
-
-  const toggleFilter = () => {
-    setOpenFilter(!openFilter);
-  };
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -34,9 +26,9 @@ const Homepage = () => {
     <div className="">
       <Header toggle={toggleNav} />
       <Nav isVisible={isNavOpen} />
-      <Layer1 openFilter={showFilter} />
+      <Layer1/>
       <Layer2 />
-      <Layer3 filter={openFilter} toggle={toggleFilter} />
+      <Layer3 />
       <Layer4 />
       <Email pageName={page} />
       <Footer />
