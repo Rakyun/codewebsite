@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { CheckBoxContext } from "../../../context/CheckBoxContext";
 import { Link } from "react-router-dom";
 import img1 from "../../../assets/courses/squarebanner01.png";
@@ -7,12 +7,27 @@ import img3 from "../../../assets/courses/squarebanner03.png";
 import img4 from "../../../assets/courses/squarebanner04.png";
 import img5 from "../../../assets/courses/squarebanner05.png";
 import img6 from "../../../assets/courses/squarebanner06.png";
-
 import age from "../../../assets/searchfilter/age.png";
 import graph from "../../../assets/searchfilter/graph.png";
 import laptop from "../../../assets/searchfilter/laptop.png";
 const Layer3 = () => {
   const [radio, setRadio, filter, setFilter] = useContext(CheckBoxContext);
+
+  const [showNewbie, setShowNewbie] = useState(false);
+  const [showExplorer, setShowExplorer] = useState(false);
+  const [showMaster, setShowMaster] = useState(false);
+
+  const handleNewbie = () => {
+    setShowNewbie((prev) => !prev);
+  };
+
+  const handleExplorer = () => {
+    setShowExplorer((prev) => !prev);
+  };
+
+  const handleMaster = () => {
+    setShowMaster((prev) => !prev);
+  };
 
   const courses = [
     {
@@ -126,7 +141,7 @@ const Layer3 = () => {
               </p>
             </div>
             <div className="flex flex-col">
-              <div className="mb-5 flex w-full">
+              <div className="mb-5 flex w-full items-center">
                 <input
                   type="radio"
                   id="newbie"
@@ -138,9 +153,20 @@ const Layer3 = () => {
                     setRadio(e.target.value);
                   }}
                 />
-                <label htmlFor="newbie" className="text-lg ">
+                <label htmlFor="newbie" className="mr-3 text-lg ">
                   Newbie
                 </label>
+                <div
+                  onMouseEnter={handleNewbie}
+                  onMouseLeave={handleNewbie}
+                  className="relative h-5 w-5 bg-black"
+                >
+                  <div
+                    className={`absolute bottom-5 left-[20px]  h-32 w-32 items-center justify-center rounded-t-full rounded-br-full bg-[#FFEDB3] px-5 text-center drop-shadow-xl ${showNewbie ? "flex" : "hidden"}`}
+                  >
+                    <p className="text-xs ">No Experience in coding</p>
+                  </div>
+                </div>
               </div>
 
               <div className="mb-5 flex w-full items-center">
@@ -156,9 +182,22 @@ const Layer3 = () => {
                   }}
                 />
 
-                <label htmlFor="explorer" className="text-lg ">
+                <label htmlFor="explorer" className="mr-3 text-lg ">
                   Explorer
                 </label>
+                <div
+                  onMouseEnter={handleExplorer}
+                  onMouseLeave={handleExplorer}
+                  className="relative h-5 w-5 bg-black"
+                >
+                  <div
+                    className={`absolute bottom-5 left-[20px]  h-32 w-32 items-center justify-center rounded-t-full rounded-br-full bg-[#FFEDB3] px-5 text-center drop-shadow-xl   ${showExplorer ? "flex" : "hidden"}`}
+                  >
+                    <p className="text-xs ">
+                      You have some knowledge about basic coding principles.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               <div className="mb-5 flex w-full items-center">
@@ -174,9 +213,22 @@ const Layer3 = () => {
                   }}
                 />
 
-                <label htmlFor="master" className="text-lg ">
+                <label htmlFor="master" className="mr-3 text-lg ">
                   Master
                 </label>
+                <div
+                  onMouseEnter={handleMaster}
+                  onMouseLeave={handleMaster}
+                  className="relative h-5 w-5 bg-black"
+                >
+                  <div
+                    className={`absolute bottom-5 left-[20px] h-32 w-32 items-center justify-center rounded-t-full rounded-br-full bg-[#FFEDB3] px-5 text-center drop-shadow-xl ${showMaster ? "flex" : "hidden"}`}
+                  >
+                    <p className="text-xs ">
+                      You want to expand your coding knowledge further.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
