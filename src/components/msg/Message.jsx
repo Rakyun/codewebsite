@@ -4,7 +4,7 @@ const Message = () => {
     <>
       <a
         href="https://www.facebook.com/messages/t/102949192458304"
-        className="fixed bottom-3 right-3 w-[200px]  animate-bounce-slow cursor-pointer  hover:opacity-90 active:opacity-80"
+        className="fixed bottom-3 right-3 w-[150px] animate-bounce-slow  cursor-pointer hover:opacity-90  active:opacity-80 md:w-[200px]"
         target="_blank"
         rel="noreferrer"
       >
