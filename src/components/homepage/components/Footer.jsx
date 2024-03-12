@@ -54,11 +54,17 @@ const Footer = () => {
           {contactList}
         </div>
       </section>
-      <div className="flex w-full items-center justify-center bg-[#29446A]  p-3 text-lg font-bold text-white md:justify-between md:px-10">
-        <p>Copyright © CO-DE Academy</p>
-        <p className="text-xl text-[#FFAC1C]">
-          <a href="mailto:jobscode@gmail.com">Work with Us</a>
+      <div className="flex w-full items-center justify-center  bg-[#29446A]  p-3 font-bold text-white md:justify-between md:px-10">
+        <p className="mr-10 text-base sm:text-xl  md:mr-0">
+          Copyright © CO-DE Academy
         </p>
+
+        <a
+          href="mailto:jobscode@gmail.com"
+          className="text-base text-[#FFAC1C] sm:text-xl "
+        >
+          Work with Us
+        </a>
       </div>
     </footer>
   );

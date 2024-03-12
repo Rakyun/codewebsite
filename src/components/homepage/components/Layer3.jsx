@@ -10,6 +10,7 @@ import img6 from "../../../assets/courses/squarebanner06.png";
 import age from "../../../assets/searchfilter/age.png";
 import graph from "../../../assets/searchfilter/graph.png";
 import laptop from "../../../assets/searchfilter/laptop.png";
+import info from "../../../assets/info.png";
 const Layer3 = () => {
   const [radio, setRadio, filter, setFilter] = useContext(CheckBoxContext);
 
@@ -159,8 +160,9 @@ const Layer3 = () => {
                 <div
                   onMouseEnter={handleNewbie}
                   onMouseLeave={handleNewbie}
-                  className="relative h-5 w-5 bg-black"
+                  className="relative h-5 w-5 "
                 >
+                  <img src={info} alt="info" className="w-full" />
                   <div
                     className={`absolute bottom-5 left-[20px]  h-32 w-32 items-center justify-center rounded-t-full rounded-br-full bg-[#FFEDB3] px-5 text-center drop-shadow-xl ${showNewbie ? "flex" : "hidden"}`}
                   >
@@ -188,8 +190,9 @@ const Layer3 = () => {
                 <div
                   onMouseEnter={handleExplorer}
                   onMouseLeave={handleExplorer}
-                  className="relative h-5 w-5 bg-black"
+                  className="relative h-5 w-5"
                 >
+                  <img src={info} alt="info" className="w-full" />
                   <div
                     className={`absolute bottom-5 left-[20px]  h-32 w-32 items-center justify-center rounded-t-full rounded-br-full bg-[#FFEDB3] px-5 text-center drop-shadow-xl   ${showExplorer ? "flex" : "hidden"}`}
                   >
@@ -219,8 +222,9 @@ const Layer3 = () => {
                 <div
                   onMouseEnter={handleMaster}
                   onMouseLeave={handleMaster}
-                  className="relative h-5 w-5 bg-black"
+                  className="relative h-5 w-5"
                 >
+                  <img src={info} alt="info" className="w-full" />
                   <div
                     className={`absolute bottom-5 left-[20px] h-32 w-32 items-center justify-center rounded-t-full rounded-br-full bg-[#FFEDB3] px-5 text-center drop-shadow-xl ${showMaster ? "flex" : "hidden"}`}
                   >
