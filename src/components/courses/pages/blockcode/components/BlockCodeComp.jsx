@@ -1,7 +1,6 @@
 import front from "../../../../../assets/playground/front.png";
-import scratchCourse from "../../../../../assets/ScratchCourse.jpg";
-import octo from "../../../../../assets/specificCourses/octo.jpg";
-import scratch from "../../../../../assets/specificCourses/scratch.jpg";
+import octo from "../../../../../assets/courseDetails/octo.jpg";
+import scratch from "../../../../../assets/courseDetails/scratch.jpg";
 import dede from "../../../../../assets/messageUs.png";
 import { useState } from "react";
 const BlockCodeComp = () => {

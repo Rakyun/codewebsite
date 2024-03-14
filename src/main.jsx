@@ -10,7 +10,7 @@ import Course from "./components/courses/Course.jsx";
 import PitchingPage from "./components/pitching/PitchingPage.jsx";
 import AboutUs from "./components/aboutUs/AboutUs.jsx";
 import BlockCode from "./components/courses/pages/blockcode/BlockCode.jsx";
-import Custom from "./components/homepage/components/customCourse/components/Custom.jsx";
+import Custom from "./components/homepage/components/customCourse/Custom.jsx";
 
 const router = createHashRouter([
   {

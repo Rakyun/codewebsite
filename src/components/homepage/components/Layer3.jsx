@@ -79,7 +79,7 @@ const Layer3 = () => {
         <p className="mb-6 text-xl font-bold  md:mb-0 md:h-[65px] md:text-lg lg:text-xl xl:h-[80px] xl:text-2xl">
           {course.courseName}
         </p>
-        <p className=" text-xl font-bold  xl:text-2xl">{course.age}</p>
+        <p className="text-xl font-bold  xl:text-2xl">{course.age}</p>
       </div>
     </div>
   ));

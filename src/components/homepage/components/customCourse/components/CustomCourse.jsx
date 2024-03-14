@@ -1,53 +1,99 @@
 /* eslint-disable no-unused-vars */
 import { CheckBoxContext } from "../../../../../context/CheckBoxContext";
 import { useContext } from "react";
+import {
+  Scratch,
+  Octo,
+  ThreeDeeModel,
+  Arduino,
+  DesignThinking,
+  FullStack,
+  Java,
+  Microbit,
+  Mobile,
+  Python,
+  RoadToUni,
+  Roblox,
+  AdvPython,
+} from "./CoursesImports";
 
 const CustomCourse = () => {
   const [radio, setRadio, filter] = useContext(CheckBoxContext);
 
   const customCourses = {
-    custom1: ["microbit", "minecraft", "roblox", "3D"],
-    custom2: ["microbit", "minecraft", "roblox", "3D", "python"],
-    custom3: ["roblox", "3D", "python"],
-    custom4: ["roblox", "3D", "python", "web dev"],
-    custom5: ["roblox", "3D", "python", "arduino"],
-    custom6: [
-      "roblox",
-      "3D",
-      "python",
-      "arduino",
-      "web dev",
-      "mobile app dev",
-      "advanced python",
+    custom1: [
+      <Microbit key={0} />,
+      "minecraft",
+      <Roblox key={2} />,
+      <ThreeDeeModel key={3} />,
     ],
-    custom7: ["roblox", "3D", "python", "arduino", "java"],
+    custom2: [
+      <Microbit key={0} />,
+      "minecraft",
+      <Roblox key={2} />,
+      <ThreeDeeModel key={3} />,
+      <Python key={4} />,
+    ],
+    custom3: [
+      <Roblox key={0} />,
+      <ThreeDeeModel key={1} />,
+      <Python key={2} />,
+    ],
+    custom4: [
+      <Roblox key={0} />,
+      <ThreeDeeModel key={1} />,
+      <Python key={2} />,
+      <FullStack key={3} />,
+    ],
+    custom5: [
+      <Roblox key={0} />,
+      <ThreeDeeModel key={1} />,
+      <Python key={2} />,
+      <Arduino key={3} />,
+    ],
+    custom6: [
+      <Roblox key={0} />,
+      <ThreeDeeModel key={1} />,
+      <Python key={2} />,
+      <Arduino key={3} />,
+      <FullStack key={4} />,
+      <Mobile key={5} />,
+      <AdvPython key={6} />,
+    ],
+    custom7: [
+      <Roblox key={0} />,
+      <ThreeDeeModel key={1} />,
+      <Python key={2} />,
+      <Arduino key={3} />,
+      <Java key={4} />,
+    ],
     custom8: [
-      "roblox",
-      "3D",
-      "python",
-      "arduino",
-      "web dev",
-      "mobile app dev",
-      "advanced python",
-      "java",
+      <Roblox key={0} />,
+      <ThreeDeeModel key={1} />,
+      <Python key={2} />,
+      <Arduino key={3} />,
+      <FullStack key={4} />,
+      <Mobile key={5} />,
+      <AdvPython key={6} />,
+      <Java key={7} />,
     ],
     custom9: [
-      "roblox",
-      "3D",
-      "python",
-      "arduino",
-      "web dev",
-      "mobile app dev",
-      "advanced python",
-      "java",
-      "road to university",
+      <Roblox key={0} />,
+      <ThreeDeeModel key={1} />,
+      <Python key={2} />,
+      <Arduino key={3} />,
+      <FullStack key={4} />,
+      <Mobile key={5} />,
+      <AdvPython key={6} />,
+      <Java key={7} />,
+      <RoadToUni key={8} />,
     ],
 
-    custom10: ["design thinking"],
-    custom11: ["design thinking", "octostudio"],
-    custom12: ["octostudio", "scratch"],
-    custom13: ["scratch"],
-    custom14: ["scratch", "microbit", "minecraft"],
+    custom10: [<DesignThinking key={0} />],
+    custom11: [<DesignThinking key={0} />, <Octo key={1} />],
+    custom12: [<Octo key={0} />, <Scratch key={1} />],
+    custom13: [<Scratch key={0} />],
+    custom14: [<Scratch key={0} />, <Microbit key={1} />, "minecraft"],
   };
 
   const testContent = () => {
@@ -119,17 +165,14 @@ const CustomCourse = () => {
   };
 
   const filteredCourse = testContent();
+
   return (
     <div className="flex h-full w-full flex-col items-center bg-[#042451] pt-[150px] font-comfortaa text-white">
       <p className="mb-14 mt-28 w-[80%] text-center text-3xl md:text-4xl">
         Reccommended Courses
       </p>
 
-      {filteredCourse.map((course, index) => (
-        <div key={index} className="my-5 bg-green-500 p-10 text-3xl">
-          <p>{course}</p>
-        </div>
-      ))}
+      {filteredCourse.map((item) => item)}
     </div>
   );
 };

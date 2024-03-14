@@ -1,10 +1,10 @@
-import Header from "../../../../header/Header";
-import Nav from "../../../../header/Nav";
-import Footer from "../../Footer";
-import Email from "../../Email";
-import CustomCourse from "./CustomCourse";
+import Header from "../../../header/Header";
+import Nav from "../../../header/Nav";
+import Footer from "../Footer";
+import Email from "../Email";
+import CustomCourse from "./components/CustomCourse";
 import { useState, useEffect } from "react";
-import Message from "../../../../msg/Message";
+import Message from "../../../msg/Message";
 
 const Custom = () => {
   const page = "Custom Page";
