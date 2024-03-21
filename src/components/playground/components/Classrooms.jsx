@@ -5,6 +5,7 @@ import dede from "../../../assets/playground/dede.jpg";
 import echo from "../../../assets/playground/echo.jpg";
 import foxtrot from "../../../assets/playground/foxtrot.jpg";
 const Classrooms = () => {
+  // Classroom Lists
   const classrooms = [
     {
       image: alpha,
@@ -55,7 +56,7 @@ const Classrooms = () => {
       sidename: "Foxtrot",
     },
   ];
-
+  // Rendering Classroom
   const classroomContainers = classrooms.map((classroom) => (
     <div
       key={classroom.id}

@@ -18,7 +18,7 @@ import {
 } from "./CoursesImports";
 
 const CustomCourse = () => {
-  const [radio, setRadio, filter] = useContext(CheckBoxContext);
+  const [radio, , filter] = useContext(CheckBoxContext);
 
   const customCourses = {
     custom1: [

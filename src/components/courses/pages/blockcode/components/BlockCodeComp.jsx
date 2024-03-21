@@ -2,6 +2,13 @@ import front from "../../../../../assets/playground/front.png";
 import octo from "../../../../../assets/courseDetails/octo.jpg";
 import scratch from "../../../../../assets/courseDetails/scratch.jpg";
 import dede from "../../../../../assets/messageUs.png";
+import blockImg1 from "../../../../../assets/slideImages/blockCode/img1.jpg";
+import blockImg2 from "../../../../../assets/slideImages/blockCode/img2.jpg";
+import blockImg3 from "../../../../../assets/slideImages/blockCode/img3.jpg";
+import blockImg4 from "../../../../../assets/slideImages/blockCode/img4.jpg";
+import { Carousel } from "@material-tailwind/react";
+import "react-slideshow-image/dist/styles.css";
+import "./style.css";
 import { useState } from "react";
 const BlockCodeComp = () => {
   const feature = [
@@ -14,6 +21,8 @@ const BlockCodeComp = () => {
     { image: dede, text: "Basic Class" },
     { image: dede, text: "Entertainment" },
   ];
+
+  const images = [blockImg1, blockImg2, blockImg3, blockImg4];
 
   const features = feature.map((content, index) => (
     <div key={index} className="flex w-[50%] items-center ">
@@ -29,13 +38,29 @@ const BlockCodeComp = () => {
   const showInfo = () => {
     setShowMore(!showMore);
   };
+
   return (
     <div className="flex h-full w-full flex-col items-center bg-[#042451] pt-[150px] font-comfortaa text-white">
-      <img
+      <Carousel
+        autoplay={true}
+        autoplayDelay={3000}
+        loop={true}
+        className="w-[80%] rounded-2xl md:w-[70%]  xl:w-[60%] "
+      >
+        {images.map((item, index) => (
+          <img
+            className="object-cover "
+            key={index}
+            src={item}
+            alt="slideshow"
+          />
+        ))}
+      </Carousel>
+      {/* {<img
         src={front}
         alt="front"
         className="my-2 w-[80%] rounded-3xl md:w-[50%]"
-      />
+      />} */}
       <p className="mt-8 w-[80%] text-center text-lg md:text-xl">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
         explicabo suscipit magni iusto eligendi quasi. Debitis eligendi

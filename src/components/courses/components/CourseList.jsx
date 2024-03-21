@@ -3,12 +3,16 @@ import { Link as ScrollLink } from "react-scroll";
 import { Link } from "react-router-dom";
 const CourseList = (props) => {
   const listOfCourses = props.courses.map((course) => (
-    <img
+    <div
       key={course.id}
-      src={course.image}
-      alt="A course"
       className={` w-[90%] cursor-pointer transition-transform duration-500 hover:scale-105 lg:w-[85%] xl:w-[75%] ${course == props.courses[0] ? "rounded-t-xl" : course == props.courses[props.courses.length - 1] ? "rounded-b-xl" : ""}`}
-    />
+    >
+      <img
+        className={`${course == props.courses[0] ? "rounded-t-xl" : course == props.courses[props.courses.length - 1] ? "rounded-b-xl" : ""}`}
+        src={course.image}
+        alt="A course"
+      />
+    </div>
   ));
 
   return (
