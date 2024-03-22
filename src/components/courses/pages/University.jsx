@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import Header from "../../../header/Header";
-import Nav from "../../../header/Nav";
-import Footer from "../../../homepage/components/Footer";
-import Message from "../../../msg/Message";
-import BlockCodeComp from "./components/BlockCodeComp";
-import Email from "../../../homepage/components/Email";
+import Header from "../../header/Header";
+import Nav from "../../header/Nav";
+import Footer from "../../homepage/components/Footer";
+import Message from "../../msg/Message";
+import Email from "../../homepage/components/Email";
+import CourseSetup from "./components/CourseSetup";
 
-const BlockCode = () => {
+const University = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -18,7 +18,7 @@ const BlockCode = () => {
     <>
       <Header toggle={toggleNav} />
       <Nav isVisible={isNavOpen} />
-      <BlockCodeComp />
+      <CourseSetup />
       <Email />
       <Footer />
       <Message />
@@ -26,4 +26,4 @@ const BlockCode = () => {
   );
 };
 
-export default BlockCode;
+export default University;

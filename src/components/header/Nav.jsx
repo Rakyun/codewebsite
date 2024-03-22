@@ -8,27 +8,37 @@ const Nav = (props) => {
           props.isVisible ? "translate-y-0" : "-translate-y-[500px]"
         }`}
       >
-        <a
-          className="font-comfortaa my-4 cursor-pointer select-none text-xl text-white   hover:opacity-80  active:opacity-50"
-          rel="noreferrer"
+        <Link
+          to="/"
+          className="my-4 cursor-pointer select-none font-comfortaa text-xl text-white  hover:opacity-80 active:opacity-50"
         >
-          <Link to="/">CO-DE</Link>
-        </a>
-        <a className="font-comfortaa my-4 cursor-pointer select-none text-xl text-white  hover:opacity-80 active:opacity-50">
-          <Link to="/courses">COURSES</Link>
-        </a>
-        <a className="font-comfortaa my-4 cursor-pointer select-none text-xl text-white  hover:opacity-80 active:opacity-50">
-          <Link to="/playground">OUR PLAYGROUND</Link>
-        </a>
-        <a className="font-comfortaa my-4 cursor-pointer select-none text-xl text-white  hover:opacity-80 active:opacity-50">
+          CO-DE
+        </Link>
+        <Link
+          to="/courses"
+          className="my-4 cursor-pointer select-none font-comfortaa text-xl text-white  hover:opacity-80 active:opacity-50"
+        >
+          COURSES
+        </Link>
+        <Link
+          to="/playground"
+          className="my-4 cursor-pointer select-none font-comfortaa text-xl text-white  hover:opacity-80 active:opacity-50"
+        >
+          OUR PLAYGROUND
+        </Link>
+        <a className="my-4 cursor-pointer select-none font-comfortaa text-xl text-white  hover:opacity-80 active:opacity-50">
           TRENDS
         </a>
-        <a className="font-comfortaa my-4 cursor-pointer select-none text-xl text-white  hover:opacity-80 active:opacity-50">
-          <Link to="/contactUs">CONTACT US</Link>
-        </a>
+        <Link
+          to="/contactUs"
+          className="my-4 cursor-pointer select-none font-comfortaa text-xl text-white  hover:opacity-80 active:opacity-50"
+        >
+          CONTACT US
+        </Link>
+
         <div className="my-3 flex cursor-pointer select-none items-center hover:opacity-80 active:opacity-50">
           <img src={ukflag} alt="flag" className="h-[25px] w-[40px]" />
-          <p className="bold font-comfortaa ml-3 text-xl text-white">English</p>
+          <p className="bold ml-3 font-comfortaa text-xl text-white">English</p>
         </div>
       </div>
     </>

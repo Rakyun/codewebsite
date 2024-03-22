@@ -9,7 +9,12 @@ import Contact from "./components/contactUs/Contact.jsx";
 import Course from "./components/courses/Course.jsx";
 import PitchingPage from "./components/pitching/PitchingPage.jsx";
 import AboutUs from "./components/aboutUs/AboutUs.jsx";
-import BlockCode from "./components/courses/pages/blockcode/BlockCode.jsx";
+import BlockCode from "./components/courses/pages/BlockCode.jsx";
+import Creative from "./components/courses/pages/Creative.jsx";
+import Fundamental from "./components/courses/pages/Fundamental.jsx";
+import Mechanical from "./components/courses/pages/Mechanical.jsx";
+import NonCode from "./components/courses/pages/NonCode.jsx";
+import University from "./components/courses/pages/University.jsx";
 import Custom from "./components/homepage/components/customCourse/Custom.jsx";
 
 const router = createHashRouter([
@@ -40,6 +45,26 @@ const router = createHashRouter([
   {
     path: "/courses/blockcode",
     element: <BlockCode />,
+  },
+  {
+    path: "/courses/creative",
+    element: <Creative />,
+  },
+  {
+    path: "/courses/fundamental",
+    element: <Fundamental />,
+  },
+  {
+    path: "/courses/mechanical",
+    element: <Mechanical />,
+  },
+  {
+    path: "/courses/noncode",
+    element: <NonCode />,
+  },
+  {
+    path: "/courses/university",
+    element: <University />,
   },
   {
     path: "/customCourse",

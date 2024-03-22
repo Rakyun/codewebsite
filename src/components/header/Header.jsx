@@ -41,28 +41,41 @@ const Header = (props) => {
           className="cursor-pointer select-none hover:opacity-90 active:opacity-70 md:hidden"
         />
         <div className="relative right-12 hidden w-[90%] md:flex md:justify-between lg:justify-evenly">
-          <a
-            className="font-comfortaa cursor-pointer select-none text-white hover:opacity-80  active:opacity-50  md:text-[1.6vw]  lg:text-[1.3vw]"
-            rel="noreferrer"
+          <Link
+            to="/"
+            className="cursor-pointer select-none font-comfortaa text-white hover:opacity-80  active:opacity-50  md:text-[1.6vw]  lg:text-[1.3vw]"
           >
-            <Link to="/">CO-DE</Link>
-          </a>
-          <a className="font-comfortaa cursor-pointer select-none text-white hover:opacity-80  active:opacity-50 md:text-[1.6vw]  lg:text-[1.3vw]">
-          <Link to="/courses">COURSES</Link>
-          </a>
-          <a className="font-comfortaa cursor-pointer select-none text-white hover:opacity-80  active:opacity-50 md:text-[1.6vw]  lg:text-[1.3vw]">
-            <Link to="/playground">OUR PLAYGROUND</Link>
-          </a>
-          <a className="font-comfortaa cursor-pointer select-none text-white hover:opacity-80  active:opacity-50 md:text-[1.6vw]  lg:text-[1.3vw]">
+            CO-DE
+          </Link>
+
+          <Link
+            to="/courses"
+            className="cursor-pointer select-none font-comfortaa text-white hover:opacity-80  active:opacity-50  md:text-[1.6vw]  lg:text-[1.3vw]"
+          >
+            COURSES
+          </Link>
+
+          <Link
+            to="/playground"
+            className="cursor-pointer select-none font-comfortaa text-white hover:opacity-80  active:opacity-50  md:text-[1.6vw]  lg:text-[1.3vw]"
+          >
+            OUR PLAYGROUND
+          </Link>
+
+          <a className="cursor-pointer select-none font-comfortaa text-white hover:opacity-80  active:opacity-50 md:text-[1.6vw]  lg:text-[1.3vw]">
             TRENDS
-          </a>  
-          <a className="font-comfortaa cursor-pointer select-none text-white hover:opacity-80  active:opacity-50 md:text-[1.6vw]  lg:text-[1.3vw]">
-            <Link to="/contactUs">CONTACT US</Link>
           </a>
+
+          <Link
+            to="/contactUs"
+            className="cursor-pointer select-none font-comfortaa text-white hover:opacity-80  active:opacity-50  md:text-[1.6vw]  lg:text-[1.3vw]"
+          >
+            CONTACT US
+          </Link>
         </div>
         <div className="absolute right-10 top-2 hidden cursor-pointer select-none items-center hover:opacity-80 active:opacity-50  md:flex">
           <img src={ukflag} alt="flag" className="h-[20px] w-[30px]" />
-          <p className="bold font-comfortaa ml-1 text-[13px] text-white">
+          <p className="bold ml-1 font-comfortaa text-[13px] text-white">
             English
           </p>
         </div>

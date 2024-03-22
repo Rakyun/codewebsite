@@ -15,12 +15,42 @@ import graduate from "../../assets/bannerLong/graduate.jpg";
 
 const Course = () => {
   const courses = [
-    { image: noncoding, id: 1, filterTest: "kids" },
-    { image: blockcode, id: 2, filterTest: "teen" },
-    { image: fundamental, id: 3, filterTest: "kids" },
-    { image: creative, id: 4, filterTest: "teen" },
-    { image: mechanical, id: 5, filterTest: "kids" },
-    { image: graduate, id: 6, filterTest: "kids" },
+    {
+      image: noncoding,
+      id: 12,
+      filterTest: "kids",
+      direct: "/courses/noncode",
+    },
+    {
+      image: blockcode,
+      id: 23,
+      filterTest: "teen",
+      direct: "/courses/blockcode",
+    },
+    {
+      image: fundamental,
+      id: 34,
+      filterTest: "kids",
+      direct: "/courses/fundamental",
+    },
+    {
+      image: creative,
+      id: 45,
+      filterTest: "teen",
+      direct: "/courses/creative",
+    },
+    {
+      image: mechanical,
+      id: 56,
+      filterTest: "kids",
+      direct: "/courses/mechanical",
+    },
+    {
+      image: graduate,
+      id: 67,
+      filterTest: "kids",
+      direct: "/courses/university",
+    },
   ];
 
   const page = "Courses";

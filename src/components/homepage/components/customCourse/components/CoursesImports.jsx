@@ -1,21 +1,21 @@
-import octoStudio from "../../../../../assets/courseDetails/octo.jpg";
-import scratch from "../../../../../assets/courseDetails/scratch.jpg";
+import octoStudio from "../../../../../assets/courseDetails/octo.png";
+import scratch from "../../../../../assets/courseDetails/scratch.png";
 
-import threeDeeModel from "../../../../../assets/courseDetails/3DModel.jpg";
-import arduino from "../../../../../assets/courseDetails/arduino.jpg";
+import threeDeeModel from "../../../../../assets/courseDetails/3DModel.png";
+import arduino from "../../../../../assets/courseDetails/arduino.png";
 
-import designThinking from "../../../../../assets/courseDetails/designThinking.jpg";
-import fullstack from "../../../../../assets/courseDetails/fullstack.jpg";
+import designThinking from "../../../../../assets/courseDetails/designThinking.png";
+import fullstack from "../../../../../assets/courseDetails/fullstack.png";
 
-import java from "../../../../../assets/courseDetails/java.jpg";
-import microbit from "../../../../../assets/courseDetails/microbit.jpg";
+import java from "../../../../../assets/courseDetails/java.png";
+import microbit from "../../../../../assets/courseDetails/microbit.png";
 
-import mobile from "../../../../../assets/courseDetails/mobile.jpg";
-import python from "../../../../../assets/courseDetails/python.jpg";
+import mobile from "../../../../../assets/courseDetails/mobile.png";
+import python from "../../../../../assets/courseDetails/python.png";
 
-import roadToUni from "../../../../../assets/courseDetails/roadToUni.jpg";
-import roblox from "../../../../../assets/courseDetails/roblox.jpg";
-import advPython from "../../../../../assets/courseDetails/advPython.jpg";
+import roadToUni from "../../../../../assets/courseDetails/roadToUni.png";
+import roblox from "../../../../../assets/courseDetails/roblox.png";
+import advPython from "../../../../../assets/courseDetails/advPython.png";
 
 export const Scratch = () => {
   return (
