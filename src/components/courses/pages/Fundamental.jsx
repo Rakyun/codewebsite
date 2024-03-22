@@ -13,6 +13,7 @@ import img3 from "../../../assets/slideImages/Fundamental/img3.jpg";
 import img4 from "../../../assets/slideImages/Fundamental/img4.jpg";
 import img5 from "../../../assets/slideImages/Fundamental/img5.jpg";
 import python from "../../../assets/courseDetails/python.png";
+import advPython from "../../../assets/courseDetails/advPython.png";
 import java from "../../../assets/courseDetails/java.png";
 
 const Fundamental = () => {
@@ -24,6 +25,10 @@ const Fundamental = () => {
     {
       pic: java,
       title: "Basic Coding with Java",
+    },
+    {
+      pic: advPython,
+      title: "Advanced Coding with Python",
     },
   ];
   const slideShowData = [img1, img2, img3, img4, img5];

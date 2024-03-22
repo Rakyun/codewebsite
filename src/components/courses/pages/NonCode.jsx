@@ -18,7 +18,7 @@ const NonCode = () => {
   const coursesData = [
     {
       pic: designThinking,
-      title: " Design Thinking : BunBun's Journey",
+      title: "Design Thinking : BunBun's Journey",
     },
   ];
   const slideShowData = [img1, img2, img3, img4, img5];

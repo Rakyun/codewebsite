@@ -19,114 +19,155 @@ import advPython from "../../../../../assets/courseDetails/advPython.png";
 
 export const Scratch = () => {
   return (
-    <img
-      src={scratch}
-      alt="scratch"
-      className="my-2 mb-20 w-[85%] rounded-xl"
-    />
+    <div className="mb-20 flex w-full flex-col items-center">
+      <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
+        Scratch : The Journey of Superpower
+      </p>
+      <img src={scratch} alt="scratch" className="my-2  w-[85%] rounded-xl" />
+    </div>
   );
 };
 
 export const Octo = () => {
   return (
-    <img
-      src={octoStudio}
-      alt="octoStudio"
-      className="my-2 mb-20 w-[85%] rounded-xl"
-    />
+    <div className="mb-20 flex w-full flex-col items-center">
+      <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
+        Octo Studio : Make Seafood using Octopus
+      </p>
+      <img
+        src={octoStudio}
+        alt="scratch"
+        className="my-2  w-[85%] rounded-xl"
+      />
+    </div>
   );
 };
 
 export const ThreeDeeModel = () => {
   return (
-    <img
-      src={threeDeeModel}
-      alt="threeDeeModel"
-      className="my-2 mb-20 w-[85%] rounded-xl"
-    />
+    <div className="mb-20 flex w-full flex-col items-center">
+      <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
+        3D Modelling : Design and Create
+      </p>
+      <img
+        src={threeDeeModel}
+        alt="scratch"
+        className="my-2  w-[85%] rounded-xl"
+      />
+    </div>
   );
 };
 
 export const Arduino = () => {
   return (
-    <img
-      src={arduino}
-      alt="arduino"
-      className="my-2 mb-20 w-[85%] rounded-xl"
-    />
+    <div className="mb-20 flex w-full flex-col items-center">
+      <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
+        Arduino : Basic Board and Circuit
+      </p>
+      <img src={arduino} alt="scratch" className="my-2  w-[85%] rounded-xl" />
+    </div>
   );
 };
 
 export const DesignThinking = () => {
   return (
-    <img
-      src={designThinking}
-      alt="designThinking"
-      className="my-2 mb-20 w-[85%] rounded-xl"
-    />
+    <div className="mb-20 flex w-full flex-col items-center">
+      <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
+        Design Thinking : BunBun's Journey
+      </p>
+      <img
+        src={designThinking}
+        alt="scratch"
+        className="my-2  w-[85%] rounded-xl"
+      />
+    </div>
   );
 };
 
 export const FullStack = () => {
   return (
-    <img
-      src={fullstack}
-      alt="fullstack"
-      className="my-2 mb-20 w-[85%] rounded-xl"
-    />
+    <div className="mb-20 flex w-full flex-col items-center">
+      <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
+        Full-stack Web Development with Python
+      </p>
+      <img src={fullstack} alt="scratch" className="my-2  w-[85%] rounded-xl" />
+    </div>
   );
 };
 
 export const Java = () => {
   return (
-    <img src={java} alt="java" className="my-2 mb-20 w-[85%] rounded-xl" />
+    <div className="mb-20 flex w-full flex-col items-center">
+      <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
+        Basic Coding with Java
+      </p>
+      <img src={java} alt="scratch" className="my-2  w-[85%] rounded-xl" />
+    </div>
   );
 };
 
 export const Microbit = () => {
   return (
-    <img
-      src={microbit}
-      alt="microbit"
-      className="my-2 mb-20 w-[85%] rounded-xl"
-    />
+    <div className="mb-20 flex w-full flex-col items-center">
+      <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
+        Microbit : Get creative and connected
+      </p>
+      <img src={microbit} alt="scratch" className="my-2  w-[85%] rounded-xl" />
+    </div>
   );
 };
 
 export const Mobile = () => {
   return (
-    <img src={mobile} alt="mobile" className="my-2 mb-20 w-[85%] rounded-xl" />
+    <div className="mb-20 flex w-full flex-col items-center">
+      <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
+        Mobile App Development
+      </p>
+      <img src={mobile} alt="scratch" className="my-2  w-[85%] rounded-xl" />
+    </div>
   );
 };
 
 export const Python = () => {
   return (
-    <img src={python} alt="python" className="my-2 mb-20 w-[85%] rounded-xl" />
+    <div className="mb-20 flex w-full flex-col items-center">
+      <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
+        Basic Coding with Python
+      </p>
+      <img src={python} alt="scratch" className="my-2  w-[85%] rounded-xl" />
+    </div>
   );
 };
 
 export const RoadToUni = () => {
   return (
-    <img
-      src={roadToUni}
-      alt="roadToUni"
-      className="my-2 mb-20 w-[85%] rounded-xl"
-    />
+    <div className="mb-20 flex w-full flex-col items-center">
+      <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
+        Road to University
+      </p>
+      <img src={roadToUni} alt="scratch" className="my-2  w-[85%] rounded-xl" />
+    </div>
   );
 };
 
 export const Roblox = () => {
   return (
-    <img src={roblox} alt="roblox" className="my-2 mb-20 w-[85%] rounded-xl" />
+    <div className="mb-20 flex w-full flex-col items-center">
+      <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
+        Roblox : Game Development
+      </p>
+      <img src={roblox} alt="scratch" className="my-2  w-[85%] rounded-xl" />
+    </div>
   );
 };
 
 export const AdvPython = () => {
   return (
-    <img
-      src={advPython}
-      alt="advPython"
-      className="my-2 mb-20 w-[85%] rounded-xl"
-    />
+    <div className="mb-20 flex w-full flex-col items-center">
+      <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
+        Advanced Coding with Python
+      </p>
+      <img src={advPython} alt="scratch" className="my-2  w-[85%] rounded-xl" />
+    </div>
   );
 };

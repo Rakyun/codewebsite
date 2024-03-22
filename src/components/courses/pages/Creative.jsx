@@ -13,11 +13,13 @@ import img3 from "../../../assets/slideImages/Creative/img3.jpg";
 import img4 from "../../../assets/slideImages/Creative/img4.jpg";
 import roblox from "../../../assets/courseDetails/roblox.png";
 import fullstack from "../../../assets/courseDetails/fullstack.png";
+import mobile from "../../../assets/courseDetails/mobile.png";
 
 const Creative = () => {
   const coursesData = [
     { pic: roblox, title: "Roblox : Game Development" },
     { pic: fullstack, title: "Full-stack Web Development with Python" },
+    { pic: mobile, title: "Mobile App Development" },
   ];
   const slideShowData = [img1, img2, img3, img4];
 
