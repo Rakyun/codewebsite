@@ -1,17 +1,18 @@
 import { Carousel } from "@material-tailwind/react";
 import "react-slideshow-image/dist/styles.css";
-
+import { Link } from "react-router-dom";
 const CourseSetup = (props) => {
   const courses = props.coursesData.map((course, index) => (
     <div key={index} className="mb-20 flex w-full flex-col items-center">
       <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
         {course.title}
       </p>
-      <img
-        src={course.pic}
-        alt="scratch"
-        className="my-2  w-[85%] rounded-xl"
-      />
+      <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
+        <img src={course.pic} alt="pic" className=" rounded-xl" />
+        <Link className=" absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-4 text-center text-[1.7vw]">
+          More Details
+        </Link>
+      </div>
     </div>
   ));
 

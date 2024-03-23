@@ -6,7 +6,7 @@ const CourseList = (props) => {
     <Link
       to={course.direct}
       key={course.id}
-      className={` w-[90%] cursor-pointer transition-transform duration-500 hover:scale-105 lg:w-[85%] xl:w-[75%] ${course == props.courses[0] ? "rounded-t-xl" : course == props.courses[props.courses.length - 1] ? "rounded-b-xl" : ""}`}
+      className={`w-[90%] cursor-pointer transition-transform duration-500 hover:scale-105 lg:w-[85%] xl:w-[75%] ${course == props.courses[0] ? "rounded-t-xl" : course == props.courses[props.courses.length - 1] ? "rounded-b-xl" : ""}`}
     >
       <img
         className={`${course == props.courses[0] ? "rounded-t-xl" : course == props.courses[props.courses.length - 1] ? "rounded-b-xl" : ""}`}
