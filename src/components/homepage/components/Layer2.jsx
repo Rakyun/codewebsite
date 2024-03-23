@@ -59,9 +59,13 @@ const Layer2 = () => {
           </div>
         </div>
         <div className="flex w-[90%] items-center justify-center md:justify-normal  ">
-          <a className="font-comfortaa text-2xl font-bold  text-[#F7C94B] drop-shadow-md">
-            <Link to="/aboutUs"> {">> Get to know us more"} </Link>
-          </a>
+          <Link
+            className="font-comfortaa text-2xl font-bold  text-[#F7C94B] drop-shadow-md"
+            to="/aboutUs"
+          >
+            {" "}
+            {">> Get to know us more"}{" "}
+          </Link>
           <img src={star} alt="flag" className="hidden w-[8%] md:block" />
         </div>
       </div>
