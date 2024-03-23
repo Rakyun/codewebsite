@@ -1,4 +1,4 @@
-import code_logo from "../../../assets/code_logo.png";
+import code_logo from "../../../assets/others/code_logo.png";
 import facebook from "../../../assets/logos/facebook.png";
 import line from "../../../assets/logos/line.png";
 import phone from "../../../assets/logos/phone.png";

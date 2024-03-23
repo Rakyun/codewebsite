@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import code_logo from "../../assets/code_logo.png";
-import nav_logo from "../../assets/nav.png";
-import ukflag from "../../assets/ukflag.png";
+import code_logo from "../../assets/others/code_logo.png";
+import nav_logo from "../../assets/others/nav.png";
+import ukflag from "../../assets/others/ukflag.png";
 import { Link } from "react-router-dom";
 
 const Header = (props) => {

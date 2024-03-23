@@ -1,4 +1,4 @@
-import stage from "../../../assets/stage.jpg";
+import stage from "../../../assets/others/stage.jpg";
 const Stage = () => {
   return (
     <>

@@ -10,7 +10,7 @@ import img6 from "../../../assets/courses/squarebanner06.png";
 import age from "../../../assets/searchfilter/age.png";
 import graph from "../../../assets/searchfilter/graph.png";
 import laptop from "../../../assets/searchfilter/laptop.png";
-import info from "../../../assets/info.png";
+import info from "../../../assets/others/info.png";
 const Layer3 = () => {
   const [radio, setRadio, filter, setFilter] = useContext(CheckBoxContext);
 
@@ -36,30 +36,35 @@ const Layer3 = () => {
       courseName: "Design Thinking Class",
       age: "4+ years old",
       id: "teen",
+      direct: "/courses/noncode",
     },
     {
       image: img2,
       courseName: "Block-Based Coding Class",
       age: "6+ years old",
       id: "teen",
+      direct: "/courses/blockcode",
     },
     {
       image: img5,
       courseName: "Mechanical Innovation Class",
       age: "8+ years old",
       id: "kids",
+      direct: "/courses/mechanical",
     },
     {
       image: img3,
       courseName: "Fundamental Coding Class",
       age: "9+ years old",
       id: "kids",
+      direct: "/courses/fundamental",
     },
     {
       image: img4,
       courseName: "Creative Coding Class",
       age: "9+ years old",
       id: "teen",
+      direct: "/courses/creative",
     },
     {
       image: img6,
@@ -70,7 +75,8 @@ const Layer3 = () => {
   ];
 
   const coursesBox = courses.map((course, index) => (
-    <div
+    <Link
+      to={course.direct}
       key={index}
       className="mb-8  flex  w-[80%] flex-col  rounded-br-[40px] rounded-tl-[40px] bg-white  transition-transform duration-500  hover:scale-105 sm:w-[70%]  md:w-[30%]   "
     >
@@ -81,7 +87,7 @@ const Layer3 = () => {
         </p>
         <p className="text-xl font-bold  xl:text-2xl">{course.age}</p>
       </div>
-    </div>
+    </Link>
   ));
 
   return (
@@ -97,11 +103,11 @@ const Layer3 = () => {
         className="bold mb-20 w-[300px] cursor-pointer rounded-[50px] bg-[#F7C94B] p-2 text-center font-comfortaa text-white drop-shadow-lg transition-transform duration-500 hover:bg-[#EA5880]  active:opacity-80 md:p-4  md:hover:scale-105"
       >
         More on our Courses
-      </Link> 
+      </Link>
 
       <section
         id="filterbutton"
-        className="flex w-[90%] flex-col items-center rounded-3xl  border-neutral-800 bg-[#f3e49a] p-8 text-black drop-shadow-2xl"
+        className="border-neutral-800 flex w-[90%] flex-col items-center  rounded-3xl bg-[#f3e49a] p-8 text-black drop-shadow-2xl"
       >
         <p className="mb-8 text-center text-2xl  lg:text-3xl">
           Let us help you choose what is best for you!

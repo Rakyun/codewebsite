@@ -23,13 +23,11 @@ const CustomCourse = () => {
   const customCourses = {
     custom1: [
       <Microbit key={0} />,
-      "minecraft",
       <Roblox key={2} />,
       <ThreeDeeModel key={3} />,
     ],
     custom2: [
       <Microbit key={0} />,
-      "minecraft",
       <Roblox key={2} />,
       <ThreeDeeModel key={3} />,
       <Python key={4} />,

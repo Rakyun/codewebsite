@@ -1,4 +1,4 @@
-import dede from "../../assets/messageUs.png";
+import dede from "../../assets/others/messageUs.png";
 const Message = () => {
   return (
     <>

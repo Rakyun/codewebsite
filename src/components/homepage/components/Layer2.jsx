@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
-import prepare from "../../../assets/prepare.png";
-import why from "../../../assets/why.png";
-import catpeek from "../../../assets/catpeek.png";
-import star from "../../../assets/star.png";
+import prepare from "../../../assets/others/prepare.png";
+import why from "../../../assets/others/why.png";
+import catpeek from "../../../assets/others/catpeek.png";
+import star from "../../../assets/others/star.png";
 import { Link } from "react-router-dom";
 const Layer2 = () => {
   return (

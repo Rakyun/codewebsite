@@ -1,4 +1,4 @@
-import ukflag from "../../assets/ukflag.png";
+import ukflag from "../../assets/others/ukflag.png";
 import { Link } from "react-router-dom";
 const Nav = (props) => {
   return (
