@@ -22,7 +22,7 @@ const CourseList = (props) => {
       <img
         src={menu}
         alt="menu"
-        className="mb-32 w-[80%] rounded-3xl transition-all duration-500 hover:w-[95%] md:w-[70%] md:hover:w-[85%] md:active:w-[70%] "
+        className="mb-32 w-[80%] rounded-3xl transition-all duration-500 hover:w-[95%] md:w-[70%] md:hover:w-[85%] md:active:w-[85%] "
       />
 
       <section className="mb-20 flex h-full flex-col items-center">

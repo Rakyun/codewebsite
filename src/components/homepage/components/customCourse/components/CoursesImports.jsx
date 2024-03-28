@@ -17,13 +17,20 @@ import roadToUni from "../../../../../assets/courseDetails/roadToUni.png";
 import roblox from "../../../../../assets/courseDetails/roblox.png";
 import advPython from "../../../../../assets/courseDetails/advPython.png";
 
+import { Link } from "react-router-dom";
+
 export const Scratch = () => {
   return (
     <div className="mb-20 flex w-full flex-col items-center">
       <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
         Scratch : The Journey of Superpower
       </p>
-      <img src={scratch} alt="scratch" className="my-2  w-[85%] rounded-xl" />
+      <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
+        <img src={scratch} alt="pic" className=" rounded-xl" />
+        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+          More Details
+        </Link>
+      </div>
     </div>
   );
 };
@@ -34,11 +41,12 @@ export const Octo = () => {
       <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
         Octo Studio : Make Seafood using Octopus
       </p>
-      <img
-        src={octoStudio}
-        alt="scratch"
-        className="my-2  w-[85%] rounded-xl"
-      />
+      <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
+        <img src={octoStudio} alt="pic" className=" rounded-xl" />
+        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+          More Details
+        </Link>
+      </div>
     </div>
   );
 };
@@ -49,11 +57,12 @@ export const ThreeDeeModel = () => {
       <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
         3D Modelling : Design and Create
       </p>
-      <img
-        src={threeDeeModel}
-        alt="scratch"
-        className="my-2  w-[85%] rounded-xl"
-      />
+      <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
+        <img src={threeDeeModel} alt="pic" className=" rounded-xl" />
+        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+          More Details
+        </Link>
+      </div>
     </div>
   );
 };
@@ -64,7 +73,12 @@ export const Arduino = () => {
       <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
         Arduino : Basic Board and Circuit
       </p>
-      <img src={arduino} alt="scratch" className="my-2  w-[85%] rounded-xl" />
+      <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
+        <img src={arduino} alt="pic" className=" rounded-xl" />
+        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+          More Details
+        </Link>
+      </div>
     </div>
   );
 };
@@ -75,11 +89,12 @@ export const DesignThinking = () => {
       <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
         Design Thinking : BunBun's Journey
       </p>
-      <img
-        src={designThinking}
-        alt="scratch"
-        className="my-2  w-[85%] rounded-xl"
-      />
+      <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
+        <img src={designThinking} alt="pic" className=" rounded-xl" />
+        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+          More Details
+        </Link>
+      </div>
     </div>
   );
 };
@@ -90,7 +105,12 @@ export const FullStack = () => {
       <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
         Full-stack Web Development with Python
       </p>
-      <img src={fullstack} alt="scratch" className="my-2  w-[85%] rounded-xl" />
+      <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
+        <img src={fullstack} alt="pic" className=" rounded-xl" />
+        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+          More Details
+        </Link>
+      </div>
     </div>
   );
 };
@@ -101,7 +121,12 @@ export const Java = () => {
       <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
         Basic Coding with Java
       </p>
-      <img src={java} alt="scratch" className="my-2  w-[85%] rounded-xl" />
+      <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
+        <img src={java} alt="pic" className=" rounded-xl" />
+        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+          More Details
+        </Link>
+      </div>
     </div>
   );
 };
@@ -112,7 +137,12 @@ export const Microbit = () => {
       <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
         Microbit : Get creative and connected
       </p>
-      <img src={microbit} alt="scratch" className="my-2  w-[85%] rounded-xl" />
+      <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
+        <img src={microbit} alt="pic" className=" rounded-xl" />
+        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+          More Details
+        </Link>
+      </div>
     </div>
   );
 };
@@ -123,7 +153,12 @@ export const Mobile = () => {
       <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
         Mobile App Development
       </p>
-      <img src={mobile} alt="scratch" className="my-2  w-[85%] rounded-xl" />
+      <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
+        <img src={mobile} alt="pic" className=" rounded-xl" />
+        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+          More Details
+        </Link>
+      </div>
     </div>
   );
 };
@@ -134,7 +169,12 @@ export const Python = () => {
       <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
         Basic Coding with Python
       </p>
-      <img src={python} alt="scratch" className="my-2  w-[85%] rounded-xl" />
+      <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
+        <img src={python} alt="pic" className=" rounded-xl" />
+        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+          More Details
+        </Link>
+      </div>
     </div>
   );
 };
@@ -145,7 +185,12 @@ export const RoadToUni = () => {
       <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
         Road to University
       </p>
-      <img src={roadToUni} alt="scratch" className="my-2  w-[85%] rounded-xl" />
+      <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
+        <img src={roadToUni} alt="pic" className=" rounded-xl" />
+        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+          More Details
+        </Link>
+      </div>
     </div>
   );
 };
@@ -156,7 +201,12 @@ export const Roblox = () => {
       <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
         Roblox : Game Development
       </p>
-      <img src={roblox} alt="scratch" className="my-2  w-[85%] rounded-xl" />
+      <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
+        <img src={roblox} alt="pic" className=" rounded-xl" />
+        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+          More Details
+        </Link>
+      </div>
     </div>
   );
 };
@@ -167,7 +217,12 @@ export const AdvPython = () => {
       <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
         Advanced Coding with Python
       </p>
-      <img src={advPython} alt="scratch" className="my-2  w-[85%] rounded-xl" />
+      <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
+        <img src={advPython} alt="pic" className=" rounded-xl" />
+        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+          More Details
+        </Link>
+      </div>
     </div>
   );
 };
