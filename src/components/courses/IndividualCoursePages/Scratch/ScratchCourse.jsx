@@ -115,7 +115,7 @@ const ScratchCourse = () => {
           </p>
           <ul className="ml-4 list-disc text-base md:text-lg lg:text-xl">
             <li className="font-bold">Introduction To Scratch:</li>
-            <ul className="list-square mb-5 ml-7">
+            <ul className="mb-5 ml-7 list-square">
               <li>
                 Start by learning the basics of Scratch, including the
                 interface, sprites, and blocks.
@@ -127,7 +127,7 @@ const ScratchCourse = () => {
             </ul>
 
             <li className="font-bold">Foundational Concepts:</li>
-            <ul className="list-square mb-5 ml-7">
+            <ul className="mb-5 ml-7 list-square">
               <li>
                 Learn fundamental programming concepts such as sequencing,
                 loops, conditionals, and variables.
@@ -139,7 +139,7 @@ const ScratchCourse = () => {
             </ul>
 
             <li className="font-bold">Guided Projects:</li>
-            <ul className="list-square mb-5 ml-7">
+            <ul className="mb-5 ml-7 list-square">
               <li>
                 Follow guided projects provided by the course instructor or
                 curriculum.
@@ -151,7 +151,7 @@ const ScratchCourse = () => {
             </ul>
 
             <li className="font-bold">Hands-On Practice:</li>
-            <ul className="list-square mb-5 ml-7">
+            <ul className="mb-5 ml-7 list-square">
               <li>
                 Spend time practicing with Scratch on your own, applying what
                 you've learned in guided projects.
@@ -163,7 +163,7 @@ const ScratchCourse = () => {
             </ul>
 
             <li className="font-bold">Feedback and Review with teacher:</li>
-            <ul className="list-square mb-5 ml-7">
+            <ul className="mb-5 ml-7 list-square">
               <li>
                 Receive feedback from the instructor and peers on your projects.
               </li>
@@ -174,7 +174,7 @@ const ScratchCourse = () => {
             </ul>
 
             <li className="font-bold">Challenges and Extensions:</li>
-            <ul className="list-square mb-5 ml-7">
+            <ul className="mb-5 ml-7 list-square">
               <li>
                 Take on challenges and extensions to deepen your understanding
                 and skills.
@@ -186,7 +186,7 @@ const ScratchCourse = () => {
             </ul>
 
             <li className="font-bold">Project Showcase:</li>
-            <ul className="list-square mb-5 ml-7">
+            <ul className="mb-5 ml-7 list-square">
               <li>
                 Showcase your projects to the class or in a public exhibition.
               </li>
@@ -206,11 +206,11 @@ const ScratchCourse = () => {
         </div>
       </section>
 
-      <section className="flex w-full bg-white text-black">
-        <div className="flex h-[800px] w-[50%] items-center justify-center border-2 border-black text-[10vw]">
+      <section className="flex w-full flex-col bg-white text-black md:flex-row">
+        <div className="flex h-[800px] w-full items-center justify-center border-2 border-black text-[10vw] md:w-[50%]">
           Video
         </div>
-        <div className="flex h-[800px] w-[50%] items-center justify-center border-2 border-black text-[10vw]">
+        <div className="flex h-[800px] w-full items-center justify-center border-2 border-black text-[10vw] md:w-[50%]">
           Photos
         </div>
       </section>
