@@ -15,6 +15,13 @@ module.exports = withMT({
       },
       // You can extend other configurations here as needed
     },
+    listStyleType: {
+      none: "none",
+      disc: "disc",
+      decimal: "decimal",
+      square: "square",
+      roman: "upper-roman",
+    },
   },
   plugins: [],
 });

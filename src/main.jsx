@@ -16,6 +16,7 @@ import Mechanical from "./components/courses/pages/Mechanical.jsx";
 import NonCode from "./components/courses/pages/NonCode.jsx";
 import University from "./components/courses/pages/University.jsx";
 import Custom from "./components/homepage/components/customCourse/Custom.jsx";
+import ScratchPage from "./components/courses/IndividualCoursePages/Scratch/ScratchPage.jsx";
 
 const router = createHashRouter([
   {
@@ -69,6 +70,10 @@ const router = createHashRouter([
   {
     path: "/customCourse",
     element: <Custom />,
+  },
+  {
+    path: "/courses/blockcode/scratch",
+    element: <ScratchPage />,
   },
 ]);
 

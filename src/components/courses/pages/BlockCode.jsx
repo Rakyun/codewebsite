@@ -17,7 +17,11 @@ import scratch from "../../../assets/courseDetails/scratch.png";
 const BlockCode = () => {
   const coursesData = [
     { pic: octo, title: "Octo Studio : Make Seafood using Octopus" },
-    { pic: scratch, title: "Scratch : The Journey of Superpower" },
+    {
+      pic: scratch,
+      title: "Scratch : The Journey of Superpower",
+      portal: "/courses/blockcode/scratch",
+    },
   ];
   const slideShowData = [img1, img2, img3, img4];
 
