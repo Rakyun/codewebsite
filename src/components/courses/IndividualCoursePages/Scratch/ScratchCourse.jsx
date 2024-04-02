@@ -5,6 +5,7 @@ import scratchLogo from "../../../../assets/CourseLogos/scratchLogo.png";
 import kid from "../../../../assets/CourseLogos/kid.jpeg";
 import scratchStat from "../../../../assets/CourseLogos/scratchStat.png";
 import episodes from "../../../../assets/CourseLogos/episodes.png";
+import blockcoder from "../../../../assets/CourseLogos/blockcoder.png";
 import age from "../../../../assets/searchfilter/age.png";
 import graph from "../../../../assets/searchfilter/graph.png";
 import laptop from "../../../../assets/searchfilter/laptop.png";
@@ -14,33 +15,16 @@ const ScratchCourse = () => {
   return (
     <div className="flex h-full w-full flex-col items-center bg-[#65b57d] pt-[150px] font-comfortaa text-white">
       <section className="flex w-full flex-col md:flex-row">
-        <div className="flex w-full flex-col bg-[#6FBC87] p-12 md:w-[70%]">
-          <p className="mb-10 text-center text-3xl">
+        <div className="flex w-full flex-col items-center bg-[#6FBC87] py-12 md:w-[70%]">
+          <p className="mb-10 w-[90%] text-center text-3xl">
             "A perfect starting point for young minds to explore the exciting
             world of coding"
           </p>
 
           {/* Scratch + Kid Pic*/}
 
-          <section className="flex">
-            <img src={cat} alt="cat" className="mr-10 w-[30%]" />
-            <div className="flex w-[80%] flex-col">
-              <div className="flex w-full ">
-                <img
-                  src={scratchLogo}
-                  alt=""
-                  className="mr-5  w-[65%]  object-contain    md:mr-10 md:w-[55%]"
-                />
-                <img
-                  src={block}
-                  alt=""
-                  className="w-[20%] rotate-[30deg] object-contain"
-                />
-              </div>
-              <p className="text-lg font-bold text-black md:text-xl  lg:text-2xl ">
-                Scratch is a block-based coding platform from MIT
-              </p>
-            </div>
+          <section className="w-full">
+            <img src={blockcoder} alt="blockcoder" className=" w-full" />
           </section>
         </div>
         <img
@@ -108,7 +92,7 @@ const ScratchCourse = () => {
         </div>
       </section>
 
-      <section className="flex w-full items-center justify-center bg-green-300 p-10">
+      <section className="flex w-full items-center justify-center bg-green-300 p-10 text-black">
         <div>
           <p className="mb-5 text-2xl font-bold lg:text-3xl">
             Learning Process
