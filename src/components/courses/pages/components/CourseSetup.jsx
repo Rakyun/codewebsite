@@ -1,5 +1,4 @@
 import { Carousel } from "@material-tailwind/react";
-import "react-slideshow-image/dist/styles.css";
 import { Link } from "react-router-dom";
 const CourseSetup = (props) => {
   const courses = props.coursesData.map((course, index) => (

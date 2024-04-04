@@ -1,19 +1,27 @@
 /* eslint-disable react/no-unescaped-entities */
-import block from "../../../../assets/CourseLogos/block.png";
-import cat from "../../../../assets/CourseLogos/cat.png";
-import scratchLogo from "../../../../assets/CourseLogos/scratchLogo.png";
-import kid from "../../../../assets/CourseLogos/kid.jpeg";
-import scratchStat from "../../../../assets/CourseLogos/scratchStat.png";
-import episodes from "../../../../assets/CourseLogos/episodes.png";
-import blockcoder from "../../../../assets/CourseLogos/blockcoder.png";
+import kid from "../../../../assets/CourseLogos/Scratch/kid.jpeg";
+import scratchStat from "../../../../assets/CourseLogos/Scratch/scratchStat.png";
+import check from "../../../../assets/CourseLogos/Scratch/check.png";
+import episodes from "../../../../assets/CourseLogos/Scratch/episodes.png";
+import blockcoder from "../../../../assets/CourseLogos/Scratch/blockcoder.png";
 import age from "../../../../assets/searchfilter/age.png";
 import graph from "../../../../assets/searchfilter/graph.png";
 import laptop from "../../../../assets/searchfilter/laptop.png";
 import certificate from "../../../../assets/searchfilter/certificate.png";
 import blockCode from "../../../../assets/searchfilter/blockCode.png";
+import img1 from "../../../../assets/CourseLogos/Scratch/images/img1.jpg";
+import img2 from "../../../../assets/CourseLogos/Scratch/images/img2.jpg";
+import img3 from "../../../../assets/CourseLogos/Scratch/images/img3.jpg";
+
+import { Carousel } from "@material-tailwind/react";
 const ScratchCourse = () => {
+  const listStyle = {
+    listStyleImage: `url(${check})`,
+  };
+  const slideShowData = [img1, img2, img3];
+
   return (
-    <div className="flex h-full w-full flex-col items-center bg-[#65b57d] pt-[150px] font-comfortaa text-white">
+    <div className="flex h-full w-full flex-col items-center bg-[#65b57d] pt-[80px] font-comfortaa text-white md:pt-[110px]">
       <section className="flex w-full flex-col md:flex-row">
         <div className="flex w-full flex-col items-center bg-[#6FBC87]   md:w-[70%]">
           <img src={blockcoder} alt="blockcoder" className=" w-full" />
@@ -43,29 +51,37 @@ const ScratchCourse = () => {
             <p className="mb-2 text-sm font-bold sm:text-base lg:text-lg xl:text-xl">
               Skills Developed
             </p>
-            <ul className="list-disc">
-              <li className="mb-2 ml-10 text-left text-sm sm:text-base lg:text-lg xl:text-xl">
-                Computation Skills & Logical Thinking
+            <ul style={listStyle} className="ml-10 ">
+              <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
+                <p className="ml-2">Computation Skills & Logical Thinking</p>
               </li>
-              <li className="mb-2 ml-10 text-left text-sm sm:text-base lg:text-lg xl:text-xl">
-                Introduction to programming concepts and logic
+              <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
+                <p className="ml-2">
+                  Introduction to programming concepts and logic
+                </p>
               </li>
-              <li className="mb-2 ml-10 text-left text-sm sm:text-base lg:text-lg xl:text-xl">
-                Creativity and imagination through project-based learning
+              <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
+                <p className="ml-2">
+                  Creativity and imagination through project-based learning
+                </p>
               </li>
-              <li className="mb-2 ml-10 text-left text-sm sm:text-base lg:text-lg xl:text-xl">
-                Basic understanding of algorithms and sequencing
+              <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
+                <p className="ml-2">
+                  Basic understanding of algorithms and sequencing
+                </p>
               </li>
-              <li className="mb-2 ml-10 text-left text-sm sm:text-base lg:text-lg xl:text-xl">
-                Vizualizing and creating interactive stories, animations, and
-                games
+              <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
+                <p className="ml-2">
+                  Vizualizing and creating interactive stories, animations, and
+                  games
+                </p>
               </li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section className="flex items-center justify-center p-10">
+      <section className="flex items-center justify-center bg-[#65b57d] p-10">
         <div className=" flex w-full flex-wrap text-sm sm:text-base  lg:text-lg xl:text-3xl ">
           <div className="mb-3 flex w-[50%] items-center font-bold ">
             <img src={graph} alt="laptop" className="mr-3 w-[15%]" />
@@ -188,12 +204,34 @@ const ScratchCourse = () => {
         </div>
       </section>
 
-      <section className="flex w-full flex-col bg-white text-black md:flex-row">
-        <div className="flex h-[800px] w-full items-center justify-center border-2 border-black text-[10vw] md:w-[50%]">
-          Video
+      <section className="flex w-full flex-col bg-white text-black lg:flex-row">
+        <div className="flex h-[800px] w-full  lg:w-[50%]">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/x8Rjqw6KFPk?"
+            title="CO-DE : Block-based code with Scratch"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
-        <div className="flex h-[800px] w-full items-center justify-center border-2 border-black text-[10vw] md:w-[50%]">
-          Photos
+        <div className=" flex h-[800px] w-full items-center justify-center border-2 border-black bg-[#6FBC87] text-[10vw] lg:w-[50%]">
+          <Carousel
+            autoplay={true}
+            autoplayDelay={3000}
+            loop={true}
+            className="drop-shadow-2xl"
+          >
+            {slideShowData.map((item, index) => (
+              <img
+                className="h-full w-full object-cover"
+                key={index}
+                src={item}
+                alt="slideshow"
+              />
+            ))}
+          </Carousel>
         </div>
       </section>
     </div>
