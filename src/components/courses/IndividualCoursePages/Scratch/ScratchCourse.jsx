@@ -15,17 +15,15 @@ const ScratchCourse = () => {
   return (
     <div className="flex h-full w-full flex-col items-center bg-[#65b57d] pt-[150px] font-comfortaa text-white">
       <section className="flex w-full flex-col md:flex-row">
-        <div className="flex w-full flex-col items-center bg-[#6FBC87] py-12 md:w-[70%]">
-          <p className="mb-10 w-[90%] text-center text-3xl">
+        <div className="flex w-full flex-col items-center bg-[#6FBC87]   md:w-[70%]">
+          <img src={blockcoder} alt="blockcoder" className=" w-full" />
+
+          <p className="my-12 w-[90%] text-center text-xl  lg:text-2xl xl:text-3xl">
             "A perfect starting point for young minds to explore the exciting
             world of coding"
           </p>
 
           {/* Scratch + Kid Pic*/}
-
-          <section className="w-full">
-            <img src={blockcoder} alt="blockcoder" className=" w-full" />
-          </section>
         </div>
         <img
           src={kid}
