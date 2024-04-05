@@ -205,7 +205,7 @@ const ScratchCourse = () => {
       </section>
 
       <section className="flex w-full flex-col bg-white text-black lg:flex-row">
-        <div className="flex h-[800px] w-full  lg:w-[50%]">
+        <div className="flex h-[500px] w-full  lg:w-[50%]">
           <iframe
             width="100%"
             height="100%"
@@ -216,7 +216,7 @@ const ScratchCourse = () => {
             allowfullscreen
           ></iframe>
         </div>
-        <div className=" flex h-[800px] w-full items-center justify-center border-2 border-black bg-[#6FBC87] text-[10vw] lg:w-[50%]">
+        <div className=" flex h-[500px] w-full items-center justify-center border-2 border-black bg-[#6FBC87] text-[10vw] lg:w-[50%]">
           <Carousel
             autoplay={true}
             autoplayDelay={3000}
