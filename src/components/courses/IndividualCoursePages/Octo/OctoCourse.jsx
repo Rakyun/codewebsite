@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import kid from "../../../../assets/CourseLogos/Scratch/kid.jpeg";
-import scratchStat from "../../../../assets/CourseLogos/Scratch/scratchStat.png";
-import check from "../../../../assets/CourseLogos/Scratch/check.png";
-import episodes from "../../../../assets/CourseLogos/Scratch/episodes.png";
-import blockcoder from "../../../../assets/CourseLogos/Scratch/blockcoder.png";
+import octoStat from "../../../../assets/CourseLogos/Octo/octoStat.png";
+import check from "../../../../assets/CourseLogos/Octo/check.png";
+import episodes from "../../../../assets/CourseLogos/Octo/episodes.png";
+import dinocode from "../../../../assets/CourseLogos/Octo/dinocode.png";
 import age from "../../../../assets/searchfilter/age.png";
 import graph from "../../../../assets/searchfilter/graph.png";
 import laptop from "../../../../assets/searchfilter/laptop.png";
@@ -14,7 +14,7 @@ import img2 from "../../../../assets/CourseLogos/Scratch/images/img2.jpg";
 import img3 from "../../../../assets/CourseLogos/Scratch/images/img3.jpg";
 
 import { Carousel } from "@material-tailwind/react";
-const ScratchCourse = () => {
+const OctoCourse = () => {
   const listStyle = {
     listStyleImage: `url(${check})`,
   };
@@ -24,11 +24,10 @@ const ScratchCourse = () => {
     <div className="flex h-full w-full flex-col items-center bg-[#65b57d] pt-[80px] font-comfortaa text-white md:pt-[110px]">
       <section className="flex w-full flex-col md:flex-row">
         <div className="flex w-full flex-col items-center bg-[#6FBC87]   md:w-[70%]">
-          <img src={blockcoder} alt="blockcoder" className=" w-full" />
+          <img src={dinocode} alt="blockcoder" className=" w-full" />
 
           <p className="my-12 w-[90%] text-center text-xl  lg:text-2xl xl:text-3xl">
-            "A perfect starting point for young minds to explore the exciting
-            world of coding"
+            "Ignite your passion for coding in a fun and interactive way."
           </p>
 
           {/* Scratch + Kid Pic*/}
@@ -42,7 +41,7 @@ const ScratchCourse = () => {
 
       <section className="flex w-full flex-col bg-[#ACEDBF] md:flex-row">
         <img
-          src={scratchStat}
+          src={octoStat}
           alt="Course"
           className="w-full object-contain md:w-[55%]"
         />
@@ -238,4 +237,4 @@ const ScratchCourse = () => {
   );
 };
 
-export default ScratchCourse;
+export default OctoCourse;

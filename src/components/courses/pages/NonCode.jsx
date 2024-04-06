@@ -19,6 +19,7 @@ const NonCode = () => {
     {
       pic: designThinking,
       title: "Design Thinking : BunBun's Journey",
+      portal: "/courses/noncode/designthinking",
     },
   ];
   const slideShowData = [img1, img2, img3, img4, img5];

@@ -17,6 +17,8 @@ import NonCode from "./components/courses/pages/NonCode.jsx";
 import University from "./components/courses/pages/University.jsx";
 import Custom from "./components/homepage/components/customCourse/Custom.jsx";
 import ScratchPage from "./components/courses/IndividualCoursePages/Scratch/ScratchPage.jsx";
+import OctoPage from "./components/courses/IndividualCoursePages/Octo/OctoPage.jsx";
+import DesignPage from "./components/courses/IndividualCoursePages/Design/DesignPage.jsx";
 
 const router = createHashRouter([
   {
@@ -74,6 +76,14 @@ const router = createHashRouter([
   {
     path: "/courses/blockcode/scratch",
     element: <ScratchPage />,
+  },
+  {
+    path: "/courses/blockcode/octo",
+    element: <OctoPage />,
+  },
+  {
+    path: "/courses/noncode/designthinking",
+    element: <DesignPage />,
   },
 ]);
 

@@ -23,7 +23,7 @@ export const Scratch = () => {
   return (
     <div className="mb-20 flex w-full flex-col items-center">
       <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
-        Scratch : The Journey of Superpower
+        Block Coder : The Journey of Superpower
       </p>
       <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
         <img src={scratch} alt="pic" className=" rounded-xl" />
@@ -39,7 +39,7 @@ export const Octo = () => {
   return (
     <div className="mb-20 flex w-full flex-col items-center">
       <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
-        Octo Studio : Make Seafood using Octopus
+        Dino Code : Adventures of Gong
       </p>
       <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
         <img src={octoStudio} alt="pic" className=" rounded-xl" />

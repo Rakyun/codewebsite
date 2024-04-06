@@ -16,10 +16,14 @@ import scratch from "../../../assets/courseDetails/scratch.png";
 
 const BlockCode = () => {
   const coursesData = [
-    { pic: octo, title: "Octo Studio : Make Seafood using Octopus" },
+    {
+      pic: octo,
+      title: "Dino Code : Adventures of Gong",
+      portal: "/courses/blockcode/octo",
+    },
     {
       pic: scratch,
-      title: "Scratch : The Journey of Superpower",
+      title: "Block Coder : The Journey of Superpower",
       portal: "/courses/blockcode/scratch",
     },
   ];
