@@ -71,6 +71,7 @@ const Layer3 = () => {
       courseName: "Road to University",
       age: "15+ years old",
       id: "teen",
+      direct: "/courses/university",
     },
   ];
 

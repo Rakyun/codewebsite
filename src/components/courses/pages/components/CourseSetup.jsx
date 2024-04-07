@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const CourseSetup = (props) => {
   const courses = props.coursesData.map((course, index) => (
     <div key={index} className="mb-20 flex w-full flex-col items-center">
-      <p className="mb-6  w-[80%] text-center text-2xl  md:text-3xl xl:text-4xl">
+      <p className="mb-6 w-[80%]  text-center text-2xl text-[#FDFF86]  md:text-3xl xl:text-4xl">
         {course.title}
       </p>
       <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
@@ -24,7 +24,7 @@ const CourseSetup = (props) => {
         autoplay={true}
         autoplayDelay={3000}
         loop={true}
-        className="w-[80%] rounded-2xl border-8 border-black md:w-[70%]  xl:w-[60%] "
+        className="mb-28 w-[80%] rounded-2xl border-8 border-black md:w-[70%]  xl:w-[60%] "
       >
         {props.slideshow.map((item, index) => (
           <img
@@ -36,24 +36,21 @@ const CourseSetup = (props) => {
         ))}
       </Carousel>
 
-      <p className="mt-8 w-[80%] text-center text-base md:text-lg lg:text-xl">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
-        explicabo suscipit magni iusto eligendi quasi. Debitis eligendi
-        repellendus laborum tempora pariatur adipisci consectetur, est odio iure
-        fugiat dolore deserunt incidunt fuga optio sit harum nobis ratione quia
-        corrupti ex illum necessitatibus sed officiis! Sed sequi magnam
-        perferendis enim officiis est!
+      <p className=" w-[80%] text-center text-2xl text-[#FDFF86] md:text-3xl xl:text-4xl">
+        {props.texts.p1}
       </p>
 
-      <p className="mt-28 w-[80%] text-center text-2xl md:text-3xl xl:text-4xl">
-        Lorem ipsum dolor sit amet
+      <p className="mb-28 mt-8 w-[80%] text-center text-base md:text-lg lg:text-xl">
+        {props.texts.p2}
       </p>
-      <p className="mb-20 mt-8 w-[80%] text-center text-base md:text-lg lg:text-xl">
-        repellendus laborum tempora pariatur adipisci consectetur, est odio iure
-        fugiat dolore deserunt incidunt fuga optio sit harum nobis ratione quia
-        corrupti ex illum necessitatibus sed officiis! Sed sequi magnam
-        perferendis enim officiis est!
+
+      <p className="w-[80%] text-center text-2xl text-[#FDFF86] md:text-3xl xl:text-4xl">
+        {props.texts.p3}
       </p>
+      <p className="mb-28 mt-8 w-[80%] text-center text-base md:text-lg lg:text-xl">
+        {props.texts.p4}
+      </p>
+
       {courses}
     </div>
   );

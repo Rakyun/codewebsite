@@ -5,6 +5,8 @@ import palo from "../../../assets/universities/palo.png";
 import siit from "../../../assets/universities/siit.png";
 import web from "../../../assets/universities/webster.png";
 import foxtrot from "../../../assets/playground/foxtrot.jpg";
+import teacher1 from "../../../assets/teachers/teacher1.jpeg";
+import teacher2 from "../../../assets/teachers/teacher2.jpeg";
 const Detail = () => {
   return (
     <main className="flex h-full w-full flex-col items-center bg-[#042451] pt-[150px] font-comfortaa text-white ">
@@ -45,7 +47,7 @@ const Detail = () => {
         </p>
       </section>
 
-      <img src={foxtrot} alt="foxtrot" className="w-[80%] rounded-2xl" />
+      <img src={teacher1} alt="foxtrot" className="w-[80%] rounded-2xl" />
 
       <section className="my-16 flex w-[80%] flex-col items-center rounded-2xl  bg-[#29446A] px-5 py-10">
         <p className="mb-8  text-center text-xl md:text-3xl">
@@ -59,7 +61,7 @@ const Detail = () => {
         </p>
       </section>
 
-      <img src={foxtrot} alt="foxtrot" className="w-[80%] rounded-2xl" />
+      <img src={teacher2} alt="foxtrot" className="w-[80%] rounded-2xl" />
 
       <section className="my-16 flex w-[80%] flex-col items-center rounded-2xl  bg-[#29446A] px-5 py-10">
         <p className="mb-8  text-center text-xl md:text-3xl">

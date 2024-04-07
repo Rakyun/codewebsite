@@ -15,6 +15,13 @@ import img5 from "../../../assets/slideImages/nonCode/img5.jpg";
 import designThinking from "../../../assets/courseDetails/designThinking.png";
 
 const NonCode = () => {
+  const texts = {
+    p1: "Where enjoyment meets education",
+    p2: "Our Design Thinking course is designed to nurture your child's growth in five crucial areas: gross motor skills, fine motor skills, language development, cognitive abilities, and social-emotional and behavioral well-being. With an emphasis on 21st-century skills such as coding and fostering imagination, our curriculum promises an enjoyable and enriching learning journey perfectly tailored for your young coder.",
+    p3: "The logical sequencing in young minds",
+    p4: "Storytelling and coding together help kids be more creative and think logically. This mix boosts their imagination, language skills, and problem-solving abilities. By doing storytelling with coding, parents give their children important skills for success in today's digital world, setting them up to do well in the future.",
+  };
+
   const coursesData = [
     {
       pic: designThinking,
@@ -35,7 +42,11 @@ const NonCode = () => {
     <>
       <Header toggle={toggleNav} />
       <Nav isVisible={isNavOpen} />
-      <CourseSetup slideshow={slideShowData} coursesData={coursesData} />
+      <CourseSetup
+        slideshow={slideShowData}
+        coursesData={coursesData}
+        texts={texts}
+      />
       <Email />
       <Footer />
       <Message />

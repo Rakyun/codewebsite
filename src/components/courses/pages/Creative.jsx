@@ -16,6 +16,13 @@ import fullstack from "../../../assets/courseDetails/fullstack.png";
 import mobile from "../../../assets/courseDetails/mobile.png";
 
 const Creative = () => {
+  const texts = {
+    p1: "Make your imagination come alive with code",
+    p2: "Imagination is where it all begins, and we'd hate to squash it. Our creative coding program is designed to make coding more tangible.From building websites to creating awesome games, your child's imagination will come to life through coding.If you believe in spelling magic, let's make your magic happen through code.",
+    p3: "Creative ideas combined with a creative learning experience",
+    p4: "Our coding class embraces the concept of learning through play, providing an environment where children can explore their interests while mastering coding skills.Similar to a carefully designed house, our curriculum is structured to encourage learning based on their curiosity and passions, making the educational journey both enjoyable and enriching.",
+  };
+
   const coursesData = [
     { pic: roblox, title: "Roblox : Game Development" },
     { pic: fullstack, title: "Full-stack Web Development with Python" },
@@ -34,7 +41,11 @@ const Creative = () => {
     <>
       <Header toggle={toggleNav} />
       <Nav isVisible={isNavOpen} />
-      <CourseSetup slideshow={slideShowData} coursesData={coursesData} />
+      <CourseSetup
+        slideshow={slideShowData}
+        coursesData={coursesData}
+        texts={texts}
+      />
       <Email />
       <Footer />
       <Message />

@@ -17,6 +17,13 @@ import advPython from "../../../assets/courseDetails/advPython.png";
 import java from "../../../assets/courseDetails/java.png";
 
 const Fundamental = () => {
+  const texts = {
+    p1: "The beginning of strong academic coding background",
+    p2: "Our fundamental coding class focuses on teaching the concept of coding theory, making it ideal for learners who have a specific purpose in mind for their future programming endeavors, or for those who need a strong foundational understanding of coding theory for future studies in coding programs.",
+    p3: "Strong basic is everything",
+    p4: "A strong foundation in coding is essential for programmers, and we understand this deeply. That's why our course focuses primarily on strengthening your fundamental skills. With diverse exercises and expert instructors with strong academic backgrounds, we aim to build your confidence in navigating the coding world.",
+  };
+
   const coursesData = [
     {
       pic: python,
@@ -44,7 +51,11 @@ const Fundamental = () => {
     <>
       <Header toggle={toggleNav} />
       <Nav isVisible={isNavOpen} />
-      <CourseSetup slideshow={slideShowData} coursesData={coursesData} />
+      <CourseSetup
+        slideshow={slideShowData}
+        coursesData={coursesData}
+        texts={texts}
+      />
       <Email />
       <Footer />
       <Message />

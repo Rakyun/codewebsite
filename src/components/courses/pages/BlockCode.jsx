@@ -15,6 +15,12 @@ import octo from "../../../assets/courseDetails/octo.png";
 import scratch from "../../../assets/courseDetails/scratch.png";
 
 const BlockCode = () => {
+  const texts = {
+    p1: "The start of building a programming mindset.",
+    p2: "Our block-based coding program is all about making coding fun and easy for kids. We teach them the Coding Theory Concept, which is important for building their future programming skills. With a user-friendly interface and visually stimulating blocks, we create a playful and enjoyable learning experience for children.",
+    p3: "The key elements are logical and systematical thinking.",
+    p4: "Logical thinking and systematic thinking are the core concepts of this course. Through carefully selected tasks aimed at nurturing young minds, children are encouraged to understand the purpose of each block of code in their tasks. This approach helps them cultivate expertise in reasoning and problem-solving skills for their future.",
+  };
   const coursesData = [
     {
       pic: octo,
@@ -40,7 +46,11 @@ const BlockCode = () => {
     <>
       <Header toggle={toggleNav} />
       <Nav isVisible={isNavOpen} />
-      <CourseSetup slideshow={slideShowData} coursesData={coursesData} />
+      <CourseSetup
+        slideshow={slideShowData}
+        coursesData={coursesData}
+        texts={texts}
+      />
       <Email />
       <Footer />
       <Message />

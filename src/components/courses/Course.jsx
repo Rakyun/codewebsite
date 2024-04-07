@@ -49,6 +49,7 @@ const Course = () => {
       image: graduate,
       id: 67,
       filterTest: "kids",
+      direct: "/courses/university",
     },
   ];
 
