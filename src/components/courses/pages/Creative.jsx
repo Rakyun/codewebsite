@@ -24,7 +24,11 @@ const Creative = () => {
   };
 
   const coursesData = [
-    { pic: roblox, title: "Roblox : Game Development" },
+    {
+      pic: roblox,
+      title: "Roblox : Game Development",
+      portal: "/courses/creative/roblox",
+    },
     { pic: fullstack, title: "Full-stack Web Development with Python" },
     { pic: mobile, title: "Mobile App Development" },
   ];

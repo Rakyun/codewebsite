@@ -19,6 +19,9 @@ import Custom from "./components/homepage/components/customCourse/Custom.jsx";
 import ScratchPage from "./components/courses/IndividualCoursePages/Scratch/ScratchPage.jsx";
 import OctoPage from "./components/courses/IndividualCoursePages/Octo/OctoPage.jsx";
 import DesignPage from "./components/courses/IndividualCoursePages/Design/DesignPage.jsx";
+import PythonPage from "./components/courses/IndividualCoursePages/Python/PythonPage.jsx";
+import RobloxPage from "./components/courses/IndividualCoursePages/Roblox/RobloxPage.jsx";
+import ModelPage from "./components/courses/IndividualCoursePages/Modelling/ModelPage.jsx";
 
 const router = createHashRouter([
   {
@@ -84,6 +87,22 @@ const router = createHashRouter([
   {
     path: "/courses/noncode/designthinking",
     element: <DesignPage />,
+  },
+  {
+    path: "/courses/fundamental/python",
+    element: <PythonPage />,
+  },
+  {
+    path: "/courses/creative/roblox",
+    element: <RobloxPage />,
+  },
+  {
+    path: "/courses/creative/roblox",
+    element: <RobloxPage />,
+  },
+  {
+    path: "/courses/mechanical/3dmodelling",
+    element: <ModelPage />,
   },
 ]);
 

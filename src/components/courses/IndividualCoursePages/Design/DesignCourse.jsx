@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import kid from "../../../../assets/CourseLogos/Scratch/kid.jpeg";
+import kid from "../../../../assets/CourseLogos/Design/main.jpeg";
 import designStat from "../../../../assets/CourseLogos/Design/designStat.png";
 import check from "../../../../assets/CourseLogos/Design/check.png";
 import episodes from "../../../../assets/CourseLogos/Design/episodes.png";
@@ -9,21 +9,22 @@ import graph from "../../../../assets/searchfilter/graph.png";
 import laptop from "../../../../assets/searchfilter/laptop.png";
 import certificate from "../../../../assets/searchfilter/certificate.png";
 import blockCode from "../../../../assets/searchfilter/blockCode.png";
-import img1 from "../../../../assets/CourseLogos/Scratch/images/img1.jpg";
-import img2 from "../../../../assets/CourseLogos/Scratch/images/img2.jpg";
-import img3 from "../../../../assets/CourseLogos/Scratch/images/img3.jpg";
+import img1 from "../../../../assets/CourseLogos/Design/images/img1.jpeg";
+import img2 from "../../../../assets/CourseLogos/Design/images/img2.jpeg";
+import img3 from "../../../../assets/CourseLogos/Design/images/img3.jpeg";
+import img4 from "../../../../assets/CourseLogos/Design/images/img4.jpeg";
 
 import { Carousel } from "@material-tailwind/react";
 const DesignCourse = () => {
   const listStyle = {
     listStyleImage: `url(${check})`,
   };
-  const slideShowData = [img1, img2, img3];
+  const slideShowData = [img1, img2, img3, img4];
 
   return (
     <div className="flex h-full w-full flex-col items-center bg-[#F9E5AC] pt-[80px] font-comfortaa text-white md:pt-[110px]">
-      <section className="flex w-full flex-col md:flex-row">
-        <div className="flex w-full flex-col items-center bg-[#F6C94B]   md:w-[70%]">
+      <section className="flex w-full flex-col lg:flex-row ">
+        <div className="flex w-full flex-col items-center bg-[#F6C94B]   lg:w-[70%]">
           <img src={designThinking} alt="blockcoder" className=" w-full" />
 
           <p className="my-12 w-[90%] text-center text-xl  lg:text-2xl xl:text-3xl">
@@ -36,7 +37,7 @@ const DesignCourse = () => {
         <img
           src={kid}
           alt=""
-          className="w-full object-cover drop-shadow-2xl   md:w-[40%]"
+          className=" h-[500px] w-full   object-cover drop-shadow-2xl md:w-[40%] "
         />
       </section>
 
@@ -81,7 +82,7 @@ const DesignCourse = () => {
         </div>
       </section>
 
-      <section className="flex items-center justify-center bg-[#F7A2A0] p-10">
+      <section className="flex items-center justify-center bg-[#F3C74A] p-10">
         <div className=" flex w-full flex-wrap text-sm sm:text-base  lg:text-lg xl:text-3xl ">
           <div className="mb-3 flex w-[50%] items-center font-bold ">
             <img src={graph} alt="laptop" className="mr-3 w-[15%]" />
@@ -106,7 +107,7 @@ const DesignCourse = () => {
         </div>
       </section>
 
-      <section className="flex w-full items-center justify-center bg-[#F9E5AC] p-10 text-black">
+      <section className="flex w-full items-center justify-center bg-[#fddb7e] p-10 text-black">
         <div>
           <p className="mb-5 text-2xl font-bold lg:text-3xl">
             Learning Process
@@ -197,7 +198,7 @@ const DesignCourse = () => {
         </div>
       </section>
 
-      <section className="relative flex w-full  items-center justify-center bg-[#FEE397]  p-12 md:p-0">
+      <section className="relative flex w-full  items-center justify-center bg-[#FEE397]  p-12 ">
         <img src={episodes} alt="episodes" className=" md:w-[80%] lg:w-[70%]" />
         <div className="absolute right-0 top-0 bg-[#F7A2A0] px-5 py-2">
           <p className="text-center">Our Adventure</p>

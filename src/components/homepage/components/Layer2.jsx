@@ -51,7 +51,7 @@ const Layer2 = () => {
                 Project-Based learning{" "}
               </Link>
               with a team of engineers and programmers who will work directly
-              with you.You will practice your skills in pitching projects and
+              with you. You will practice your skills in pitching projects and
               present your project at the end of class. To develop skills
               Prepare yourself to be a citizen of the digital world of the
               future.

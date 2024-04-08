@@ -28,6 +28,7 @@ const Fundamental = () => {
     {
       pic: python,
       title: "Basic Coding with Python",
+      portal: "/courses/fundamental/python",
     },
     {
       pic: java,

@@ -21,9 +21,9 @@ const ScratchCourse = () => {
   const slideShowData = [img1, img2, img3];
 
   return (
-    <div className="flex h-full w-full flex-col items-center bg-[#65b57d] pt-[80px] font-comfortaa text-white md:pt-[110px]">
-      <section className="flex w-full flex-col md:flex-row">
-        <div className="flex w-full flex-col items-center bg-[#6FBC87]   md:w-[70%]">
+    <div className="flex h-full w-full flex-col items-center bg-[#6FBC87] pt-[80px] font-comfortaa text-white md:pt-[110px]">
+      <section className="flex w-full flex-col lg:flex-row">
+        <div className="flex w-full flex-col items-center bg-[#6FBC87]   lg:w-[70%]">
           <img src={blockcoder} alt="blockcoder" className=" w-full" />
 
           <p className="my-12 w-[90%] text-center text-xl  lg:text-2xl xl:text-3xl">
@@ -36,7 +36,7 @@ const ScratchCourse = () => {
         <img
           src={kid}
           alt=""
-          className="w-full object-cover drop-shadow-2xl   md:w-[40%]"
+          className="h-[500px] w-full object-cover drop-shadow-2xl  lg:w-[40%] "
         />
       </section>
 
@@ -46,7 +46,7 @@ const ScratchCourse = () => {
           alt="Course"
           className="w-full object-contain md:w-[55%]"
         />
-        <div className="flex w-full  flex-col items-center justify-center bg-[#ACEDBF] p-5 text-black  md:w-[45%]  md:p-10 ">
+        <div className="flex w-full  flex-col items-center justify-center  p-5 text-black  md:w-[45%]  md:p-10 ">
           <div>
             <p className="mb-2 text-sm font-bold sm:text-base lg:text-lg xl:text-xl">
               Skills Developed
@@ -81,7 +81,7 @@ const ScratchCourse = () => {
         </div>
       </section>
 
-      <section className="flex items-center justify-center bg-[#65b57d] p-10">
+      <section className="flex items-center justify-center bg-[#6FBC87] p-10">
         <div className=" flex w-full flex-wrap text-sm sm:text-base  lg:text-lg xl:text-3xl ">
           <div className="mb-3 flex w-[50%] items-center font-bold ">
             <img src={graph} alt="laptop" className="mr-3 w-[15%]" />
@@ -106,7 +106,7 @@ const ScratchCourse = () => {
         </div>
       </section>
 
-      <section className="flex w-full items-center justify-center bg-green-300 p-10 text-black">
+      <section className="flex w-full items-center justify-center bg-[#b7f5ca] p-10 text-black">
         <div>
           <p className="mb-5 text-2xl font-bold lg:text-3xl">
             Learning Process
@@ -197,7 +197,7 @@ const ScratchCourse = () => {
         </div>
       </section>
 
-      <section className="relative flex w-full  items-center justify-center bg-[#ACEDBF] p-12 md:p-0">
+      <section className="relative flex w-full  items-center justify-center bg-[#ACEDBF] p-12 ">
         <img src={episodes} alt="episodes" className=" md:w-[80%] lg:w-[70%]" />
         <div className="absolute right-0 top-0 bg-[#4CBD80] px-5 py-2">
           <p className="text-center">Our Course Path</p>
