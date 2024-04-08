@@ -27,8 +27,8 @@ const ModelCourse = () => {
           <img src={modelling} alt="blockcoder" className=" w-full" />
 
           <p className="my-12 w-[90%] text-center text-xl  lg:text-2xl xl:text-3xl">
-            "A Desired class that empowers your basic fundamental Python
-            skills."
+            "Unleash your creativity, learn the art of digital sculpting, and
+            bring your ideas to life"
           </p>
 
           {/* Scratch + Kid Pic*/}

@@ -27,8 +27,8 @@ const RobloxCourse = () => {
           <img src={roblox} alt="blockcoder" className=" w-full" />
 
           <p className="my-12 w-[90%] text-center text-xl  lg:text-2xl xl:text-3xl">
-            "A Desired class that empowers your basic fundamental Python
-            skills."
+            "Where fun meets fundamentals. Learn coding through your child's
+            favorite game."
           </p>
 
           {/* Scratch + Kid Pic*/}
