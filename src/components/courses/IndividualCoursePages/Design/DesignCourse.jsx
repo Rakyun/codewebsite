@@ -37,7 +37,7 @@ const DesignCourse = () => {
         <img
           src={kid}
           alt=""
-          className=" h-[500px] w-full   object-cover drop-shadow-2xl md:w-[40%] "
+          className=" h-[500px] w-full   object-cover drop-shadow-2xl lg:w-[40%] "
         />
       </section>
 

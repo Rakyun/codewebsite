@@ -13,7 +13,6 @@ const Homepage = () => {
   const page = "Home";
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
@@ -26,7 +25,7 @@ const Homepage = () => {
     <div className="">
       <Header toggle={toggleNav} />
       <Nav isVisible={isNavOpen} />
-      <Layer1/>
+      <Layer1 />
       <Layer2 />
       <Layer3 />
       <Layer4 />

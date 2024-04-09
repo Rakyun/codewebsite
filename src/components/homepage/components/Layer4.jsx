@@ -21,7 +21,10 @@ const Layer4 = () => {
               Our Classroom
             </p>
           </Link>
-          <div className="relative my-5 flex w-[90%] cursor-pointer items-center justify-center drop-shadow-xl transition-transform duration-500 hover:scale-105  active:opacity-[0.9] md:w-[45%]">
+          <Link
+            to="/aboutUs"
+            className="relative my-5 flex w-[90%] cursor-pointer items-center justify-center drop-shadow-xl transition-transform duration-500 hover:scale-105  active:opacity-[0.9] md:w-[45%]"
+          >
             <img
               src={team}
               className="rounded-3xl opacity-[0.95]"
@@ -30,7 +33,7 @@ const Layer4 = () => {
             <p className="absolute text-center text-xl underline underline-offset-[20px]">
               Our Team and Curriculum
             </p>
-          </div>
+          </Link>
         </div>
         <div className="flex w-[85%] flex-col items-center bg-transparent md:flex-row md:justify-around ">
           <Link

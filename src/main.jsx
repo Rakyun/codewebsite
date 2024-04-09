@@ -22,6 +22,8 @@ import DesignPage from "./components/courses/IndividualCoursePages/Design/Design
 import PythonPage from "./components/courses/IndividualCoursePages/Python/PythonPage.jsx";
 import RobloxPage from "./components/courses/IndividualCoursePages/Roblox/RobloxPage.jsx";
 import ModelPage from "./components/courses/IndividualCoursePages/Modelling/ModelPage.jsx";
+import WebPage from "./components/courses/IndividualCoursePages/Web/WebPage.jsx";
+import AboutCoding from "./components/AboutCoding/AboutCoding.jsx";
 
 const router = createHashRouter([
   {
@@ -47,6 +49,10 @@ const router = createHashRouter([
   {
     path: "/aboutUs",
     element: <AboutUs />,
+  },
+  {
+    path: "/aboutCoding",
+    element: <AboutCoding />,
   },
   {
     path: "/courses/blockcode",
@@ -103,6 +109,10 @@ const router = createHashRouter([
   {
     path: "/courses/mechanical/3dmodelling",
     element: <ModelPage />,
+  },
+  {
+    path: "/courses/creative/fullstackweb",
+    element: <WebPage />,
   },
 ]);
 

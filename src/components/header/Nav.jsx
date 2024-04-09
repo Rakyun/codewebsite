@@ -4,7 +4,7 @@ const Nav = (props) => {
   return (
     <>
       <div
-        className={`fixed left-0 right-0 z-50 flex h-[480px] flex-col rounded-b-[20px] bg-[#00B0E6] py-4 pl-10 pt-[80px] transition-transform duration-500 md:hidden ${
+        className={`fixed left-0 right-0 top-0 z-50 flex h-[480px] flex-col rounded-b-[20px] bg-[#00B0E6] py-4 pl-10 pt-[80px] transition-transform duration-500 md:hidden ${
           props.isVisible ? "translate-y-0" : "-translate-y-[500px]"
         }`}
       >
@@ -36,10 +36,10 @@ const Nav = (props) => {
           CONTACT US
         </Link>
 
-        <div className="my-3 flex cursor-pointer select-none items-center hover:opacity-80 active:opacity-50">
+        {/* <div className="my-3 flex cursor-pointer select-none items-center hover:opacity-80 active:opacity-50">
           <img src={ukflag} alt="flag" className="h-[25px] w-[40px]" />
           <p className="bold ml-3 font-comfortaa text-xl text-white">English</p>
-        </div>
+        </div> */}
       </div>
     </>
   );

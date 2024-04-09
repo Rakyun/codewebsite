@@ -10,7 +10,7 @@ const Layer2 = () => {
       <div className="relative flex h-full w-full flex-col items-center bg-[#98E7FF] py-[70px] font-comfortaa">
         <div className="m-auto mb-10 flex w-[90%] flex-col items-center bg-transparent md:flex-row md:items-start md:justify-between ">
           <div className="mb-10 flex  w-[90%] flex-col items-center md:w-[45%]">
-            <p className="mb-10  text-center text-2xl font-extrabold md:h-12 md:w-[400px]">
+            <p className="mb-10  text-center text-2xl font-extrabold md:h-12 ">
               Prepare your child's skills for the world of the future
             </p>
             <img
@@ -18,7 +18,7 @@ const Layer2 = () => {
               src={prepare}
               alt="A picture"
             />
-            <p className="text-center">
+            <p className="mb-10 text-center">
               CO-DE academy is a school that aims to prepare students. To the
               world of the 21st century, our school controls and conducts
               teaching as well. National level engineer You will learn important
@@ -26,9 +26,16 @@ const Layer2 = () => {
               such as Scratch, Python, Web developer, Roblox Developer and many
               more.
             </p>
+
+            <Link
+              to="/aboutCoding"
+              className="bold mb-10 w-[200px] cursor-pointer select-none rounded-[50px] bg-[#F7C94B] p-2 text-center font-comfortaa text-white drop-shadow-lg transition-transform duration-500 hover:bg-[#EA5880]  active:opacity-80 md:p-4  md:hover:scale-105"
+            >
+              More Details
+            </Link>
           </div>
           <div className="mb-10 flex w-[90%] flex-col  items-center md:w-[45%]">
-            <p className="mb-10 flex h-12 items-end justify-center text-center text-2xl font-extrabold  md:w-[400px]">
+            <p className="mb-10 flex h-12 items-end justify-center text-center text-2xl font-extrabold  ">
               Why study with us?
             </p>
             <div className="relative">
@@ -40,7 +47,7 @@ const Layer2 = () => {
               />
             </div>
 
-            <p className="text-center">
+            <p className="mb-10 text-center">
               Our academy emphasizes teaching and learning that allows students
               to experience coding skills and develop systematic thinking.
               Through learning{" "}
@@ -56,17 +63,13 @@ const Layer2 = () => {
               Prepare yourself to be a citizen of the digital world of the
               future.
             </p>
+            <Link
+              to="/aboutUs"
+              className="bold mb-10 w-[200px] cursor-pointer select-none rounded-[50px] bg-[#F7C94B] p-2 text-center font-comfortaa text-white drop-shadow-lg transition-transform duration-500 hover:bg-[#EA5880]  active:opacity-80 md:p-4  md:hover:scale-105"
+            >
+              More Details
+            </Link>
           </div>
-        </div>
-        <div className="flex w-[90%] items-center justify-center md:justify-normal  ">
-          <Link
-            className="font-comfortaa text-2xl font-bold  text-[#F7C94B] drop-shadow-md"
-            to="/aboutUs"
-          >
-            {" "}
-            {">> Get to know us more"}{" "}
-          </Link>
-          <img src={star} alt="flag" className="hidden w-[8%] md:block" />
         </div>
       </div>
     </>

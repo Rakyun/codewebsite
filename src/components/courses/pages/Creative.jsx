@@ -29,7 +29,11 @@ const Creative = () => {
       title: "Roblox : Game Development",
       portal: "/courses/creative/roblox",
     },
-    { pic: fullstack, title: "Full-stack Web Development with Python" },
+    {
+      pic: fullstack,
+      title: "Full-stack Web Development with Python",
+      portal: "/courses/creative/fullstackweb",
+    },
     { pic: mobile, title: "Mobile App Development" },
   ];
   const slideShowData = [img1, img2, img3, img4];

@@ -36,7 +36,7 @@ const ScratchCourse = () => {
         <img
           src={kid}
           alt=""
-          className="h-[500px] w-full object-cover drop-shadow-2xl  lg:w-[40%] "
+          className=" w-full object-cover drop-shadow-2xl  lg:w-[40%] "
         />
       </section>
 
