@@ -27,7 +27,10 @@ export const Scratch = () => {
       </p>
       <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
         <img src={scratch} alt="pic" className=" rounded-xl" />
-        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+        <Link
+          to="/courses/blockcode/scratch"
+          className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]"
+        >
           More Details
         </Link>
       </div>
@@ -43,7 +46,10 @@ export const Octo = () => {
       </p>
       <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
         <img src={octoStudio} alt="pic" className=" rounded-xl" />
-        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+        <Link
+          to="/courses/blockcode/octo"
+          className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]"
+        >
           More Details
         </Link>
       </div>
@@ -59,7 +65,10 @@ export const ThreeDeeModel = () => {
       </p>
       <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
         <img src={threeDeeModel} alt="pic" className=" rounded-xl" />
-        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+        <Link
+          to="/courses/mechanical/3dmodelling"
+          className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]"
+        >
           More Details
         </Link>
       </div>
@@ -91,7 +100,10 @@ export const DesignThinking = () => {
       </p>
       <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
         <img src={designThinking} alt="pic" className=" rounded-xl" />
-        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+        <Link
+          to="/courses/noncode/designthinking"
+          className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]"
+        >
           More Details
         </Link>
       </div>
@@ -107,7 +119,10 @@ export const FullStack = () => {
       </p>
       <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
         <img src={fullstack} alt="pic" className=" rounded-xl" />
-        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+        <Link
+          to="/courses/creative/fullstackweb"
+          className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]"
+        >
           More Details
         </Link>
       </div>
@@ -139,7 +154,10 @@ export const Microbit = () => {
       </p>
       <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
         <img src={microbit} alt="pic" className=" rounded-xl" />
-        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+        <Link
+          to="/courses/mechanical/microbit"
+          className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]"
+        >
           More Details
         </Link>
       </div>
@@ -171,7 +189,10 @@ export const Python = () => {
       </p>
       <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
         <img src={python} alt="pic" className=" rounded-xl" />
-        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+        <Link
+          to="/courses/fundamental/python"
+          className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]"
+        >
           More Details
         </Link>
       </div>
@@ -203,7 +224,10 @@ export const Roblox = () => {
       </p>
       <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
         <img src={roblox} alt="pic" className=" rounded-xl" />
-        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+        <Link
+          to="/courses/creative/roblox"
+          className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]"
+        >
           More Details
         </Link>
       </div>

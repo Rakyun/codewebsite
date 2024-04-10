@@ -22,7 +22,11 @@ const Mechanical = () => {
   };
 
   const coursesData = [
-    { pic: microbit, title: "Microbit : Get creative and connected" },
+    {
+      pic: microbit,
+      title: "Microbit : Get creative and connected",
+      portal: "/courses/mechanical/microbit",
+    },
     {
       pic: threeDee,
       title: "3D Modelling : Design and Create",

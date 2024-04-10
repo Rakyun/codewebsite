@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-import prepare from "../../../assets/others/prepare.png";
-import why from "../../../assets/others/why.png";
+import prepare from "../../../assets/others/prepare.jpg";
+import why from "../../../assets/others/why.jpg";
 import catpeek from "../../../assets/others/catpeek.png";
 import star from "../../../assets/others/star.png";
 import { Link } from "react-router-dom";
@@ -14,7 +14,7 @@ const Layer2 = () => {
               Prepare your child's skills for the world of the future
             </p>
             <img
-              className="my-3 drop-shadow-xl"
+              className="my-5 rounded-2xl drop-shadow-xl"
               src={prepare}
               alt="A picture"
             />
@@ -38,11 +38,15 @@ const Layer2 = () => {
             <p className="mb-10 flex h-12 items-end justify-center text-center text-2xl font-extrabold  ">
               Why study with us?
             </p>
-            <div className="relative">
-              <img className="my-3 drop-shadow-xl" src={why} alt="A picture" />
+            <div className="relative my-5 ">
+              <img
+                className="rounded-2xl drop-shadow-xl"
+                src={why}
+                alt="A picture"
+              />
               <img
                 src={catpeek}
-                className="absolute left-0 top-0 w-[25%] -translate-x-[35%] -translate-y-[40%] transform md:-translate-y-[45%]"
+                className="absolute left-0 top-0 w-[25%] -translate-x-[35%] -translate-y-[55%] transform md:-translate-y-[55%]"
                 alt="Cat peeking"
               />
             </div>

@@ -24,6 +24,7 @@ import RobloxPage from "./components/courses/IndividualCoursePages/Roblox/Roblox
 import ModelPage from "./components/courses/IndividualCoursePages/Modelling/ModelPage.jsx";
 import WebPage from "./components/courses/IndividualCoursePages/Web/WebPage.jsx";
 import AboutCoding from "./components/AboutCoding/AboutCoding.jsx";
+import MicroPage from "./components/courses/IndividualCoursePages/Microbit/MicroPage.jsx";
 
 const router = createHashRouter([
   {
@@ -103,12 +104,12 @@ const router = createHashRouter([
     element: <RobloxPage />,
   },
   {
-    path: "/courses/creative/roblox",
-    element: <RobloxPage />,
-  },
-  {
     path: "/courses/mechanical/3dmodelling",
     element: <ModelPage />,
+  },
+  {
+    path: "/courses/mechanical/microbit",
+    element: <MicroPage />,
   },
   {
     path: "/courses/creative/fullstackweb",
