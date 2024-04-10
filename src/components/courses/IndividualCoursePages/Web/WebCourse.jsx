@@ -27,8 +27,8 @@ const WebCourse = () => {
           <img src={web} alt="blockcoder" className=" w-full" />
 
           <p className="my-12 w-[90%] text-center text-xl  lg:text-2xl xl:text-3xl">
-            "Where fun meets fundamentals. Learn coding through your child's
-            favorite game."
+            "From design basics to coding magic - Start creating your own
+            website with Python."
           </p>
 
           {/* Scratch + Kid Pic*/}
@@ -105,7 +105,14 @@ const WebCourse = () => {
           <p className="mb-5 text-2xl font-bold lg:text-3xl">
             Learning Process
           </p>
+
           <ul className="ml-4 list-disc text-base md:text-lg lg:text-xl">
+            <li className="font-bold">Bring Web to life with Python:</li>
+            <ul className="mb-5 ml-7 list-square">
+              <li>Integrating Python with HTML</li>
+              <li>Learn Web Routing with Python using Flask</li>
+            </ul>
+
             <li className="font-bold">Introduction to Web Development:</li>
             <ul className="mb-5 ml-7 list-square">
               <li>Understand the basics and importance of web development.</li>
