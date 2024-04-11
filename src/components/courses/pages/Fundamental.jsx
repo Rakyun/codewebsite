@@ -33,10 +33,12 @@ const Fundamental = () => {
     {
       pic: java,
       title: "Basic Coding with Java",
+      portal: "/courses/fundamental/java"
     },
     {
       pic: advPython,
       title: "Advanced Coding with Python",
+      portal: "/courses/fundamental/advpython"
     },
   ];
   const slideShowData = [img1, img2, img3, img4, img5];

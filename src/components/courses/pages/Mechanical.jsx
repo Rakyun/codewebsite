@@ -32,7 +32,11 @@ const Mechanical = () => {
       title: "3D Modelling : Design and Create",
       portal: "/courses/mechanical/3dmodelling",
     },
-    { pic: arduino, title: "Arduino : Basic Board and Circuit" },
+    {
+      pic: arduino,
+      title: "Arduino : Basic Board and Circuit",
+      portal: "/courses/mechanical/arduino",
+    },
   ];
   const slideShowData = [img1, img2, img3];
 

@@ -2,7 +2,6 @@
 import prepare from "../../../assets/others/prepare.jpg";
 import why from "../../../assets/others/why.jpg";
 import catpeek from "../../../assets/others/catpeek.png";
-import star from "../../../assets/others/star.png";
 import { Link } from "react-router-dom";
 const Layer2 = () => {
   return (

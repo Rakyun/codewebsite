@@ -84,7 +84,10 @@ export const Arduino = () => {
       </p>
       <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
         <img src={arduino} alt="pic" className=" rounded-xl" />
-        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+        <Link
+          to="/courses/mechanical/arduino"
+          className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]"
+        >
           More Details
         </Link>
       </div>
@@ -138,7 +141,10 @@ export const Java = () => {
       </p>
       <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
         <img src={java} alt="pic" className=" rounded-xl" />
-        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+        <Link
+          to="/courses/fundamental/java"
+          className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]"
+        >
           More Details
         </Link>
       </div>
@@ -173,7 +179,10 @@ export const Mobile = () => {
       </p>
       <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
         <img src={mobile} alt="pic" className=" rounded-xl" />
-        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+        <Link
+          to="/courses/creative/mobile"
+          className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]"
+        >
           More Details
         </Link>
       </div>
@@ -243,7 +252,10 @@ export const AdvPython = () => {
       </p>
       <div className="relative my-2 w-[90%] rounded-xl sm:w-[85%]">
         <img src={advPython} alt="pic" className=" rounded-xl" />
-        <Link className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]">
+        <Link
+          to="/courses/fundamental/advpython"
+          className="absolute bottom-[3%] right-[5%] flex  h-[8%] w-[20%] items-center justify-center rounded-3xl bg-[#F38E45] px-5 py-3 text-center text-[1.7vw]"
+        >
           More Details
         </Link>
       </div>

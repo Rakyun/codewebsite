@@ -34,7 +34,11 @@ const Creative = () => {
       title: "Full-stack Web Development with Python",
       portal: "/courses/creative/fullstackweb",
     },
-    { pic: mobile, title: "Mobile App Development" },
+    {
+      pic: mobile,
+      title: "Mobile App Development",
+      portal: "/courses/creative/mobile",
+    },
   ];
   const slideShowData = [img1, img2, img3, img4];
 

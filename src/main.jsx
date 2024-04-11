@@ -25,6 +25,10 @@ import ModelPage from "./components/courses/IndividualCoursePages/Modelling/Mode
 import WebPage from "./components/courses/IndividualCoursePages/Web/WebPage.jsx";
 import AboutCoding from "./components/AboutCoding/AboutCoding.jsx";
 import MicroPage from "./components/courses/IndividualCoursePages/Microbit/MicroPage.jsx";
+import MobilePage from "./components/courses/IndividualCoursePages/Mobile/MobilePage.jsx";
+import ArduinoPage from "./components/courses/IndividualCoursePages/Arduino/ArduinoPage.jsx";
+import JavaPage from "./components/courses/IndividualCoursePages/Java/JavaPage.jsx";
+import AdvPythonPage from "./components/courses/IndividualCoursePages/AdvPython/AdvPythonPage.jsx";
 
 const router = createHashRouter([
   {
@@ -84,6 +88,10 @@ const router = createHashRouter([
     element: <Custom />,
   },
   {
+    path: "/courses/noncode/designthinking",
+    element: <DesignPage />,
+  },
+  {
     path: "/courses/blockcode/scratch",
     element: <ScratchPage />,
   },
@@ -92,16 +100,16 @@ const router = createHashRouter([
     element: <OctoPage />,
   },
   {
-    path: "/courses/noncode/designthinking",
-    element: <DesignPage />,
-  },
-  {
-    path: "/courses/fundamental/python",
-    element: <PythonPage />,
-  },
-  {
     path: "/courses/creative/roblox",
     element: <RobloxPage />,
+  },
+  {
+    path: "/courses/creative/fullstackweb",
+    element: <WebPage />,
+  },
+  {
+    path: "/courses/creative/mobile",
+    element: <MobilePage />,
   },
   {
     path: "/courses/mechanical/3dmodelling",
@@ -111,9 +119,22 @@ const router = createHashRouter([
     path: "/courses/mechanical/microbit",
     element: <MicroPage />,
   },
+
   {
-    path: "/courses/creative/fullstackweb",
-    element: <WebPage />,
+    path: "/courses/mechanical/arduino",
+    element: <ArduinoPage />,
+  },
+  {
+    path: "/courses/fundamental/java",
+    element: <JavaPage />,
+  },
+  {
+    path: "/courses/fundamental/python",
+    element: <PythonPage />,
+  },
+  {
+    path: "/courses/fundamental/advpython",
+    element: <AdvPythonPage />,
   },
 ]);
 

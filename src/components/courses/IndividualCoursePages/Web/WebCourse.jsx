@@ -4,11 +4,12 @@ import webStat from "../../../../assets/CourseLogos/Web/webStat.png";
 import check from "../../../../assets/CourseLogos/Web/check.png";
 import episodes from "../../../../assets/CourseLogos/Web/episodes.png";
 import web from "../../../../assets/CourseLogos/Web/web.png";
-import age from "../../../../assets/searchfilter/age.png";
-import graph from "../../../../assets/searchfilter/graph.png";
-import laptop from "../../../../assets/searchfilter/laptop.png";
-import certificate from "../../../../assets/searchfilter/certificate.png";
-import blockCode from "../../../../assets/searchfilter/blockCode.png";
+import group from "../../../../assets/CourseIcons/group.png";
+import level2 from "../../../../assets/CourseIcons/level2.png";
+import laptop from "../../../../assets/CourseIcons/laptop.png";
+import certificate from "../../../../assets/CourseIcons/certificate.png";
+import textCode from "../../../../assets/CourseIcons/textCode.png";
+import require from "../../../../assets/CourseIcons/require.png";
 import img1 from "../../../../assets/CourseLogos/Web/images/img1.jpg";
 import img2 from "../../../../assets/CourseLogos/Web/images/img2.jpg";
 import img3 from "../../../../assets/CourseLogos/Web/images/img3.jpg";
@@ -36,7 +37,7 @@ const WebCourse = () => {
         <img
           src={kid}
           alt=""
-          className=" h-[500px] w-full   object-cover drop-shadow-2xl lg:w-[40%] "
+          className="w-full   object-cover drop-shadow-2xl lg:w-[40%] "
         />
       </section>
 
@@ -78,24 +79,28 @@ const WebCourse = () => {
       <section className="flex items-center justify-center bg-[#E9587E] p-10">
         <div className=" flex w-full flex-wrap text-sm sm:text-base  lg:text-lg xl:text-3xl ">
           <div className="mb-3 flex w-[50%] items-center font-bold ">
-            <img src={graph} alt="laptop" className="mr-3 w-[15%]" />
-            <p>Beginner</p>
+            <img src={level2} alt="laptop" className="mr-3 w-[15%]" />
+            <p>Intermediate</p>
           </div>
           <div className="mb-3 flex w-[50%] items-center font-bold">
-            <img src={age} alt="laptop" className="mr-3 w-[15%]" />
-            <p>Private / Group Class</p>
+            <img src={require} alt="laptop" className="mr-3 w-[15%]" />
+            <p>Required Basic Course</p>
           </div>
           <div className="mb-3 flex w-[50%] items-center font-bold">
-            <img src={blockCode} alt="laptop" className="mr-3 w-[15%]" />
-            <p>Block-Based Coding</p>
-          </div>
-          <div className="mb-3 flex w-[50%] items-center font-bold">
-            <img src={certificate} alt="laptop" className="mr-3 w-[15%]" />
-            <p>Certificate Included</p>
+            <img src={textCode} alt="laptop" className="mr-3 w-[15%]" />
+            <p>Text-Based Code</p>
           </div>
           <div className="mb-3 flex w-[50%] items-center font-bold">
             <img src={laptop} alt="laptop" className="mr-3 w-[15%]" />
             <p>On-site / Online</p>
+          </div>
+          <div className="mb-3 flex w-[50%] items-center font-bold">
+            <img src={group} alt="laptop" className="mr-3 w-[15%]" />
+            <p>Private / Group Class</p>
+          </div>
+          <div className="mb-3 flex w-[50%] items-center font-bold">
+            <img src={certificate} alt="laptop" className="mr-3 w-[15%]" />
+            <p>Certificate Included</p>
           </div>
         </div>
       </section>
