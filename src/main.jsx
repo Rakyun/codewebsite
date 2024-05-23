@@ -142,9 +142,7 @@ const router = createHashRouter([
 initializeGA();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <CheckBoxProvider>
-      <RouterProvider router={router} />
-    </CheckBoxProvider>
-  </React.StrictMode>,
+  <CheckBoxProvider>
+    <RouterProvider router={router} />
+  </CheckBoxProvider>,
 );

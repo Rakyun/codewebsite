@@ -5,7 +5,7 @@ import Email from "../Email";
 import CustomCourse from "./components/CustomCourse";
 import { useState, useEffect } from "react";
 import Message from "../../../msg/Message";
-
+import ReactGA from "react-ga4";
 const Custom = () => {
   const page = "Custom Page";
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -15,6 +15,7 @@ const Custom = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    ReactGA.send({ hitType: "pageview", title: "Custom Courses Page" });
   }, []);
 
   

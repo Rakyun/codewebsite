@@ -14,6 +14,7 @@ import img4 from "../../../assets/slideImages/Creative/img4.jpg";
 import roblox from "../../../assets/courseDetails/roblox.png";
 import fullstack from "../../../assets/courseDetails/fullstack.png";
 import mobile from "../../../assets/courseDetails/mobile.png";
+import ReactGA from "react-ga4";
 
 const Creative = () => {
   const texts = {
@@ -45,7 +46,9 @@ const Creative = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
+    ReactGA.send({ hitType: "pageview", title: "Creative Page" });
   }, []);
+
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
