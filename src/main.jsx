@@ -29,8 +29,9 @@ import MobilePage from "./components/courses/IndividualCoursePages/Mobile/Mobile
 import ArduinoPage from "./components/courses/IndividualCoursePages/Arduino/ArduinoPage.jsx";
 import JavaPage from "./components/courses/IndividualCoursePages/Java/JavaPage.jsx";
 import AdvPythonPage from "./components/courses/IndividualCoursePages/AdvPython/AdvPythonPage.jsx";
-import initializeGA from "./analytics";
 
+import CookieConsentProvider from "./CookieConsent.jsx";
+import Cookie from "./Cookie.jsx";
 const router = createHashRouter([
   {
     path: "/",
@@ -139,10 +140,11 @@ const router = createHashRouter([
   },
 ]);
 
-initializeGA();
-
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <CheckBoxProvider>
-    <RouterProvider router={router} />
-  </CheckBoxProvider>,
+  <CookieConsentProvider>
+    <CheckBoxProvider>
+      <Cookie />
+      <RouterProvider router={router} />
+    </CheckBoxProvider>
+  </CookieConsentProvider>,
 );
