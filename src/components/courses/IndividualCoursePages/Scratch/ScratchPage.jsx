@@ -13,9 +13,11 @@ const ScratchPage = () => {
     window.scrollTo(0, 0);
     ReactGA.send({ hitType: "pageview", title: "Scratch Page" });
   }, []);
+
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
+
   return (
     <>
       <Header toggle={toggleNav} />
