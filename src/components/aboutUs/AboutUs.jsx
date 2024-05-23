@@ -5,6 +5,7 @@ import Email from "../homepage/components/Email";
 import Footer from "../homepage/components/Footer";
 import Detail from "./components/Detail";
 import Message from "../msg/Message";
+import ReactGA from "react-ga4";
 const AboutUs = () => {
   const page = "About Us";
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -15,6 +16,7 @@ const AboutUs = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    ReactGA.send({ hitType: "pageview", title: "About Us Page" });
   }, []);
   return (
     <>

@@ -13,6 +13,7 @@ import img3 from "../../../assets/slideImages/blockCode/img3.jpg";
 import img4 from "../../../assets/slideImages/blockCode/img4.jpg";
 import octo from "../../../assets/courseDetails/octo.png";
 import scratch from "../../../assets/courseDetails/scratch.png";
+import ReactGA from "react-ga4";
 
 const BlockCode = () => {
   const texts = {
@@ -38,7 +39,9 @@ const BlockCode = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
+    ReactGA.send({ hitType: "pageview", title: "Block-Code Page" });
   }, []);
+
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };

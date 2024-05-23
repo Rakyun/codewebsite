@@ -13,6 +13,8 @@ import img3 from "../../../assets/slideImages/Mechanical/img3.jpg";
 import microbit from "../../../assets/courseDetails/microbit.png";
 import threeDee from "../../../assets/courseDetails/3DModel.png";
 import arduino from "../../../assets/courseDetails/arduino.png";
+import ReactGA from "react-ga4";
+
 const Mechanical = () => {
   const texts = {
     p1: "Make your idea tangible",
@@ -43,7 +45,9 @@ const Mechanical = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
+    ReactGA.send({ hitType: "pageview", title: "Mechanical Page" });
   }, []);
+
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };

@@ -12,7 +12,7 @@ import fundamental from "../../assets/bannerLong/fundamental.jpg";
 import mechanical from "../../assets/bannerLong/mechanical.jpg";
 import noncoding from "../../assets/bannerLong/noncoding.jpg";
 import graduate from "../../assets/bannerLong/graduate.jpg";
-
+import ReactGA from "react-ga4";
 const Course = () => {
   const courses = [
     {
@@ -62,6 +62,7 @@ const Course = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    ReactGA.send({ hitType: "pageview", title: "Courses Page" });
   }, []);
   return (
     <>

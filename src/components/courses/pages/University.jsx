@@ -9,6 +9,8 @@ import img2 from "../../../assets/slideImages/Mechanical/img1.jpg";
 import img1 from "../../../assets/slideImages/Mechanical/img2.jpg";
 import img3 from "../../../assets/slideImages/Mechanical/img3.jpg";
 import roadToUni from "../../../assets/courseDetails/roadToUni.png";
+import ReactGA from "react-ga4";
+
 const University = () => {
   const texts = {
     p1: "A compass for your Computer Science journey",
@@ -27,7 +29,9 @@ const University = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
+    ReactGA.send({ hitType: "pageview", title: "University Page" });
   }, []);
+
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };

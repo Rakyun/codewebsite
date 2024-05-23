@@ -15,6 +15,7 @@ import img5 from "../../../assets/slideImages/Fundamental/img5.jpg";
 import python from "../../../assets/courseDetails/python.png";
 import advPython from "../../../assets/courseDetails/advPython.png";
 import java from "../../../assets/courseDetails/java.png";
+import ReactGA from "react-ga4";
 
 const Fundamental = () => {
   const texts = {
@@ -46,7 +47,9 @@ const Fundamental = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
+    ReactGA.send({ hitType: "pageview", title: "Fundamental Page" });
   }, []);
+
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };

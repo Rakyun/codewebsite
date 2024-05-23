@@ -13,6 +13,7 @@ import img3 from "../../../assets/slideImages/nonCode/img3.jpg";
 import img4 from "../../../assets/slideImages/nonCode/img4.jpg";
 import img5 from "../../../assets/slideImages/nonCode/img5.jpg";
 import designThinking from "../../../assets/courseDetails/designThinking.png";
+import ReactGA from "react-ga4";
 
 const NonCode = () => {
   const texts = {
@@ -34,7 +35,9 @@ const NonCode = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
+    ReactGA.send({ hitType: "pageview", title: "Non-Code Page" });
   }, []);
+
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };

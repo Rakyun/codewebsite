@@ -5,6 +5,8 @@ import Information from "./components/Information";
 import Email from "../homepage/components/Email";
 import Footer from "../homepage/components/Footer";
 import Message from "../msg/Message.jsx";
+import ReactGA from "react-ga4";
+
 const Contact = () => {
   const page = "Contact Us";
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -15,15 +17,16 @@ const Contact = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    ReactGA.send({ hitType: "pageview", title: "Contact Page" });
   }, []);
   return (
     <>
       <Header toggle={toggleNav} />
       <Nav isVisible={isNavOpen} />
       <Information />
-      <Email pageName={page}/>
+      <Email pageName={page} />
       <Footer />
-      <Message/>
+      <Message />
     </>
   );
 };
