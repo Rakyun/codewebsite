@@ -50,13 +50,21 @@ const OctoCourse = () => {
             <p className="mb-2 text-sm font-bold sm:text-base lg:text-lg xl:text-xl">
               Skills Developed
             </p>
+
             <ul style={listStyle} className="ml-10 ">
               <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
-                <p className="ml-2">Computation Skills & Logical Thinking</p>
+                <p className="ml-2">
+                  A Strong Imaginative Mind Through the Process of Storytelling
+                </p>
               </li>
               <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
                 <p className="ml-2">
-                  Introduction to programming concepts and logic
+                  Programming Concepts with Block-Based Coding
+                </p>
+              </li>
+              <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
+                <p className="ml-2">
+                  Development of Sequencing and Logical Thinking Skills
                 </p>
               </li>
               <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
@@ -65,15 +73,7 @@ const OctoCourse = () => {
                 </p>
               </li>
               <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
-                <p className="ml-2">
-                  Basic understanding of algorithms and sequencing
-                </p>
-              </li>
-              <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
-                <p className="ml-2">
-                  Vizualizing and creating interactive stories, animations, and
-                  games
-                </p>
+                <p className="ml-2">Gaining Familiarity with Technology</p>
               </li>
             </ul>
           </div>
@@ -110,89 +110,82 @@ const OctoCourse = () => {
           <p className="mb-5 text-2xl font-bold lg:text-3xl">
             Learning Process
           </p>
+          <p className="mb-5 text-2xl font-bold lg:text-3xl">
+            Introducing the World of Imagination Brought to Life by Code
+          </p>
+          <p className="mb-5 text-xl  lg:text-2xl">
+            The Dino Code class is an adventure story of a young dinosaur that
+            introduces your child to the exciting world of coding in a fun and
+            imaginative way!
+          </p>
           <ul className="ml-4 list-disc text-base md:text-lg lg:text-xl">
-            <li className="font-bold">Introduction To Scratch:</li>
+            <li className="font-bold">Imaginative Learning Goals:</li>
             <ul className="mb-5 ml-7 list-square">
               <li>
-                Start by learning the basics of Scratch, including the
-                interface, sprites, and blocks.
-              </li>
-              <li>
-                Understand the purpose and potential of Scratch for creating
-                interactive projects.
+                In this course, your child will embark on thrilling coding
+                adventures, where they'll learn to create animations, solve
+                puzzles, and bring their favorite stories to life through simple
+                coding concepts.
               </li>
             </ul>
 
-            <li className="font-bold">Foundational Concepts:</li>
+            <li className="font-bold">Creative Learning Resources: </li>
             <ul className="mb-5 ml-7 list-square">
               <li>
-                Learn fundamental programming concepts such as sequencing,
-                loops, conditionals, and variables.
-              </li>
-              <li>
-                Understand how these concepts are applied in Scratch through
-                hands-on activities and examples.
+                Our curriculum is filled with captivating storytelling and
+                hands-on activities, making learning both enjoyable and
+                educational. Each lesson is carefully crafted to spark your
+                child's imagination and curiosity.
               </li>
             </ul>
 
-            <li className="font-bold">Guided Projects:</li>
+            <li className="font-bold">Playful Practice:</li>
             <ul className="mb-5 ml-7 list-square">
               <li>
-                Follow guided projects provided by the course instructor or
-                curriculum.
-              </li>
-              <li>
-                Work through step-by-step instructions to create projects that
-                demonstrate key concepts and techniques.
+                Through guided activities and games, your child will develop
+                essential coding skills while having a blast! They'll use
+                colorful blocks and friendly characters to code their own
+                creations, fostering a love for problem-solving and critical
+                thinking.
               </li>
             </ul>
 
-            <li className="font-bold">Hands-On Practice:</li>
+            <li className="font-bold">Reflective Feedback:</li>
             <ul className="mb-5 ml-7 list-square">
               <li>
-                Spend time practicing with Scratch on your own, applying what
-                you've learned in guided projects.
-              </li>
-              <li>
-                Experiment with creating your own projects, starting with simple
-                ideas and gradually increasing in complexity.
+                Regular feedback sessions provide valuable insights into your
+                child's progress and achievements. We believe in recognizing
+                every milestone, no matter how small, to inspire confidence and
+                a sense of accomplishment.
               </li>
             </ul>
 
-            <li className="font-bold">Feedback and Review with teacher:</li>
+            <li className="font-bold">Engaging Challenges:</li>
             <ul className="mb-5 ml-7 list-square">
               <li>
-                Receive feedback from the instructor and peers on your projects.
-              </li>
-              <li>
-                Reflect on your own work and identify areas for improvement
-                based on feedback received.
+                Our course is filled with exciting challenges and puzzles that
+                will keep your child engaged and motivated. They'll learn to
+                overcome obstacles, think creatively, and persevere through
+                trial and error.
               </li>
             </ul>
 
-            <li className="font-bold">Challenges and Extensions:</li>
+            <li className="font-bold">Project Presentations:</li>
             <ul className="mb-5 ml-7 list-square">
               <li>
-                Take on challenges and extensions to deepen your understanding
-                and skills.
-              </li>
-              <li>
-                Experiment with advanced features and techniques in Scratch to
-                stretch your creativity and problem-solving abilities.
-              </li>
-            </ul>
-
-            <li className="font-bold">Project Showcase:</li>
-            <ul className="mb-5 ml-7 list-square">
-              <li>
-                Showcase your projects to the class or in a public exhibition.
-              </li>
-              <li>
-                Present your work, explain your creative process, and share
-                insights gained from the project.
+                At the end of the course, your child will have the opportunity
+                to showcase their coding projects in a special presentation.
+                They'll share their creations with family and friends, building
+                confidence and communication skills in the process.
               </li>
             </ul>
           </ul>
+          <p className="mb-5 text-base md:text-lg lg:text-xl">
+            Enroll your child in the Dino Code class today and watch as they
+            embark on a journey of discovery, creativity, and endless
+            possibilities! Give them the gift of coding and set them on the path
+            to a bright and promising future.
+          </p>
         </div>
       </section>
 

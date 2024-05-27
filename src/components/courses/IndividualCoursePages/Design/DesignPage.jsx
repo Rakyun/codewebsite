@@ -8,6 +8,8 @@ import DesignCourse from "./DesignCourse";
 import ReactGA from "react-ga4";
 
 const DesignPage = () => {
+  const page = "Design Thinking";
+
   const [isNavOpen, setIsNavOpen] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -21,7 +23,7 @@ const DesignPage = () => {
       <Header toggle={toggleNav} />
       <Nav isVisible={isNavOpen} />
       <DesignCourse />
-      <Email />
+      <Email pageName={page} />
       <Footer />
       <Message />
     </>

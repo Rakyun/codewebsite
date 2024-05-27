@@ -53,27 +53,26 @@ const JavaCourse = () => {
             </p>
             <ul style={listStyle} className="ml-10 ">
               <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
-                <p className="ml-2">Computation Skills & Logical Thinking</p>
-              </li>
-              <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
                 <p className="ml-2">
-                  Introduction to programming concepts and logic
+                  A solid understanding of programming concepts
                 </p>
               </li>
               <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
                 <p className="ml-2">
-                  Creativity and imagination through project-based learning
+                  Be able to break down problems into smaller steps and design
+                  efficient algorithms to solve them.
                 </p>
               </li>
               <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
                 <p className="ml-2">
-                  Basic understanding of algorithms and sequencing
+                  Strong problem-solving skills and Coding technique when
+                  dealing with Programming problem
                 </p>
               </li>
               <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
                 <p className="ml-2">
-                  Vizualizing and creating interactive stories, animations, and
-                  games
+                  Be able to design and implement object-oriented solutions to
+                  problems
                 </p>
               </li>
             </ul>
@@ -112,85 +111,70 @@ const JavaCourse = () => {
             Learning Process
           </p>
           <ul className="ml-4 list-disc text-base md:text-lg lg:text-xl">
-            <li className="font-bold">Introduction To Scratch:</li>
+            <li className="font-bold">Introduction to Java:</li>
             <ul className="mb-5 ml-7 list-square">
               <li>
-                Start by learning the basics of Scratch, including the
-                interface, sprites, and blocks.
+                Gain an understanding of the concept of low-level language and
+                high-level language in coding.
               </li>
+              <li>Introduction to Java and its applications.</li>
+              <li>Explanation of Java syntax and its data types.</li>
+            </ul>
+
+            <li className="font-bold">Control Flow and Functions:</li>
+            <ul className="mb-5 ml-7 list-square">
+              <li>Understand conditional statements.</li>
+              <li>Explore the variation of loops in Java.</li>
+              <li>Introduction to methods and their importance.</li>
+            </ul>
+
+            <li className="font-bold">Data Structures in Java:</li>
+            <ul className="mb-5 ml-7 list-square">
               <li>
-                Understand the purpose and potential of Scratch for creating
-                interactive projects.
+                Learn about organizing and storing data, along with its
+                advantages and use cases.
               </li>
             </ul>
 
-            <li className="font-bold">Foundational Concepts:</li>
+            <li className="font-bold">Error Handling:</li>
             <ul className="mb-5 ml-7 list-square">
               <li>
-                Learn fundamental programming concepts such as sequencing,
-                loops, conditionals, and variables.
-              </li>
-              <li>
-                Understand how these concepts are applied in Scratch through
-                hands-on activities and examples.
+                Understand program bugs and the concept of error handling
+                techniques.
               </li>
             </ul>
 
-            <li className="font-bold">Guided Projects:</li>
+            <li className="font-bold">
+              Introduction to Object-Oriented Programming (OOP):
+            </li>
             <ul className="mb-5 ml-7 list-square">
+              <li>Introduction to OOP concepts: classes and objects.</li>
+              <li>Defining classes with attributes and methods.</li>
               <li>
-                Follow guided projects provided by the course instructor or
-                curriculum.
-              </li>
-              <li>
-                Work through step-by-step instructions to create projects that
-                demonstrate key concepts and techniques.
+                Exploration of encapsulation, inheritance, and polymorphism.
               </li>
             </ul>
 
-            <li className="font-bold">Hands-On Practice:</li>
+            <li className="font-bold">Algorithm and Diagram Design:</li>
             <ul className="mb-5 ml-7 list-square">
+              <li>Learn about algorithm design principles.</li>
               <li>
-                Spend time practicing with Scratch on your own, applying what
-                you've learned in guided projects.
-              </li>
-              <li>
-                Experiment with creating your own projects, starting with simple
-                ideas and gradually increasing in complexity.
+                Introduction to flowcharts and pseudocode for algorithm
+                visualization and design.
               </li>
             </ul>
 
-            <li className="font-bold">Feedback and Review with teacher:</li>
+            <li className="font-bold"> Hands-on Project:</li>
             <ul className="mb-5 ml-7 list-square">
               <li>
-                Receive feedback from the instructor and peers on your projects.
+                Review and reinforce concepts covered in the previous weeks.
               </li>
               <li>
-                Reflect on your own work and identify areas for improvement
-                based on feedback received.
-              </li>
-            </ul>
-
-            <li className="font-bold">Challenges and Extensions:</li>
-            <ul className="mb-5 ml-7 list-square">
-              <li>
-                Take on challenges and extensions to deepen your understanding
-                and skills.
+                Encourage students to brainstorm ideas for their final project.
               </li>
               <li>
-                Experiment with advanced features and techniques in Scratch to
-                stretch your creativity and problem-solving abilities.
-              </li>
-            </ul>
-
-            <li className="font-bold">Project Showcase:</li>
-            <ul className="mb-5 ml-7 list-square">
-              <li>
-                Showcase your projects to the class or in a public exhibition.
-              </li>
-              <li>
-                Present your work, explain your creative process, and share
-                insights gained from the project.
+                Students work on their final projects under supervision,
+                receiving assistance and guidance as needed.
               </li>
             </ul>
           </ul>

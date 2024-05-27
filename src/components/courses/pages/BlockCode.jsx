@@ -16,6 +16,8 @@ import scratch from "../../../assets/courseDetails/scratch.png";
 import ReactGA from "react-ga4";
 
 const BlockCode = () => {
+  const page = "BlockCode";
+
   const texts = {
     p1: "The start of building a programming mindset.",
     p2: "Our block-based coding program is all about making coding fun and easy for kids. We teach them the Coding Theory Concept, which is important for building their future programming skills. With a user-friendly interface and visually stimulating blocks, we create a playful and enjoyable learning experience for children.",
@@ -54,7 +56,7 @@ const BlockCode = () => {
         coursesData={coursesData}
         texts={texts}
       />
-      <Email />
+      <Email pageName={page} />
       <Footer />
       <Message />
     </>

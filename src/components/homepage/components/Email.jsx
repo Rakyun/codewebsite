@@ -48,10 +48,10 @@ export const Email = (props) => {
 
     emailjs
       .sendForm(
-        "service_danilopablito",
-        "template_4qvtp1p",
+        "service_codeacademy",
+        "template_uaoq44h",
         form.current,
-        "u9BG08vzxqup94kfh",
+        "Dwq3JqPF8Lx4j4ZBG",
       )
       .then(
         (result) => {
@@ -134,7 +134,7 @@ export const Email = (props) => {
               value={parentNumber}
               onChange={(e) => setParentNumber(e.target.value)}
               className="mb-5 w-full rounded-xl px-4 py-3 text-black"
-              pattern="[0-9]{10}"
+              pattern="[0-9]{1,20}"
               title="Please Enter A Valid Number"
               required
             />

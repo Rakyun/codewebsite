@@ -8,6 +8,8 @@ import ArduinoCourse from "./ArduinoCourse";
 import ReactGA from "react-ga4";
 
 const ArduinoPage = () => {
+  const page = "Arduino";
+
   const [isNavOpen, setIsNavOpen] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -21,7 +23,7 @@ const ArduinoPage = () => {
       <Header toggle={toggleNav} />
       <Nav isVisible={isNavOpen} />
       <ArduinoCourse />
-      <Email />
+      <Email pageName={page} />
       <Footer />
       <Message />
     </>

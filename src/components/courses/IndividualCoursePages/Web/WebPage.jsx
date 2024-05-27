@@ -8,6 +8,8 @@ import WebCourse from "./WebCourse";
 import ReactGA from "react-ga4";
 
 const WebPage = () => {
+  const page = "Web Development";
+
   const [isNavOpen, setIsNavOpen] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -21,7 +23,7 @@ const WebPage = () => {
       <Header toggle={toggleNav} />
       <Nav isVisible={isNavOpen} />
       <WebCourse />
-      <Email />
+      <Email pageName={page} />
       <Footer />
       <Message />
     </>

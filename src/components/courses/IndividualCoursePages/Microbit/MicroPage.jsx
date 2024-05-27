@@ -8,6 +8,9 @@ import MicroCourse from "./MicroCourse";
 import ReactGA from "react-ga4";
 
 const MicroPage = () => {
+  const page = "Micro-bit";
+ 
+
   const [isNavOpen, setIsNavOpen] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -21,7 +24,7 @@ const MicroPage = () => {
       <Header toggle={toggleNav} />
       <Nav isVisible={isNavOpen} />
       <MicroCourse />
-      <Email />
+      <Email pageName={page} />
       <Footer />
       <Message />
     </>

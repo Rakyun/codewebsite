@@ -16,6 +16,7 @@ import img3 from "../../../../assets/CourseLogos/Python/images/img3.jpg";
 
 import { Carousel } from "@material-tailwind/react";
 const AdvPythonCourse = () => {
+  
   const listStyle = {
     listStyleImage: `url(${check})`,
   };

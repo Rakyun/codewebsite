@@ -8,6 +8,8 @@ import PythonCourse from "./PythonCourse";
 import ReactGA from "react-ga4";
 
 const PythonPage = () => {
+  const page = "Python";
+
   const [isNavOpen, setIsNavOpen] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -21,7 +23,7 @@ const PythonPage = () => {
       <Header toggle={toggleNav} />
       <Nav isVisible={isNavOpen} />
       <PythonCourse />
-      <Email />
+      <Email pageName={page} />
       <Footer />
       <Message />
     </>

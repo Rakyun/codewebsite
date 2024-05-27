@@ -8,6 +8,9 @@ import MobileCourse from "./MobileCourse";
 import ReactGA from "react-ga4";
 
 const MobilePage = () => {
+  const page = "Mobile Development";
+ 
+
   const [isNavOpen, setIsNavOpen] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -21,7 +24,7 @@ const MobilePage = () => {
       <Header toggle={toggleNav} />
       <Nav isVisible={isNavOpen} />
       <MobileCourse />
-      <Email />
+      <Email pageName={page}/>
       <Footer />
       <Message />
     </>

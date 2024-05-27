@@ -8,6 +8,8 @@ import ModelCourse from "./ModelCourse";
 import ReactGA from "react-ga4";
 
 const ModelPage = () => {
+  const page = "3D Modelling";
+
   const [isNavOpen, setIsNavOpen] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -21,7 +23,7 @@ const ModelPage = () => {
       <Header toggle={toggleNav} />
       <Nav isVisible={isNavOpen} />
       <ModelCourse />
-      <Email />
+      <Email pageName={page} />
       <Footer />
       <Message />
     </>

@@ -8,6 +8,8 @@ import RobloxCourse from "./RobloxCourse";
 import ReactGA from "react-ga4";
 
 const RobloxPage = () => {
+  const page = "Roblox";
+
   const [isNavOpen, setIsNavOpen] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -21,7 +23,7 @@ const RobloxPage = () => {
       <Header toggle={toggleNav} />
       <Nav isVisible={isNavOpen} />
       <RobloxCourse />
-      <Email />
+      <Email pageName={page} />
       <Footer />
       <Message />
     </>
