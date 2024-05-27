@@ -134,7 +134,7 @@ export const Email = (props) => {
               value={parentNumber}
               onChange={(e) => setParentNumber(e.target.value)}
               className="mb-5 w-full rounded-xl px-4 py-3 text-black"
-              pattern="[0-9]{1,20}"
+              pattern="[0-9]+"
               title="Please Enter A Valid Number"
               required
             />
