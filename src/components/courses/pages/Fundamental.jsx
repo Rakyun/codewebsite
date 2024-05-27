@@ -18,6 +18,8 @@ import java from "../../../assets/courseDetails/java.png";
 import ReactGA from "react-ga4";
 
 const Fundamental = () => {
+  const page = "Fundamental";
+  
   const texts = {
     p1: "The beginning of strong academic coding background",
     p2: "Our fundamental coding class focuses on teaching the concept of coding theory, making it ideal for learners who have a specific purpose in mind for their future programming endeavors, or for those who need a strong foundational understanding of coding theory for future studies in coding programs.",
@@ -62,7 +64,7 @@ const Fundamental = () => {
         coursesData={coursesData}
         texts={texts}
       />
-      <Email />
+      <Email pageName={page}/>
       <Footer />
       <Message />
     </>

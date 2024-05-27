@@ -17,6 +17,8 @@ import mobile from "../../../assets/courseDetails/mobile.png";
 import ReactGA from "react-ga4";
 
 const Creative = () => {
+  const page = "Creative";
+ 
   const texts = {
     p1: "Make your imagination come alive with code",
     p2: "Imagination is where it all begins, and we'd hate to squash it. Our creative coding program is designed to make coding more tangible.From building websites to creating awesome games, your child's imagination will come to life through coding.If you believe in spelling magic, let's make your magic happen through code.",
@@ -61,7 +63,7 @@ const Creative = () => {
         coursesData={coursesData}
         texts={texts}
       />
-      <Email />
+      <Email  pageName={page}/>
       <Footer />
       <Message />
     </>

@@ -8,6 +8,9 @@ import OctoCourse from "./OctoCourse";
 import ReactGA from "react-ga4";
 
 const OctoPage = () => {
+  const page = "Octo-Studio / Dino-Code";
+  
+
   const [isNavOpen, setIsNavOpen] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -21,7 +24,7 @@ const OctoPage = () => {
       <Header toggle={toggleNav} />
       <Nav isVisible={isNavOpen} />
       <OctoCourse />
-      <Email />
+      <Email pageName={page} />
       <Footer />
       <Message />
     </>

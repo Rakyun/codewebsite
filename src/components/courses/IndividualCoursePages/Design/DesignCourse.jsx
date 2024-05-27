@@ -55,28 +55,27 @@ const DesignCourse = () => {
             </p>
             <ul style={listStyle} className="ml-10 ">
               <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
-                <p className="ml-2">Computation Skills & Logical Thinking</p>
+                <p className="ml-2">Gross motor skills</p>
+              </li>
+              <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
+                <p className="ml-2">Fine motor skills</p>
+              </li>
+              <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
+                <p className="ml-2">Language development</p>
+              </li>
+              <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
+                <p className="ml-2">Cognitive abilities</p>
               </li>
               <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
                 <p className="ml-2">
-                  Introduction to programming concepts and logic
+                  Social-emotional and behavioral well-being
                 </p>
               </li>
               <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
-                <p className="ml-2">
-                  Creativity and imagination through project-based learning
-                </p>
+                <p className="ml-2">Logical thinking and Sequencing</p>
               </li>
               <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
-                <p className="ml-2">
-                  Basic understanding of algorithms and sequencing
-                </p>
-              </li>
-              <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
-                <p className="ml-2">
-                  Vizualizing and creating interactive stories, animations, and
-                  games
-                </p>
+                <p className="ml-2">Basic introduction to Coding experience</p>
               </li>
             </ul>
           </div>
@@ -114,85 +113,61 @@ const DesignCourse = () => {
             Learning Process
           </p>
           <ul className="ml-4 list-disc text-base md:text-lg lg:text-xl">
-            <li className="font-bold">Introduction To Scratch:</li>
+            <li className="font-bold">Nurturing Growth in Crucial Areas: </li>
             <ul className="mb-5 ml-7 list-square">
               <li>
-                Start by learning the basics of Scratch, including the
-                interface, sprites, and blocks.
+                The course aims to foster growth in five crucial areas: gross
+                motor skills, fine motor skills, language development, cognitive
+                abilities, and social-emotional and behavioral well-being.
               </li>
               <li>
-                Understand the purpose and potential of Scratch for creating
-                interactive projects.
+                Each aspect is likely addressed through a combination of
+                activities, exercises, and projects tailored to the age and
+                developmental stage of the children involved.
               </li>
             </ul>
 
-            <li className="font-bold">Foundational Concepts:</li>
+            <li className="font-bold">Integration of 21st-century Skills:</li>
             <ul className="mb-5 ml-7 list-square">
               <li>
-                Learn fundamental programming concepts such as sequencing,
-                loops, conditionals, and variables.
+                The curriculum places a strong emphasis on 21st-century skills
+                such as coding and imagination. This likely involves hands-on
+                activities where children engage in coding exercises, explore
+                creative projects, and participate in imaginative play.
               </li>
               <li>
-                Understand how these concepts are applied in Scratch through
-                hands-on activities and examples.
+                The goal is to equip them with skills that are highly relevant
+                in today's digital age.
               </li>
             </ul>
 
-            <li className="font-bold">Guided Projects:</li>
+            <li className="font-bold">Storytelling and Coding Integration: </li>
             <ul className="mb-5 ml-7 list-square">
               <li>
-                Follow guided projects provided by the course instructor or
-                curriculum.
+                One distinctive feature of the course is the integration of
+                storytelling and coding. This combination serves multiple
+                purposes, including enhancing creativity, logical thinking,
+                language skills, and problem-solving abilities.
               </li>
               <li>
-                Work through step-by-step instructions to create projects that
-                demonstrate key concepts and techniques.
+                Children may engage in storytelling activities where they create
+                narratives and then use coding tools or platforms to bring their
+                stories to life in a digital format.
               </li>
             </ul>
 
-            <li className="font-bold">Hands-On Practice:</li>
+            <li className="font-bold">Engagement and Enjoyment: </li>
             <ul className="mb-5 ml-7 list-square">
               <li>
-                Spend time practicing with Scratch on your own, applying what
-                you've learned in guided projects.
+                The course is designed to be enjoyable for children, ensuring
+                that they remain engaged and motivated throughout the learning
+                process.
               </li>
               <li>
-                Experiment with creating your own projects, starting with simple
-                ideas and gradually increasing in complexity.
-              </li>
-            </ul>
-
-            <li className="font-bold">Feedback and Review with teacher:</li>
-            <ul className="mb-5 ml-7 list-square">
-              <li>
-                Receive feedback from the instructor and peers on your projects.
-              </li>
-              <li>
-                Reflect on your own work and identify areas for improvement
-                based on feedback received.
-              </li>
-            </ul>
-
-            <li className="font-bold">Challenges and Extensions:</li>
-            <ul className="mb-5 ml-7 list-square">
-              <li>
-                Take on challenges and extensions to deepen your understanding
-                and skills.
-              </li>
-              <li>
-                Experiment with advanced features and techniques in Scratch to
-                stretch your creativity and problem-solving abilities.
-              </li>
-            </ul>
-
-            <li className="font-bold">Project Showcase:</li>
-            <ul className="mb-5 ml-7 list-square">
-              <li>
-                Showcase your projects to the class or in a public exhibition.
-              </li>
-              <li>
-                Present your work, explain your creative process, and share
-                insights gained from the project.
+                <p>
+                  This likely involves interactive activities, group projects,
+                  and opportunities for exploration and discovery.
+                </p>
               </li>
             </ul>
           </ul>

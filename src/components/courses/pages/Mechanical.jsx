@@ -16,6 +16,8 @@ import arduino from "../../../assets/courseDetails/arduino.png";
 import ReactGA from "react-ga4";
 
 const Mechanical = () => {
+  const page = "Mechanical";
+
   const texts = {
     p1: "Make your idea tangible",
     p2: "At the heart of our Mechanical Innovation course lies a firm belief in the boundless creativity of every child. Beginning with crafting their own 3D models, understanding electrical circuits, and mastering the integration of embedded systems to bring their creations to life. Beyond mechanical principles, our aim is to instill in them an engineering mindset—a mindset that sparks curiosity, problem- solving, and innovation.",
@@ -60,7 +62,7 @@ const Mechanical = () => {
         coursesData={coursesData}
         texts={texts}
       />
-      <Email />
+      <Email pageName={page} />
       <Footer />
       <Message />
     </>

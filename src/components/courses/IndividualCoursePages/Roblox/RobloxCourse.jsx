@@ -53,28 +53,23 @@ const RobloxCourse = () => {
             </p>
             <ul style={listStyle} className="ml-10 ">
               <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
-                <p className="ml-2">Computation Skills & Logical Thinking</p>
+                <p className="ml-2">Coding Principles with Lua Programming</p>
               </li>
               <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
                 <p className="ml-2">
-                  Introduction to programming concepts and logic
+                  Creativity and Imagination through Project-Based Learning
                 </p>
               </li>
               <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
                 <p className="ml-2">
-                  Creativity and imagination through project-based learning
+                  Problem Solving and Logical Thinking Concepts
                 </p>
               </li>
               <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
-                <p className="ml-2">
-                  Basic understanding of algorithms and sequencing
-                </p>
+                <p className="ml-2">Game Developer’s Mindset</p>
               </li>
               <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
-                <p className="ml-2">
-                  Vizualizing and creating interactive stories, animations, and
-                  games
-                </p>
+                <p className="ml-2">Confidence in Public Presentation</p>
               </li>
             </ul>
           </div>
@@ -112,70 +107,66 @@ const RobloxCourse = () => {
             Learning Process
           </p>
           <ul className="ml-4 list-disc text-base md:text-lg lg:text-xl">
-            <li className="font-bold">Introduction To Scratch:</li>
+            <li className="font-bold">Exploring the Interface:</li>
             <ul className="mb-5 ml-7 list-square">
+              <li>Familiarize yourself with the Roblox Studio interface.</li>
               <li>
-                Start by learning the basics of Scratch, including the
-                interface, sprites, and blocks.
-              </li>
-              <li>
-                Understand the purpose and potential of Scratch for creating
-                interactive projects.
+                Understand the tools and developer environment controls in
+                Roblox Studio.
               </li>
             </ul>
 
-            <li className="font-bold">Foundational Concepts:</li>
+            <li className="font-bold">Learning Lua:</li>
             <ul className="mb-5 ml-7 list-square">
               <li>
-                Learn fundamental programming concepts such as sequencing,
-                loops, conditionals, and variables.
+                Begin by learning the basics of Lua programming, both specific
+                to Roblox and more general Lua programming principles.
               </li>
               <li>
-                Understand how these concepts are applied in Scratch through
-                hands-on activities and examples.
+                Gain more experience in coding principles through gameplay.
               </li>
             </ul>
 
-            <li className="font-bold">Guided Projects:</li>
+            <li className="font-bold">Understanding the APIs:</li>
             <ul className="mb-5 ml-7 list-square">
               <li>
-                Follow guided projects provided by the course instructor or
-                curriculum.
+                Familiarize yourself with the concept of APIs while applying
+                them through Roblox game development.
               </li>
               <li>
-                Work through step-by-step instructions to create projects that
-                demonstrate key concepts and techniques.
+                Take the time to understand these APIs and how to use them
+                effectively in your projects.
               </li>
             </ul>
 
-            <li className="font-bold">Hands-On Practice:</li>
+            <li className="font-bold">
+              Learning through Play with Simple Tasks:
+            </li>
             <ul className="mb-5 ml-7 list-square">
               <li>
-                Spend time practicing with Scratch on your own, applying what
-                you've learned in guided projects.
+                Begin your coding journey by working on simple tasks in class.
               </li>
               <li>
-                Experiment with creating your own projects, starting with simple
-                ideas and gradually increasing in complexity.
+                Start with basic games or simulations that allow you to practice
+                your coding skills without feeling overwhelmed.
               </li>
             </ul>
 
-            <li className="font-bold">Feedback and Review with teacher:</li>
+            <li className="font-bold">Experimenting and Iterating:</li>
             <ul className="mb-5 ml-7 list-square">
               <li>
-                Receive feedback from the instructor and peers on your projects.
-              </li>
-              <li>
-                Reflect on your own work and identify areas for improvement
-                based on feedback received.
+                As you gain more confidence in your coding abilities, start
+                experimenting with more complex projects.
               </li>
             </ul>
 
-            <li className="font-bold">Challenges and Extensions:</li>
+            <li className="font-bold">Building Portfolio Projects:</li>
             <ul className="mb-5 ml-7 list-square">
               <li>
-                Take on challenges and extensions to deepen your understanding
-                and skills.
+                As you become more skilled in coding with Roblox Studio, start
+                working on portfolio projects that showcase your abilities.
+                These projects can be shared with others on the Roblox platform
+                for the world to see.
               </li>
               <li>
                 Experiment with advanced features and techniques in Scratch to

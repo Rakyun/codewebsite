@@ -12,6 +12,8 @@ import roadToUni from "../../../assets/courseDetails/roadToUni.png";
 import ReactGA from "react-ga4";
 
 const University = () => {
+  const page = "University";
+
   const texts = {
     p1: "A compass for your Computer Science journey",
     p2: "To gain acceptance into a computer science program at a university requires careful planning. For top-tier universities, a flawless plan is essential. This course serves as your roadmap to navigate smoothly toward your computer science or computer engineering classes. It not only advises you on the right path but also strengthens your academic preparedness for these classes. With support from our experienced team of teachers, you will be well-prepared to succeed in reaching your goals.",
@@ -44,7 +46,7 @@ const University = () => {
         coursesData={coursesData}
         texts={texts}
       />
-      <Email />
+      <Email pageName={page} />
       <Footer />
       <Message />
     </>

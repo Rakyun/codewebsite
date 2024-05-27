@@ -16,6 +16,8 @@ import designThinking from "../../../assets/courseDetails/designThinking.png";
 import ReactGA from "react-ga4";
 
 const NonCode = () => {
+  const page = "Non Code";
+ 
   const texts = {
     p1: "Where enjoyment meets education",
     p2: "Our Design Thinking course is designed to nurture your child's growth in five crucial areas: gross motor skills, fine motor skills, language development, cognitive abilities, and social-emotional and behavioral well-being. With an emphasis on 21st-century skills such as coding and fostering imagination, our curriculum promises an enjoyable and enriching learning journey perfectly tailored for your young coder.",
@@ -50,7 +52,7 @@ const NonCode = () => {
         coursesData={coursesData}
         texts={texts}
       />
-      <Email />
+      <Email  pageName={page}/>
       <Footer />
       <Message />
     </>

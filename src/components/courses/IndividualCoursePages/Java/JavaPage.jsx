@@ -8,6 +8,8 @@ import JavaCourse from "./JavaCourse";
 import ReactGA from "react-ga4";
 
 const JavaPage = () => {
+  const page = "Java";
+
   const [isNavOpen, setIsNavOpen] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -21,7 +23,7 @@ const JavaPage = () => {
       <Header toggle={toggleNav} />
       <Nav isVisible={isNavOpen} />
       <JavaCourse />
-      <Email />
+      <Email pageName={page} />
       <Footer />
       <Message />
     </>

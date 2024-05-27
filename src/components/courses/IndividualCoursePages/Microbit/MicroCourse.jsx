@@ -68,13 +68,13 @@ const MicroCourse = () => {
               </li>
               <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
                 <p className="ml-2">
-                  Basic understanding of algorithms and sequencing
+                  Basic understanding of algorithms and sequencing with
+                  microcontrollers
                 </p>
               </li>
               <li className="mb-2  text-left text-sm sm:text-base lg:text-lg xl:text-xl">
                 <p className="ml-2">
-                  Vizualizing and creating interactive stories, animations, and
-                  games
+                  Tangible coding with embedded system concepts
                 </p>
               </li>
             </ul>
@@ -113,52 +113,65 @@ const MicroCourse = () => {
             Learning Process
           </p>
           <ul className="ml-4 list-disc text-base md:text-lg lg:text-xl">
-            <li className="font-bold">Introduction To Scratch:</li>
+            <li className="font-bold">Introduction to Micro:bit:</li>
             <ul className="mb-5 ml-7 list-square">
               <li>
-                Start by learning the basics of Scratch, including the
-                interface, sprites, and blocks.
+                Start by understanding the basics of the Microcontroller ,
+                including its interface and components.
               </li>
               <li>
-                Understand the purpose and potential of Scratch for creating
-                interactive projects.
+                Familiarize yourself with the microcontroller, understanding the
+                concept of embedded systems.
               </li>
             </ul>
 
-            <li className="font-bold">Foundational Concepts:</li>
+            <li className="font-bold">Basic Concepts:</li>
             <ul className="mb-5 ml-7 list-square">
               <li>
                 Learn fundamental programming concepts such as sequencing,
                 loops, conditionals, and variables.
               </li>
               <li>
-                Understand how these concepts are applied in Scratch through
-                hands-on activities and examples.
+                Understand how these concepts are applied in the Microcontroller
+                through hands-on activities and examples.
               </li>
+              <li className="font-bold">Simple Projects:</li>
+              <ul className="mb-5 ml-10 list-square">
+                <li>
+                  Create simple programs like displaying text on the LED matrix,
+                  using buttons to control actions, and playing basic sounds.
+                </li>
+              </ul>
             </ul>
 
-            <li className="font-bold">Guided Projects:</li>
+            <li className="font-bold">Advanced Concepts:</li>
             <ul className="mb-5 ml-7 list-square">
-              <li>
-                Follow guided projects provided by the course instructor or
-                curriculum.
-              </li>
-              <li>
-                Work through step-by-step instructions to create projects that
-                demonstrate key concepts and techniques.
-              </li>
+              <li className="font-bold">Integration with Other Hardware:</li>
+              <ul className="mb-5 ml-10 list-square">
+                <li>
+                  Learn to use the Microcontroller with other hardware
+                  components, such as sensors, motors, LEDs, buzzers, servos, or
+                  displays.
+                </li>
+              </ul>
+              <li className="font-bold">Complex Projects:</li>
+              <ul className="mb-5 ml-10 list-square">
+                <li>
+                  Develop more complex projects that integrate multiple
+                  components and advanced programming concepts.
+                </li>
+              </ul>
             </ul>
 
-            <li className="font-bold">Hands-On Practice:</li>
+            <li className="font-bold">Problem-Solving and Debugging:</li>
             <ul className="mb-5 ml-7 list-square">
-              <li>
-                Spend time practicing with Scratch on your own, applying what
-                you've learned in guided projects.
-              </li>
-              <li>
-                Experiment with creating your own projects, starting with simple
-                ideas and gradually increasing in complexity.
-              </li>
+              <li className="font-bold">Troubleshooting:</li>
+              <ul className="mb-5 ml-10 list-square">
+                <li>
+                  Learn common troubleshooting techniques for both hardware and
+                  software issues.
+                </li>
+              </ul>
             </ul>
 
             <li className="font-bold">Feedback and Review with teacher:</li>
@@ -169,18 +182,6 @@ const MicroCourse = () => {
               <li>
                 Reflect on your own work and identify areas for improvement
                 based on feedback received.
-              </li>
-            </ul>
-
-            <li className="font-bold">Challenges and Extensions:</li>
-            <ul className="mb-5 ml-7 list-square">
-              <li>
-                Take on challenges and extensions to deepen your understanding
-                and skills.
-              </li>
-              <li>
-                Experiment with advanced features and techniques in Scratch to
-                stretch your creativity and problem-solving abilities.
               </li>
             </ul>
 
@@ -225,7 +226,7 @@ const MicroCourse = () => {
             className="drop-shadow-2xl"
           >
             {slideShowData.map((item, index) => (
-              <img
+              <img  
                 className="h-full w-full object-cover"
                 key={index}
                 src={item}
